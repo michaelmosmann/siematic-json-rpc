@@ -1,0 +1,408 @@
+### login
+POST https://siemens.fritz.box/api/jsonrpc
+Content-Type: application/json
+
+{"method":"Api.Login","jsonrpc":"2.0","id":"d4an6dnm","params":{"user":"Service","password":"2010"}}
+
+> {% client.global.set("auth_token", response.body.result.token); %}
+
+### browse
+POST https://siemens.fritz.box/api/jsonrpc
+Content-Type: application/json
+x-auth-token: {{auth_token}}
+
+[
+  {
+    "method": "PlcProgram.Browse",
+    "params": {
+      "mode": "children",
+      "var": "\"dbMode\".system[2].heat"
+    },
+    "jsonrpc": "2.0",
+    "id": "dbMode"
+  },
+  {
+    "method": "PlcProgram.Browse",
+    "params": {
+      "mode": "children",
+      "var": "\"dbMode\""
+    },
+    "jsonrpc": "2.0",
+    "id": "dbMode"
+  },
+  {
+    "method": "PlcProgram.Browse",
+    "params": {
+      "mode": "children",
+      "var": "\"dbTank\""
+    },
+    "jsonrpc": "2.0",
+    "id": "dbTank"
+  }
+]
+
+### daten
+POST https://siemens.fritz.box/api/jsonrpc
+Content-Type: application/json
+x-auth-token: {{auth_token}}
+
+[
+  {
+    "method": "PlcProgram.Browse",
+    "params": {
+      "mode": "children",
+      "var": "\"dbMode\".outerTemp"
+    },
+    "jsonrpc": "2.0",
+    "id": "ddMode"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbMode\".outerTemp.currentValue"
+    },
+    "jsonrpc": "2.0",
+    "id": "guessWhat"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbTank\".state[1,2].currentValue"
+    },
+    "jsonrpc": "2.0",
+    "id": "aktuelleTempB"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbTank\".state[1,2].activeSetpoint"
+    },
+    "jsonrpc": "2.0",
+    "id": "wirksamerSollwertB"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbTank\".state[1,2].switchOnThreshold"
+    },
+    "jsonrpc": "2.0",
+    "id": "einschaltschwelleB"
+  }
+]
+
+### heizkurve
+POST https://siemens.fritz.box/api/jsonrpc
+Content-Type: application/json
+x-auth-token: {{auth_token}}
+
+[
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"customSettings\".tankHeat[1].curve.outerTempLo"
+    },
+    "jsonrpc": "2.0",
+    "id": "outerTempLo"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"customSettings\".tankHeat[1].curve.outerTempHi"
+    },
+    "jsonrpc": "2.0",
+    "id": "outerTempHi"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"customSettings\".tankHeat[1].curve.setpointHi"
+    },
+    "jsonrpc": "2.0",
+    "id": "setpointHi"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"customSettings\".tankHeat[1].curve.setpointLo"
+    },
+    "jsonrpc": "2.0",
+    "id": "setpointLo"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"customSettings\".tankHeat[1].curve.isValid"
+    },
+    "jsonrpc": "2.0",
+    "id": "isValid"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"customSettings\".tankHeat[1].mode"
+    },
+    "jsonrpc": "2.0",
+    "id": "mode"
+  }
+]
+
+### reverse
+POST https://siemens.fritz.box/api/jsonrpc
+Content-Type: application/json
+x-auth-token: {{auth_token}}
+
+[
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbTank\".state[1,1].stateControl"
+    },
+    "jsonrpc": "2.0",
+    "id": "statusA"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbTank\".state[1,2].stateControl"
+    },
+    "jsonrpc": "2.0",
+    "id": "statusB"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbTank\".state[1,1].isValidValue"
+    },
+    "jsonrpc": "2.0",
+    "id": "isValidValueA"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbTank\".state[1,2].isValidValue"
+    },
+    "jsonrpc": "2.0",
+    "id": "isValidValueB"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbTank\".state[1,1].currentValue"
+    },
+    "jsonrpc": "2.0",
+    "id": "aktuelleTempA"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbTank\".state[1,2].currentValue"
+    },
+    "jsonrpc": "2.0",
+    "id": "aktuelleTempB"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"customSettings\".tank[1,1].setpoint"
+    },
+    "jsonrpc": "2.0",
+    "id": "sollwertA"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"customSettings\".tank[1,2].setpoint"
+    },
+    "jsonrpc": "2.0",
+    "id": "sollwertB"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbTank\".state[1,1].offsetSetpoint"
+    },
+    "jsonrpc": "2.0",
+    "id": "sollwertAnpassungA"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbTank\".state[1,2].offsetSetpoint"
+    },
+    "jsonrpc": "2.0",
+    "id": "sollwertAnpassungB"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbTank\".state[1,1].activeSetpoint"
+    },
+    "jsonrpc": "2.0",
+    "id": "wirksamerSollwertA"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbTank\".state[1,2].activeSetpoint"
+    },
+    "jsonrpc": "2.0",
+    "id": "wirksamerSollwertB"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"customSettings\".tank[1,1].hysteresis"
+    },
+    "jsonrpc": "2.0",
+    "id": "hysterseA"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"customSettings\".tank[1,2].hysteresis"
+    },
+    "jsonrpc": "2.0",
+    "id": "hysterseB"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"customSettings\".tankCool[1].hysteresis"
+    },
+    "jsonrpc": "2.0",
+    "id": "hysterseCool"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"customSettings\".tankHeat[1].hysteresis"
+    },
+    "jsonrpc": "2.0",
+    "id": "hysterseHeat"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbTank\".state[1,1].switchOnThreshold"
+    },
+    "jsonrpc": "2.0",
+    "id": "einschaltschwelleA"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbTank\".state[1,2].switchOnThreshold"
+    },
+    "jsonrpc": "2.0",
+    "id": "einschaltschwelleB"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"customSettings\".tank[1,1].name"
+    },
+    "jsonrpc": "2.0",
+    "id": "speicherNameA"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"customSettings\".tank[1,2].name"
+    },
+    "jsonrpc": "2.0",
+    "id": "speicherNameB"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"customSettings\".heatpump[1].name"
+    },
+    "jsonrpc": "2.0",
+    "id": "waermepumpeName"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbHeatpump\".state[1].release"
+    },
+    "jsonrpc": "2.0",
+    "id": "betriebsbereitschaftEnum"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbHeatpump\".state[1].isWaiting"
+    },
+    "jsonrpc": "2.0",
+    "id": "betriebsbereitIn"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbHeatpump\".state[1].waiting.hour"
+    },
+    "jsonrpc": "2.0",
+    "id": "betriebsbereitInH"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbHeatpump\".state[1].waiting.minute"
+    },
+    "jsonrpc": "2.0",
+    "id": "betriebsbereitInM"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbHeatpump\".state[1].modeControl"
+    },
+    "jsonrpc": "2.0",
+    "id": "betriebsartAngefordert"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbHeatpump\".state[1].modeFeedback"
+    },
+    "jsonrpc": "2.0",
+    "id": "betriebsartAktiv"
+  }
+]
