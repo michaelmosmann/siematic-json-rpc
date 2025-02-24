@@ -8,6 +8,13 @@ import de.flapdoodle.siematic.api.MethodCall
 import de.flapdoodle.siematic.api.ReadMethodCallResponse
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.JsonArray
+import kotlinx.serialization.json.JsonElement
+import kotlinx.serialization.json.boolean
+import kotlinx.serialization.json.double
+import kotlinx.serialization.json.jsonArray
+import kotlinx.serialization.json.jsonObject
+import kotlinx.serialization.json.jsonPrimitive
 import java.net.URI
 import java.net.http.HttpClient
 import java.net.http.HttpRequest
@@ -33,9 +40,9 @@ object Main {
     return request
   }
 
-  inline fun <reified T> response(request: HttpRequest): T {
+  fun responseBody(request: HttpRequest): String {
     val response = HttpClient.newBuilder()
-//    .proxy(ProxySelector.getDefault())
+      //    .proxy(ProxySelector.getDefault())
       .sslContext(Net.acceptAllSSLContext())
       .build()
       .send(request, BodyHandlers.ofString())
@@ -44,11 +51,15 @@ object Main {
       "request failed: $request, status: ${response.statusCode()}"
     }
 
-    val body = response.body()
+    return response.body()
+  }
+
+  inline fun <reified T> response(request: HttpRequest): T {
+    val body = responseBody(request)
     try {
       return Json.decodeFromString<T>(body)
     } catch (e: Exception) {
-      throw RuntimeException("failed to parse response:\n${response.body()}\n", e)
+      throw RuntimeException("failed to parse response:\n${body}\n", e)
     }
   }
 
@@ -57,9 +68,39 @@ object Main {
     return when (datatype) {
       "real" -> response<ReadMethodCallResponse.ReadNumber>(request).result
       "bool" -> response<ReadMethodCallResponse.ReadBoolean>(request).result
-      
+      "usint" -> response<ReadMethodCallResponse.ReadNumber>(request).result
+
       else -> throw IllegalArgumentException("unknown datatype: $datatype")
     }
+  }
+
+  fun readValues(token: String, values: List<Pair<String, String>>): Map<String, Any> {
+    if (values.isNotEmpty()) {
+      val valueTypeMap = values.toMap()
+
+      val requestBody = values.map { MethodCall.read(it.first, it.first) }
+      val request = request(requestBody, "x-auth-token" to token)
+      val json = responseBody(request)
+
+      val parsed = Json.parseToJsonElement(json)
+      require(parsed is JsonArray) { "wrong type: $parsed - $requestBody" }
+      return parsed.jsonArray.associate {
+        val id = it.jsonObject.getValue("id").jsonPrimitive.content
+        val keys = it.jsonObject.keys
+        require(keys.contains("result")) { "missing 'result' in $keys ($it, $requestBody)"}
+        val jsonValue: JsonElement = it.jsonObject.getValue("result")
+        val valueType = valueTypeMap[id]
+        val value = when (valueType) {
+          "bool" -> jsonValue.jsonPrimitive.boolean
+          "real" -> jsonValue.jsonPrimitive.double
+          "usint" -> jsonValue.jsonPrimitive.double
+          else -> throw IllegalArgumentException("unknown datatype: $valueType ($jsonValue)")
+        }
+
+        id to value
+      }
+    }
+    return emptyMap()
   }
 
   fun browse(token: String, name: String, level: Int = 0) {
@@ -67,30 +108,42 @@ object Main {
 
     val browseRequest = request(MethodCall.browse("id", name),"x-auth-token" to token)
     val browseResult = response<BrowseMethodCallResponse>(browseRequest)
-    browseResult.result.forEach {
-      //println("${"  ".repeat(level + 1)}${it.name} (${it.datatype})")
-//      println("---")
-//      println("-> $it")
-      if (it.has_children) {
-        when (it.datatype) {
-          "struct" -> {
-            val arrayDimensions = it.array_dimensions
-            if (arrayDimensions!=null) {
-              require(arrayDimensions.size == 1) { "more or less than one array dimension" }
+
+    val withChildren = browseResult.result.filter { it.has_children }
+    val values = browseResult.result.filter { !it.has_children }
+
+    withChildren.forEach {
+      when (it.datatype) {
+        "struct" -> {
+          val arrayDimensions = it.array_dimensions
+          if (arrayDimensions!=null) {
+            if (arrayDimensions.size == 1) {
               val arrayDimension = arrayDimensions[0]
-              (arrayDimension.start_index..<(arrayDimension.start_index+arrayDimension.count)).forEach { offset ->
+              (0..<arrayDimension.count).forEach { offset ->
                 browse(token, "$name.${it.name}[$offset]", level + 1)
               }
             } else {
-              browse(token, "$name.${it.name}", level + 1)
+              println("${"  ".repeat(level + 1)}$name.${it.name} -> skip")
             }
+          } else {
+            browse(token, "$name.${it.name}", level + 1)
           }
         }
-      } else {
-        val value = readValue(token, "$name.${it.name}", it.datatype)
-        println("${"  ".repeat(level + 1)}$name.${it.name} = $value (${it.datatype})")
       }
-//      println("---")
+//      } else {
+//        val value = readValue(token, "$name.${it.name}", it.datatype)
+//        println("${"  ".repeat(level + 1)}$name.${it.name} = $value (${it.datatype})")
+//      }
+    }
+
+    val valueMap = readValues(token, values.map {
+      if (it.array_dimensions!=null) {
+        throw IllegalArgumentException("array access")
+      }
+      "$name.${it.name}" to it.datatype
+    })
+    valueMap.forEach {
+      println("${"  ".repeat(level + 1)}$name.${it.key} = ${it.value}")
     }
   }
 
@@ -101,7 +154,7 @@ object Main {
     val token = tokenResponse.result.token
     println("token: ${token}")
 
-    browse(token, "\"dbMode\"")
+    browse(token, "\"dbTank\"")
   }
 }
 

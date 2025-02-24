@@ -16,28 +16,10 @@ x-auth-token: {{auth_token}}
     "method": "PlcProgram.Browse",
     "params": {
       "mode": "children",
-      "var": "\"dbMode\".system[2].heat"
+      "var": "\"dbTank\".copy.days"
     },
     "jsonrpc": "2.0",
     "id": "dbMode"
-  },
-  {
-    "method": "PlcProgram.Browse",
-    "params": {
-      "mode": "children",
-      "var": "\"dbMode\""
-    },
-    "jsonrpc": "2.0",
-    "id": "dbMode"
-  },
-  {
-    "method": "PlcProgram.Browse",
-    "params": {
-      "mode": "children",
-      "var": "\"dbTank\""
-    },
-    "jsonrpc": "2.0",
-    "id": "dbTank"
   }
 ]
 

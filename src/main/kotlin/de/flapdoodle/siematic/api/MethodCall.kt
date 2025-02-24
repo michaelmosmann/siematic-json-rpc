@@ -15,7 +15,7 @@ import kotlinx.serialization.Serializable
   }
  */
 @Serializable
-class MethodCall(
+data class MethodCall(
   var method: String = "",
   var params: ModeVar = ModeVar("", ""),
   @EncodeDefault
