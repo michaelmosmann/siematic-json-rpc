@@ -24,6 +24,14 @@ class MethodCall(
 ) {
 
   companion object {
+    fun read(id: String, varName: String): MethodCall {
+      return MethodCall(
+        method = "PlcProgram.Read",
+        params = ModeVar(mode = "simple", varName = varName),
+        id = id
+      )
+    }
+
     fun browse(id: String, varName: String): MethodCall {
       return MethodCall(
         method = "PlcProgram.Browse",

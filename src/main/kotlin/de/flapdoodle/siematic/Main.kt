@@ -5,12 +5,12 @@ import de.flapdoodle.siematic.api.ApiLogin
 import de.flapdoodle.siematic.api.ApiLoginResponse
 import de.flapdoodle.siematic.api.BrowseMethodCallResponse
 import de.flapdoodle.siematic.api.MethodCall
+import de.flapdoodle.siematic.api.ReadMethodCallResponse
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import java.net.URI
 import java.net.http.HttpClient
 import java.net.http.HttpRequest
-import java.net.http.HttpResponse
 import java.net.http.HttpResponse.BodyHandlers
 import java.time.Duration
 import java.time.temporal.ChronoUnit.SECONDS
@@ -52,6 +52,48 @@ object Main {
     }
   }
 
+  fun readValue(token: String, name: String, datatype: String): Any {
+    val request = request(MethodCall.read("id", name),"x-auth-token" to token)
+    return when (datatype) {
+      "real" -> response<ReadMethodCallResponse.ReadNumber>(request).result
+      "bool" -> response<ReadMethodCallResponse.ReadBoolean>(request).result
+      
+      else -> throw IllegalArgumentException("unknown datatype: $datatype")
+    }
+  }
+
+  fun browse(token: String, name: String, level: Int = 0) {
+    println("${"  ".repeat(level)}${name}")
+
+    val browseRequest = request(MethodCall.browse("id", name),"x-auth-token" to token)
+    val browseResult = response<BrowseMethodCallResponse>(browseRequest)
+    browseResult.result.forEach {
+      //println("${"  ".repeat(level + 1)}${it.name} (${it.datatype})")
+//      println("---")
+//      println("-> $it")
+      if (it.has_children) {
+        when (it.datatype) {
+          "struct" -> {
+            val arrayDimensions = it.array_dimensions
+            if (arrayDimensions!=null) {
+              require(arrayDimensions.size == 1) { "more or less than one array dimension" }
+              val arrayDimension = arrayDimensions[0]
+              (arrayDimension.start_index..<(arrayDimension.start_index+arrayDimension.count)).forEach { offset ->
+                browse(token, "$name.${it.name}[$offset]", level + 1)
+              }
+            } else {
+              browse(token, "$name.${it.name}", level + 1)
+            }
+          }
+        }
+      } else {
+        val value = readValue(token, "$name.${it.name}", it.datatype)
+        println("${"  ".repeat(level + 1)}$name.${it.name} = $value (${it.datatype})")
+      }
+//      println("---")
+    }
+  }
+
   @JvmStatic
   fun main(vararg args: String) {
     val request = request(ApiLogin.loginWith("Service", "2010"))
@@ -59,9 +101,7 @@ object Main {
     val token = tokenResponse.result.token
     println("token: ${token}")
 
-    val browseRequest = request(MethodCall.browse("foo", "\"dbMode\""),"x-auth-token" to token)
-    val browseResult = response<BrowseMethodCallResponse>(browseRequest)
-    println("browseResult: $browseResult")
+    browse(token, "\"dbMode\"")
   }
 }
 
