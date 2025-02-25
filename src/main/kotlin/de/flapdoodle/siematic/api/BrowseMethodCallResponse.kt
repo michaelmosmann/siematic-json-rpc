@@ -6,5 +6,6 @@ import kotlinx.serialization.Serializable
 data class BrowseMethodCallResponse(
   var jsonrpc: String,
   var id: String,
-  var result: List<PropertyResponse>
+  var error: Error? = null,
+  var result: List<PropertyResponse> = emptyList<PropertyResponse>()
 )

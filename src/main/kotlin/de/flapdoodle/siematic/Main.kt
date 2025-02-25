@@ -1,13 +1,12 @@
 package de.flapdoodle.siematic
 
-import de.flapdoodle.net.Net
 import de.flapdoodle.siematic.api.ApiLogin
 import de.flapdoodle.siematic.api.ApiLoginResponse
 import de.flapdoodle.siematic.api.ArrayDimensions
 import de.flapdoodle.siematic.api.BrowseMethodCallResponse
 import de.flapdoodle.siematic.api.MethodCall
+import de.flapdoodle.siematic.api.PropertyResponse
 import de.flapdoodle.siematic.api.ReadMethodCallResponse
-import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonElement
@@ -16,79 +15,34 @@ import kotlinx.serialization.json.double
 import kotlinx.serialization.json.jsonArray
 import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
-import java.net.URI
-import java.net.http.HttpClient
-import java.net.http.HttpRequest
-import java.net.http.HttpResponse.BodyHandlers
-import java.time.Duration
-import java.time.temporal.ChronoUnit.SECONDS
 
 object Main {
 
-  inline fun <reified T> request(json: T, vararg header: Pair<String, String>): HttpRequest {
-    var httpRequestBuilder = HttpRequest.newBuilder(URI("https://siemens.fritz.box/api/jsonrpc"))
-      .timeout(Duration.of(10, SECONDS))
-      .header("Content-Type", "application/json")
-
-    header.forEach {
-      httpRequestBuilder = httpRequestBuilder.header(it.first, it.second)
-    }
-
-    val request = httpRequestBuilder
-      .POST(HttpRequest.BodyPublishers.ofString(Json.encodeToString(json)))
-      .build()
-
-    return request
-  }
-
-  fun responseBody(request: HttpRequest): String {
-    val response = HttpClient.newBuilder()
-      //    .proxy(ProxySelector.getDefault())
-      .sslContext(Net.acceptAllSSLContext())
-      .build()
-      .send(request, BodyHandlers.ofString())
-
-    require(response.statusCode() == 200) {
-      "request failed: $request, status: ${response.statusCode()}"
-    }
-
-    return response.body()
-  }
-
-  inline fun <reified T> response(request: HttpRequest): T {
-    val body = responseBody(request)
-    try {
-      return Json.decodeFromString<T>(body)
-    } catch (e: Exception) {
-      throw RuntimeException("failed to parse response:\n${body}\n", e)
-    }
-  }
-
-  fun readValue(token: String, name: String, datatype: String): Any {
-    val request = request(MethodCall.read("id", name),"x-auth-token" to token)
+  fun readValue(jsonRpc: JsonRpc, name: String, datatype: String): Any {
+    val request = jsonRpc.request(MethodCall.read("id", name))
     return when (datatype) {
-      "real" -> response<ReadMethodCallResponse.ReadNumber>(request).result
-      "bool" -> response<ReadMethodCallResponse.ReadBoolean>(request).result
-      "usint" -> response<ReadMethodCallResponse.ReadNumber>(request).result
+      "real" -> jsonRpc.response<ReadMethodCallResponse.ReadNumber>(request).result
+      "bool" -> jsonRpc.response<ReadMethodCallResponse.ReadBoolean>(request).result
+      "usint" -> jsonRpc.response<ReadMethodCallResponse.ReadNumber>(request).result
 
       else -> throw IllegalArgumentException("unknown datatype: $datatype")
     }
   }
 
-  fun readValues(token: String, values: List<Pair<String, String>>): Map<String, Any> {
+  fun readValues(jsonRpc: JsonRpc, values: List<Pair<String, String>>): Map<String, Any> {
     if (values.isNotEmpty()) {
       val valueTypeMap = values.toMap()
 
       val requestBody = values.map { MethodCall.read(it.first, it.first) }
-      val request = request(requestBody, "x-auth-token" to token)
-      val json = responseBody(request)
+      val request = jsonRpc.request(requestBody)
+      val json = jsonRpc.responseBody(request)
 
       val parsed = Json.parseToJsonElement(json)
       require(parsed is JsonArray) { "wrong type: $parsed - $requestBody" }
       return parsed.jsonArray.associate {
         val id = it.jsonObject.getValue("id").jsonPrimitive.content
         val keys = it.jsonObject.keys
-        require(keys.contains("result")) { "missing 'result' in $keys ($it, $requestBody)"}
+        require(keys.contains("result")) { "missing 'result' in $keys ($it, $requestBody)" }
         val jsonValue: JsonElement = it.jsonObject.getValue("result")
         val valueType = valueTypeMap[id]
         val value = when (valueType) {
@@ -124,11 +78,11 @@ object Main {
     return unroll(arrayDimensions, 0, "")
   }
 
-  fun browse(token: String, name: String, level: Int = 0) {
+  fun browse(jsonRpc: JsonRpc, name: String, level: Int = 0) {
     println("${"  ".repeat(level)}${name}")
 
-    val browseRequest = request(MethodCall.browse("id", name),"x-auth-token" to token)
-    val browseResult = response<BrowseMethodCallResponse>(browseRequest)
+    val browseRequest = jsonRpc.request(MethodCall.browse("id", name))
+    val browseResult = jsonRpc.response<BrowseMethodCallResponse>(browseRequest)
 
     val withChildren = browseResult.result.filter { it.has_children }
     val values = browseResult.result.filter { !it.has_children }
@@ -137,13 +91,13 @@ object Main {
       when (it.datatype) {
         "struct" -> {
           val arrayDimensions = it.array_dimensions
-          if (arrayDimensions!=null) {
+          if (arrayDimensions != null) {
             val offsets = unroll(arrayDimensions)
             offsets.forEach { offset ->
-              browse(token, "$name.${it.name}[$offset]", level + 1)
+              browse(jsonRpc, "$name.${it.name}[$offset]", level + 1)
             }
           } else {
-            browse(token, "$name.${it.name}", level + 1)
+            browse(jsonRpc, "$name.${it.name}", level + 1)
           }
         }
       }
@@ -157,27 +111,98 @@ object Main {
       val arrayDimensions = it.array_dimensions
       if (arrayDimensions != null) {
         val offsets = unroll(arrayDimensions)
-          offsets.map { offset ->
-            "$name.${it.name}[$offset]" to it.datatype
-          }
+        offsets.map { offset ->
+          "$name.${it.name}[$offset]" to it.datatype
+        }
       } else {
         listOf("$name.${it.name}" to it.datatype)
       }
     }
-    val valueMap = readValues(token, readValuesJson)
+    val valueMap = readValues(jsonRpc, readValuesJson)
     valueMap.forEach {
       println("${"  ".repeat(level + 1)}$name.${it.key} = ${it.value}")
     }
   }
 
+  val blacklist = setOf<String>(
+//    "configurationSettings",
+//    "customSettings",
+//    "technicalSettings",
+//    "screedSettings",
+//    "operatingData",
+//    "dbService",
+//    "dbLoadSave",
+//    "DB 333",
+//    "dbAI",
+//    "dbAQ",
+//    "dbDI"
+  )
+
+  val whiteList = setOf(
+    "\"PTO\""
+  )
+
+  private fun blacklisted(name: String): Boolean {
+    return blacklist.contains(name)
+  }
+
+  fun browse(jsonRpc: JsonRpc, current: String, properties: List<PropertyResponse>, level: Int) {
+    val indent = "  ".repeat(level)
+    println("$indent$current")
+
+    val (withChildren, withoutChildren) = properties.partition { it.has_children }
+
+    try {
+      jsonRpc.readProperties(current, withoutChildren)
+    } catch (ex: RuntimeException) {
+      throw RuntimeException("could not call: $withoutChildren", ex)
+    }.forEach { (key, value) ->
+      println("$indent  ${key} = $value")
+    }
+
+    val properties = withChildren.flatMap {
+      it.childNames(current)
+    }
+
+    val browseChildCalls = properties.map {
+      MethodCall.browse(it, it)
+    }
+
+    try {
+      jsonRpc.browseMethodCalls(browseChildCalls)
+    } catch (ex: RuntimeException) {
+      throw RuntimeException("could not call: $withChildren", ex)
+    }.forEach {
+      if (it.error != null) {
+        println("$indent$current - ${it.id} failed with error: ${it.error}")
+      } else {
+        browse(jsonRpc, it.id, it.result, level + 1)
+      }
+    }
+
+  }
+
+
+  fun browse(jsonRpc: JsonRpc) {
+    val all = jsonRpc.browseAll()
+    browse(jsonRpc, "", all, 0)
+  }
+
   @JvmStatic
   fun main(vararg args: String) {
-    val request = request(ApiLogin.loginWith("Service", "2010"))
-    val tokenResponse = response<ApiLoginResponse>(request)
+    val jsonRpc = JsonRpc()
+    val request = jsonRpc.request(ApiLogin.loginWith("Service", "2010"))
+    val tokenResponse = jsonRpc.response<ApiLoginResponse>(request)
     val token = tokenResponse.result.token
     println("token: ${token}")
+    val jsonRpcWithAuth = jsonRpc.withHeader("x-auth-token" to token)
 
-    browse(token, "\"dbTank\"")
+    val new=true
+    if (new) {
+      browse(jsonRpcWithAuth)
+    } else {
+      browse(jsonRpcWithAuth, "\"dbTank\"")
+    }
   }
 }
 

@@ -15,16 +15,17 @@ x-auth-token: {{auth_token}}
   {
     "method": "PlcProgram.Browse",
     "params": {
-      "mode": "children"
+      "mode": "children",
+      "var": "\"PTO\""
     },
     "jsonrpc": "2.0",
-    "id": "dbMode"
+    "id": "\"PTO\""
   },
   {
     "method": "PlcProgram.Read",
     "params": {
       "mode": "simple",
-      "var": "\"dbTank\".limits.setpoint[1]"
+      "var": "PTO"
     },
     "jsonrpc": "2.0",
     "id": "guessWhat"

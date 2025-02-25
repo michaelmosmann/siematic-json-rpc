@@ -39,5 +39,13 @@ data class MethodCall(
         id = id
       )
     }
+
+    fun browseAll(id: String): MethodCall {
+      return MethodCall(
+        method = "PlcProgram.Browse",
+        params = ModeVar(mode = "children"),
+        id = id
+      )
+    }
   }
 }
