@@ -16,12 +16,23 @@ x-auth-token: {{auth_token}}
     "method": "PlcProgram.Browse",
     "params": {
       "mode": "children",
-      "var": "\"dbTank\".copy.days"
+      "var": "\"dbTank\".state[1,1]"
     },
     "jsonrpc": "2.0",
     "id": "dbMode"
+  },
+  {
+    "method": "PlcProgram.Read",
+    "params": {
+      "mode": "simple",
+      "var": "\"dbTank\".limits.setpoint[1]"
+    },
+    "jsonrpc": "2.0",
+    "id": "guessWhat"
   }
 ]
+
+
 
 ### daten
 POST https://siemens.fritz.box/api/jsonrpc

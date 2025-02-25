@@ -3,6 +3,7 @@ package de.flapdoodle.siematic
 import de.flapdoodle.net.Net
 import de.flapdoodle.siematic.api.ApiLogin
 import de.flapdoodle.siematic.api.ApiLoginResponse
+import de.flapdoodle.siematic.api.ArrayDimensions
 import de.flapdoodle.siematic.api.BrowseMethodCallResponse
 import de.flapdoodle.siematic.api.MethodCall
 import de.flapdoodle.siematic.api.ReadMethodCallResponse
@@ -94,6 +95,7 @@ object Main {
           "bool" -> jsonValue.jsonPrimitive.boolean
           "real" -> jsonValue.jsonPrimitive.double
           "usint" -> jsonValue.jsonPrimitive.double
+          "dint" -> jsonValue.jsonPrimitive.double
           else -> throw IllegalArgumentException("unknown datatype: $valueType ($jsonValue)")
         }
 
@@ -101,6 +103,25 @@ object Main {
       }
     }
     return emptyMap()
+  }
+
+  fun offset(arrayDimension: ArrayDimensions): List<Int> {
+    return (arrayDimension.start_index..<(arrayDimension.start_index + arrayDimension.count)).toList()
+  }
+
+  fun unroll(arrayDimensions: List<ArrayDimensions>, index: Int, prefix: String): List<String> {
+    val current = arrayDimensions[index]
+    return offset(current).flatMap { i ->
+      if (arrayDimensions.size > index + 1) {
+        unroll(arrayDimensions, index + 1, "$prefix$i,")
+      } else {
+        listOf("$prefix$i")
+      }
+    }
+  }
+
+  fun unroll(arrayDimensions: List<ArrayDimensions>): List<String> {
+    return unroll(arrayDimensions, 0, "")
   }
 
   fun browse(token: String, name: String, level: Int = 0) {
@@ -117,13 +138,9 @@ object Main {
         "struct" -> {
           val arrayDimensions = it.array_dimensions
           if (arrayDimensions!=null) {
-            if (arrayDimensions.size == 1) {
-              val arrayDimension = arrayDimensions[0]
-              (0..<arrayDimension.count).forEach { offset ->
-                browse(token, "$name.${it.name}[$offset]", level + 1)
-              }
-            } else {
-              println("${"  ".repeat(level + 1)}$name.${it.name} -> skip")
+            val offsets = unroll(arrayDimensions)
+            offsets.forEach { offset ->
+              browse(token, "$name.${it.name}[$offset]", level + 1)
             }
           } else {
             browse(token, "$name.${it.name}", level + 1)
@@ -136,12 +153,18 @@ object Main {
 //      }
     }
 
-    val valueMap = readValues(token, values.map {
-      if (it.array_dimensions!=null) {
-        throw IllegalArgumentException("array access")
+    val readValuesJson = values.flatMap {
+      val arrayDimensions = it.array_dimensions
+      if (arrayDimensions != null) {
+        val offsets = unroll(arrayDimensions)
+          offsets.map { offset ->
+            "$name.${it.name}[$offset]" to it.datatype
+          }
+      } else {
+        listOf("$name.${it.name}" to it.datatype)
       }
-      "$name.${it.name}" to it.datatype
-    })
+    }
+    val valueMap = readValues(token, readValuesJson)
     valueMap.forEach {
       println("${"  ".repeat(level + 1)}$name.${it.key} = ${it.value}")
     }
