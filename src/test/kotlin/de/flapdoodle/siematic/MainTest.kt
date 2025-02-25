@@ -9,7 +9,7 @@ class MainTest {
 
   @Test
   fun simpleOffset() {
-    val result = Main.unroll(listOf(ArrayDimensions(1,2)))
+    val result = ArrayDimensions.unroll(listOf(ArrayDimensions(1,2)))
 
     assertThat(result)
       .containsExactly("1","2")
@@ -17,7 +17,7 @@ class MainTest {
 
   @Test
   fun multiArray() {
-    val result = Main.unroll(listOf(ArrayDimensions(1,2),ArrayDimensions(1,2)))
+    val result = ArrayDimensions.unroll(listOf(ArrayDimensions(1,2),ArrayDimensions(1,2)))
 
     assertThat(result)
       .containsExactly("1,1","1,2","2,1","2,2")
