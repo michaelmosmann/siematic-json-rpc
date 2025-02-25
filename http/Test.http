@@ -15,8 +15,7 @@ x-auth-token: {{auth_token}}
   {
     "method": "PlcProgram.Browse",
     "params": {
-      "mode": "children",
-      "var": "\"dbTank\".state[1,1]"
+      "mode": "children"
     },
     "jsonrpc": "2.0",
     "id": "dbMode"
