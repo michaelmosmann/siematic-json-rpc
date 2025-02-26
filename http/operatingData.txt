@@ -1,0 +1,37 @@
+  "operatingData"
+    "operatingData"."heatpump"[1]
+      "operatingData"."heatpump"[1]."counter"
+        "operatingData"."heatpump"[1]."counter"."total"
+          "operatingData"."heatpump"[1]."counter"."total"."startsCompressor" = 125.0
+          "operatingData"."heatpump"[1]."counter"."total"."startsDefrost" = 0.0
+          "operatingData"."heatpump"[1]."counter"."total"."errors" = 0.0
+          "operatingData"."heatpump"[1]."counter"."total"."runtimeCompressorHour" = 179.0
+          "operatingData"."heatpump"[1]."counter"."total"."runtimeDefrostHour" = 0.0
+          "operatingData"."heatpump"[1]."counter"."total"."runtimeCompressorMinute" = 43.0
+          "operatingData"."heatpump"[1]."counter"."total"."runtimeDefrostMinute" = 0.0
+        "operatingData"."heatpump"[1]."counter"."interval"
+          "operatingData"."heatpump"[1]."counter"."interval"."startsCompressor" = 125.0
+          "operatingData"."heatpump"[1]."counter"."interval"."startsDefrost" = 0.0
+          "operatingData"."heatpump"[1]."counter"."interval"."errors" = 0.0
+          "operatingData"."heatpump"[1]."counter"."interval"."runtimeCompressorHour" = 179.0
+          "operatingData"."heatpump"[1]."counter"."interval"."runtimeDefrostHour" = 0.0
+          "operatingData"."heatpump"[1]."counter"."interval"."runtimeCompressorMinute" = 43.0
+          "operatingData"."heatpump"[1]."counter"."interval"."runtimeDefrostMinute" = 0.0
+    "operatingData"."heatpump"[2]
+      "operatingData"."heatpump"[2]."counter"
+        "operatingData"."heatpump"[2]."counter"."total"
+          "operatingData"."heatpump"[2]."counter"."total"."startsCompressor" = 0.0
+          "operatingData"."heatpump"[2]."counter"."total"."startsDefrost" = 0.0
+          "operatingData"."heatpump"[2]."counter"."total"."errors" = 0.0
+          "operatingData"."heatpump"[2]."counter"."total"."runtimeCompressorHour" = 0.0
+          "operatingData"."heatpump"[2]."counter"."total"."runtimeDefrostHour" = 0.0
+          "operatingData"."heatpump"[2]."counter"."total"."runtimeCompressorMinute" = 0.0
+          "operatingData"."heatpump"[2]."counter"."total"."runtimeDefrostMinute" = 0.0
+        "operatingData"."heatpump"[2]."counter"."interval"
+          "operatingData"."heatpump"[2]."counter"."interval"."startsCompressor" = 0.0
+          "operatingData"."heatpump"[2]."counter"."interval"."startsDefrost" = 0.0
+          "operatingData"."heatpump"[2]."counter"."interval"."errors" = 0.0
+          "operatingData"."heatpump"[2]."counter"."interval"."runtimeCompressorHour" = 0.0
+          "operatingData"."heatpump"[2]."counter"."interval"."runtimeDefrostHour" = 0.0
+          "operatingData"."heatpump"[2]."counter"."interval"."runtimeCompressorMinute" = 0.0
+          "operatingData"."heatpump"[2]."counter"."interval"."runtimeDefrostMinute" = 0.0
