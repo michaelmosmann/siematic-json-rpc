@@ -92,7 +92,7 @@ object Main {
       val sections = listOf(
         "configurationSettings",
 //        "customSettings",
-        "technicalSettings",
+//        "technicalSettings",
         "screedSettings",
 //        "operatingData",
         "dbService",
