@@ -5,14 +5,7 @@ import de.flapdoodle.siematic.api.BrowseMethodCallResponse
 import de.flapdoodle.siematic.api.MethodCall
 import de.flapdoodle.siematic.api.PropertyResponse
 import kotlinx.serialization.encodeToString
-import kotlinx.serialization.json.Json
-import kotlinx.serialization.json.JsonArray
-import kotlinx.serialization.json.JsonElement
-import kotlinx.serialization.json.boolean
-import kotlinx.serialization.json.double
-import kotlinx.serialization.json.jsonArray
-import kotlinx.serialization.json.jsonObject
-import kotlinx.serialization.json.jsonPrimitive
+import kotlinx.serialization.json.*
 import java.net.URI
 import java.net.http.HttpClient
 import java.net.http.HttpRequest
@@ -98,13 +91,28 @@ data class JsonRpc(
   }
 
   fun readProperties(current: String, properties: List<PropertyResponse>): List<Pair<String, Any>> {
-    if (!properties.isEmpty()) {
-      val nameAndType = properties.flatMap { p ->
-        p.childNames(current).map { it to p.datatype }
-      }
-      val nameTypeMap = nameAndType.toMap()
+    val nameAndType = properties.flatMap { p ->
+      p.childNames(current).map { it to p.datatype }
+    }
+    return internalReadProperties(nameAndType)
+  }
 
-      val methodCalls = nameAndType.map { MethodCall.read(it.first, it.first) }
+  fun readProperties(properties: List<Pair<String, String>>): List<Pair<String, Any>> {
+    return readProperties(properties, 100)
+  }
+
+  fun readProperties(properties: List<Pair<String, String>>, maxCalls: Int): List<Pair<String, Any>> {
+    return properties.chunked(maxCalls).flatMapIndexed { index, chunk ->
+      print("$index/${properties.size/maxCalls}     \r")
+      internalReadProperties(chunk)
+    }
+  }
+
+  private fun internalReadProperties(properties: List<Pair<String, String>>): List<Pair<String, Any>> {
+    if (properties.isNotEmpty()) {
+      val nameTypeMap = properties.toMap()
+
+      val methodCalls = properties.map { MethodCall.read(it.first, it.first) }
       val request = request(methodCalls)
       val json = responseBody(request)
 
