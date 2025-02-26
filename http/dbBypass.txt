@@ -1,0 +1,12 @@
+
+"dbBypass"
+  "system"[1]
+    "isRequested" = false
+  "system"[2]
+    "isRequested" = false
+  "state"[1]
+    "open" = false
+    "valve" = 0
+  "state"[2]
+    "open" = false
+    "valve" = 0

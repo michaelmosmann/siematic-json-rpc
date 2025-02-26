@@ -1,0 +1,236 @@
+
+"dbExchanger"
+  "system"[1]
+    "isActiveHeatpump" = false
+    "drink"
+      "isActiveHeatpump" = false
+      "isActivatedHeatpump" = false
+    "heat"
+      "isActiveHeatpump" = false
+    "cool"
+      "isActiveHeatpump" = false
+    "defrost"
+      "isActiveHeatpump" = false
+  "system"[2]
+    "isActiveHeatpump" = false
+    "drink"
+      "isActiveHeatpump" = false
+      "isActivatedHeatpump" = false
+    "heat"
+      "isActiveHeatpump" = false
+    "cool"
+      "isActiveHeatpump" = false
+    "defrost"
+      "isActiveHeatpump" = false
+  "temperature"[1]
+    "isOutOfRange" = false
+    "isFaulty" = false
+    "isReady" = true
+    "drink"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 0
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+    "heatCool"
+      "isConfigured" = true
+      "isRecordedValue" = true
+      "isValidValue" = true
+      "currentValue" = 20.84127
+      "lockTime" = 0
+      "isReady" = true
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = true
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 2
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+  "temperature"[2]
+    "isOutOfRange" = false
+    "isFaulty" = false
+    "isReady" = true
+    "drink"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 0
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+    "heatCool"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 0
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+  "loadpump"[1]
+    "drink"
+      "cntDelay" = 0
+      "isRequested" = false
+      "isRequestedOld" = false
+      "isRequestedHold" = false
+      "isConfigured" = false
+    "heatCool"
+      "cntDelay" = 0
+      "isRequested" = false
+      "isRequestedOld" = false
+      "isRequestedHold" = false
+      "isConfigured" = true
+  "loadpump"[2]
+    "drink"
+      "cntDelay" = 0
+      "isRequested" = false
+      "isRequestedOld" = false
+      "isRequestedHold" = false
+      "isConfigured" = false
+    "heatCool"
+      "cntDelay" = 0
+      "isRequested" = false
+      "isRequestedOld" = false
+      "isRequestedHold" = false
+      "isConfigured" = false
+  "cirquitBreaker"[1]
+    "isReady" = true
+    "isFaulty" = false
+    "heatCool"
+      "isConfigured" = false
+      "lockTime" = 25
+      "isReady" = true
+      "isUnlocked" = false
+      "currentSignal" = false
+      "isFaultyHolded" = false
+      "currentState" = false
+      "holdTime" = 0
+      "isFaulty" = false
+      "diag" = 0
+    "drink"
+      "isConfigured" = false
+      "lockTime" = 25
+      "isReady" = true
+      "isUnlocked" = false
+      "currentSignal" = false
+      "isFaultyHolded" = false
+      "currentState" = false
+      "holdTime" = 0
+      "isFaulty" = false
+      "diag" = 0
+  "cirquitBreaker"[2]
+    "isReady" = true
+    "isFaulty" = false
+    "heatCool"
+      "isConfigured" = false
+      "lockTime" = 25
+      "isReady" = true
+      "isUnlocked" = false
+      "currentSignal" = false
+      "isFaultyHolded" = false
+      "currentState" = false
+      "holdTime" = 0
+      "isFaulty" = false
+      "diag" = 0
+    "drink"
+      "isConfigured" = false
+      "lockTime" = 25
+      "isReady" = true
+      "isUnlocked" = false
+      "currentSignal" = false
+      "isFaultyHolded" = false
+      "currentState" = false
+      "holdTime" = 0
+      "isFaulty" = false
+      "diag" = 0
+  "alarm"[1,1]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarm"[1,2]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarm"[1,3]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarm"[1,4]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 1
+    "qualityPage" = 4
+  "alarm"[2,1]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarm"[2,2]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarm"[2,3]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarm"[2,4]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "outerTemp"
+    "isConfigured" = true
+    "isValidValue" = true
+    "currentValue" = 3.932243
+  "threeWayValve"[1]
+    "isConfigured" = false
+    "isRequestedOpen" = false
+    "isRequestedClose" = false
+    "pulse" = 0
+    "cycle" = 0
+    "isActiveOpen" = false
+    "isActiveClose" = false
+  "threeWayValve"[2]
+    "isConfigured" = false
+    "isRequestedOpen" = false
+    "isRequestedClose" = false
+    "pulse" = 0
+    "cycle" = 0
+    "isActiveOpen" = false
+    "isActiveClose" = false

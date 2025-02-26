@@ -1,0 +1,41 @@
+
+"dbVacation"
+  "roomActiveVacation"[1] = 0
+  "roomActiveVacation"[2] = 0
+  "roomActiveVacation"[3] = 0
+  "roomActiveVacation"[4] = 0
+  "roomActiveVacation"[5] = 0
+  "roomActiveVacation"[6] = 0
+  "roomActiveVacation"[7] = 0
+  "roomActiveVacation"[8] = 0
+  "roomActiveVacation"[9] = 0
+  "roomActiveVacation"[10] = 0
+  "roomActiveVacation"[11] = 0
+  "roomActiveVacation"[12] = 0
+  "roomActiveVacation"[13] = 0
+  "roomActiveVacation"[14] = 0
+  "roomActiveVacation"[15] = 0
+  "roomActiveVacation"[16] = 0
+  "tankActiveVacation"[1] = 0
+  "tankActiveVacation"[2] = 0
+  "state"[1]
+    "isActive" = false
+  "state"[2]
+    "isActive" = false
+  "state"[3]
+    "isActive" = false
+  "state"[4]
+    "isActive" = false
+  "state"[5]
+    "isActive" = false
+  "state"[6]
+    "isActive" = false
+  "limits"
+    "numberMax" = 6
+    "setpointHigh" = 26.0
+    "setpointLow" = 8.0
+    "number" = 0
+    "drinkHi" = 55.0
+    "drinkLo" = 25.0
+    "heatCoolHi" = 50.0
+    "heatCoolLo" = 17.0

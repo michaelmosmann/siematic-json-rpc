@@ -1,0 +1,22 @@
+
+"dbHeatpumpBeglau"
+  "state2"[1]
+    "alarms" = 0
+    "delayOn" = 0
+    "DIDQ"
+      "fourWayValve" = false
+      "compressorContactor" = false
+      "converterStart" = false
+      "magneticValve" = false
+  "state2"[2]
+    "alarms" = 0
+    "delayOn" = 0
+    "DIDQ"
+      "fourWayValve" = false
+      "compressorContactor" = false
+      "converterStart" = false
+      "magneticValve" = false
+  "service"[1]
+    "manualMagneticValve" = false
+  "service"[2]
+    "manualMagneticValve" = false

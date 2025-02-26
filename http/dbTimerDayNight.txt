@@ -1,0 +1,6 @@
+
+"dbTimerDayNight"
+  "state"[1]
+    "isActive" = true
+  "state"[2]
+    "isActive" = false

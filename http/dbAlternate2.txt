@@ -1,0 +1,12 @@
+
+"dbAlternate2"
+  "state"
+    "modeHeat" = 0
+    "modeCool" = 0
+    "runHeatpumpIdx" = 0
+    "runHeatpump1" = false
+    "runHeatpump2" = false
+    "runHeatpump3" = false
+    "tankRequestH" = false
+    "tankRequestE" = false
+    "modeDrink" = 0

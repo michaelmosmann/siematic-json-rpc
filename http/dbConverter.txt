@@ -1,0 +1,52 @@
+
+"dbConverter"
+  "state2"[1]
+    "isConfigured" = false
+    "cycle" = 117
+    "defrost"
+      "controlValue"
+        "calculated" = 20.0
+    "cool"
+      "controlValue"
+        "calculated" = 50.0
+    "heat"
+      "controlValue_HP"
+        "calculated" = 0.0
+      "controlValue"
+        "calculated" = 0.0
+      "controlValue_OT"
+        "calculated" = 0.0
+    "drink"
+      "controlValue"
+        "calculated" = 50.0
+    "controlValue"
+      "calculated" = 0.0
+      "limited" = 0.0
+      "min" = 0.0
+      "max" = 0.0
+      "output" = 0.0
+  "state2"[2]
+    "isConfigured" = false
+    "cycle" = 117
+    "defrost"
+      "controlValue"
+        "calculated" = 20.0
+    "cool"
+      "controlValue"
+        "calculated" = 50.0
+    "heat"
+      "controlValue_HP"
+        "calculated" = 0.0
+      "controlValue"
+        "calculated" = 0.0
+      "controlValue_OT"
+        "calculated" = 0.0
+    "drink"
+      "controlValue"
+        "calculated" = 50.0
+    "controlValue"
+      "calculated" = 0.0
+      "limited" = 0.0
+      "min" = 0.0
+      "max" = 0.0
+      "output" = 0.0

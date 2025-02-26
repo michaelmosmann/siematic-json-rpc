@@ -1,0 +1,5 @@
+
+"dbService"
+  "resetToFactoryDefaults" = false
+  "resetOuterTemp" = false
+  "saveCustomSettings" = false

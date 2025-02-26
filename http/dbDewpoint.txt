@@ -1,0 +1,58 @@
+
+"dbDewpoint"
+  "system"[1]
+    "isOperatingHeatpump" = false
+  "system"[2]
+    "isOperatingHeatpump" = false
+  "temperature"[1]
+    "isFaulty" = false
+    "isOutOfRange" = false
+    "isReady" = true
+    "dewpoint"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 0
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+  "temperature"[2]
+    "isFaulty" = false
+    "isOutOfRange" = false
+    "isReady" = true
+    "dewpoint"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 0
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+  "alarm"[1]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarm"[2]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0

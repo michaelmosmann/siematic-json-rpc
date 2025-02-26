@@ -1,0 +1,55 @@
+
+"screedSettings"
+  "step"[1]
+    "temperature" = 25.0
+    "runtime" = 24.0
+  "step"[2]
+    "temperature" = 25.0
+    "runtime" = 24.0
+  "step"[3]
+    "temperature" = 25.0
+    "runtime" = 24.0
+  "step"[4]
+    "temperature" = 30.0
+    "runtime" = 24.0
+  "step"[5]
+    "temperature" = 30.0
+    "runtime" = 24.0
+  "step"[6]
+    "temperature" = 30.0
+    "runtime" = 24.0
+  "step"[7]
+    "temperature" = 40.0
+    "runtime" = 24.0
+  "step"[8]
+    "temperature" = 40.0
+    "runtime" = 24.0
+  "step"[9]
+    "temperature" = 40.0
+    "runtime" = 24.0
+  "step"[10]
+    "temperature" = 25.0
+    "runtime" = 24.0
+  "step"[11]
+    "temperature" = 25.0
+    "runtime" = 24.0
+  "step"[12]
+    "temperature" = 25.0
+    "runtime" = 24.0
+  "step"[13]
+    "temperature" = 0.0
+    "runtime" = 0.0
+  "step"[14]
+    "temperature" = 0.0
+    "runtime" = 0.0
+  "step"[15]
+    "temperature" = 0.0
+    "runtime" = 0.0
+  "step"[16]
+    "temperature" = 0.0
+    "runtime" = 0.0
+  "limits"
+    "temperatureLo" = 0.0
+    "temperatureHi" = 60.0
+    "runtimeLo" = 0.0
+    "runtimeHi" = 240.0

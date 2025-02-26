@@ -1,0 +1,88 @@
+
+"dbInjector"
+  "state2"[1]
+    "isConfigured" = false
+    "cycle" = 0
+    "defrost"
+      "controlValue"
+        "calculated" = 100.0
+    "heatDrink"
+      "controlValue"
+        "calculated" = 0.0
+      "controlValue_V2_V1"
+        "calculated" = 0.0
+        "current" = 0.0
+        "deviation" = 0.0
+      "controlValue_V1_LP"
+        "current" = 0.0
+        "deviation" = 0.0
+        "calculated" = 0.0
+      "controlValue_V2_LP"
+        "current" = 0.0
+        "deviation" = 0.0
+        "calculated" = 0.0
+      "controlValue_CO_HP"
+        "current" = 0.0
+        "deviation" = 0.0
+        "calculated" = 0.0
+    "controlValue"
+      "calculated" = 0.0
+      "limited" = 12.0
+      "limitedInc" = 0.0
+      "output" = 0.0
+      "limitedOld" = 12.0
+      "min" = 0.0
+      "max" = 0.0
+      "increase" = 0.0
+    "cool"
+      "controlValue_CO_HP"
+        "current" = 0.0
+        "deviation" = 0.0
+        "calculated" = 0.0
+      "controlValue"
+        "calculated" = 0.0
+  "state2"[2]
+    "isConfigured" = false
+    "cycle" = 0
+    "defrost"
+      "controlValue"
+        "calculated" = 100.0
+    "heatDrink"
+      "controlValue"
+        "calculated" = 0.0
+      "controlValue_V2_V1"
+        "calculated" = 0.0
+        "current" = 0.0
+        "deviation" = 0.0
+      "controlValue_V1_LP"
+        "current" = 0.0
+        "deviation" = 0.0
+        "calculated" = 0.0
+      "controlValue_V2_LP"
+        "current" = 0.0
+        "deviation" = 0.0
+        "calculated" = 0.0
+      "controlValue_CO_HP"
+        "current" = 0.0
+        "deviation" = 0.0
+        "calculated" = 0.0
+    "controlValue"
+      "calculated" = 0.0
+      "limited" = 0.0
+      "limitedInc" = 0.0
+      "output" = 0.0
+      "limitedOld" = 0.0
+      "min" = 0.0
+      "max" = 0.0
+      "increase" = 0.0
+    "cool"
+      "controlValue_CO_HP"
+        "current" = 0.0
+        "deviation" = 0.0
+        "calculated" = 0.0
+      "controlValue"
+        "calculated" = 0.0
+  "service"[1]
+    "manualOpen" = false
+  "service"[2]
+    "manualOpen" = false

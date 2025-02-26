@@ -1,0 +1,42 @@
+
+"dbFan"
+  "state2"[1]
+    "isConfigured" = false
+    "cycle" = 0
+    "defrost"
+      "controlValue"
+        "calculated" = 0.0
+    "cool"
+      "controlValue"
+        "calculated" = 50.0
+    "heatDrink"
+      "controlValue"
+        "calculated" = 62.13039
+      "controlValue_OT"
+        "calculated" = 62.13039
+    "controlValue"
+      "calculated" = 0.0
+      "limited" = 58.8844
+      "min" = 0.0
+      "max" = 0.0
+      "output" = 0.0
+  "state2"[2]
+    "isConfigured" = false
+    "cycle" = 0
+    "defrost"
+      "controlValue"
+        "calculated" = 0.0
+    "cool"
+      "controlValue"
+        "calculated" = 50.0
+    "heatDrink"
+      "controlValue"
+        "calculated" = 62.13039
+      "controlValue_OT"
+        "calculated" = 62.13039
+    "controlValue"
+      "calculated" = 0.0
+      "limited" = 0.0
+      "min" = 0.0
+      "max" = 0.0
+      "output" = 0.0

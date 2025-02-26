@@ -1,0 +1,94 @@
+
+"dbFloorpump"
+  "state"[1]
+    "isConfigured" = true
+    "startProtectionRun" = false
+    "stopProtectionRun" = false
+    "isActivepostRun" = true
+    "isActiveProtectionRuntime" = false
+    "isActive" = true
+    "postRuntime" = 50
+    "protectionInterval" = 432000
+    "protectionRuntime" = 0
+    "isActiveProtectionInterval" = true
+    "isRequested" = true
+  "state"[2]
+    "isConfigured" = true
+    "startProtectionRun" = false
+    "stopProtectionRun" = false
+    "isActivepostRun" = false
+    "isActiveProtectionRuntime" = false
+    "isActive" = false
+    "postRuntime" = 0
+    "protectionInterval" = 175209
+    "protectionRuntime" = 0
+    "isActiveProtectionInterval" = true
+    "isRequested" = false
+  "system"[1]
+    "mode"
+      "heat"
+        "isActivatedByMode" = false
+        "isRequestedBySystem" = true
+      "cool"
+        "isActivatedByMode" = false
+        "isRequestedBySystem" = false
+  "system"[2]
+    "mode"
+      "heat"
+        "isActivatedByMode" = false
+        "isRequestedBySystem" = false
+      "cool"
+        "isActivatedByMode" = false
+        "isRequestedBySystem" = false
+  "alarm"[1]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarm"[2]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "temperature"[1]
+    "isFaulty" = false
+    "isOutOfRange" = false
+    "isReady" = true
+    "floorpump"
+      "isConfigured" = true
+      "isRecordedValue" = true
+      "isValidValue" = true
+      "currentValue" = 24.15105
+      "lockTime" = 0
+      "isReady" = true
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = true
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 2
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+  "temperature"[2]
+    "isFaulty" = false
+    "isOutOfRange" = false
+    "isReady" = true
+    "floorpump"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 0
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false

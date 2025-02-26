@@ -1,0 +1,88 @@
+
+"dbHeatpumpMitsu"
+  "state2"[1]
+    "locktimeInc" = 0
+    "locktimeDec" = 0
+    "resetLocktime" = false
+    "checktime" = 4500
+    "isChecktime" = false
+    "PWM" = 8.0
+    "AQU" = 0.8
+    "DIDQ"
+      "BE" = false
+      "FE" = false
+      "KO" = false
+      "EF" = false
+      "KU" = false
+      "HZ" = false
+      "S0" = false
+      "S1" = false
+      "S2" = false
+      "HC" = false
+    "step"
+      "calculated" = 0
+      "output" = 0
+      "requested" = 0
+      "limited" = 0
+    "power"
+      "outerTemp" = 9.218936
+      "tankDeviationAct" = 0.0
+      "tankDeviationLast" = 0.0
+      "tankDeviationChange" = 5.200481
+      "tankZoneAct" = 1
+      "tankZoneLast" = 1
+    "isConfiguredDI"
+      "BE" = true
+      "FE" = true
+      "KO" = true
+      "EF" = true
+      "KU" = true
+      "HZ" = true
+    "stepOld"
+      "calculated" = 0
+      "limited" = 0
+      "requested" = 0
+      "output" = 0
+  "state2"[2]
+    "locktimeInc" = 0
+    "locktimeDec" = 0
+    "resetLocktime" = false
+    "checktime" = 0
+    "isChecktime" = false
+    "PWM" = 0.0
+    "AQU" = 0.0
+    "DIDQ"
+      "BE" = false
+      "FE" = false
+      "KO" = false
+      "EF" = false
+      "KU" = false
+      "HZ" = false
+      "S0" = false
+      "S1" = false
+      "S2" = false
+      "HC" = false
+    "step"
+      "calculated" = 0
+      "output" = 0
+      "requested" = 0
+      "limited" = 0
+    "power"
+      "outerTemp" = 0.0
+      "tankDeviationAct" = 0.0
+      "tankDeviationLast" = 0.0
+      "tankDeviationChange" = 0.0
+      "tankZoneAct" = 0
+      "tankZoneLast" = 0
+    "isConfiguredDI"
+      "BE" = false
+      "FE" = false
+      "KO" = false
+      "EF" = false
+      "KU" = false
+      "HZ" = false
+    "stepOld"
+      "calculated" = 0
+      "limited" = 0
+      "requested" = 0
+      "output" = 0

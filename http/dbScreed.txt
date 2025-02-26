@@ -1,0 +1,20 @@
+
+"dbScreed"
+  "activeStepTemperature" = 0.0
+  "activeStepNumber" = 1
+  "activated" = false
+  "start" = false
+  "stop" = false
+  "startStepNumber" = 1
+  "activeStep_h" = 0
+  "activeStep_m" = 0
+  "activeStep_s" = 0
+  "forward" = false
+  "backward" = false
+  "activeStepRuntime" = 0
+  "startStepTemperature" = 25.0
+  "startStep_h" = 24
+  "startStep_m" = 0
+  "startStep_s" = 0
+  "active" = false
+  "ready" = true

@@ -1,0 +1,13 @@
+
+"dbLoadSave"
+  "save" = false
+  "counterSave" = 16
+  "lastSave"
+    "YEAR" = 2025
+    "MONTH" = 2
+    "DAY" = 27
+    "WEEKDAY" = 5
+    "HOUR" = 0
+    "MINUTE" = 0
+    "SECOND" = 5
+    "NANOSECOND" = 555288000

@@ -1,0 +1,18 @@
+
+"dbSGReady"
+  "state"
+    "isReady" = true
+    "startup"
+      "isReady" = true
+    "supplier"
+      "isReady" = true
+      "isConfigured" = false
+      "diag" = 0
+    "sgr"
+      "isConfigured" = false
+      "signal0" = false
+      "signal1" = false
+      "mode" = 0
+      "isGained" = false
+      "isActive" = false
+      "diag" = 0

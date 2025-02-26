@@ -1,0 +1,70 @@
+
+"dbPTO"
+  "signal"[1]
+    "mode" = false
+    "manual" = 0.0
+    "setpoint" = 8.0
+  "signal"[2]
+    "mode" = false
+    "manual" = 0.0
+    "setpoint" = 0.0
+  "signal"[3]
+    "mode" = false
+    "manual" = 0.0
+    "setpoint" = 0.0
+  "signal"[4]
+    "mode" = false
+    "manual" = 0.0
+    "setpoint" = 0.0
+  "CTRL_PTO"[1]
+    "REQ" = false
+    "PTO" = 265
+    "FREQUENCY" = 0
+    "DONE" = false
+    "BUSY" = false
+    "ERROR" = false
+    "STATUS" = 0
+  "CTRL_PTO"[2]
+    "REQ" = false
+    "PTO" = 266
+    "FREQUENCY" = 0
+    "DONE" = false
+    "BUSY" = false
+    "ERROR" = false
+    "STATUS" = 0
+  "CTRL_PTO"[3]
+    "REQ" = false
+    "PTO" = 267
+    "FREQUENCY" = 0
+    "DONE" = false
+    "BUSY" = false
+    "ERROR" = false
+    "STATUS" = 0
+  "CTRL_PTO"[4]
+    "REQ" = false
+    "PTO" = 268
+    "FREQUENCY" = 0
+    "DONE" = false
+    "BUSY" = false
+    "ERROR" = false
+    "STATUS" = 0
+  "CTRL_PWM"[1]
+    "PWM" = 265
+    "ENABLE" = true
+    "BUSY" = false
+    "STATUS" = 0
+  "CTRL_PWM"[2]
+    "PWM" = 266
+    "ENABLE" = true
+    "BUSY" = false
+    "STATUS" = 32976
+  "CTRL_PWM"[3]
+    "PWM" = 0
+    "ENABLE" = false
+    "BUSY" = false
+    "STATUS" = 0
+  "CTRL_PWM"[4]
+    "PWM" = 0
+    "ENABLE" = false
+    "BUSY" = false
+    "STATUS" = 0

@@ -1,0 +1,758 @@
+
+"dbHeatpump"
+  "state"[1]
+    "isReadyDelayed" = true
+    "readyness" = 10
+    "isFaulty" = false
+    "isActivated" = false
+    "isOperating" = false
+    "tankDeviation" = 0.0
+    "isReady" = true
+    "counterDelayReady" = 0
+    "counterDelayStart" = 25
+    "isWaiting" = false
+    "isOperatingFEH" = false
+    "isOperatingFE" = false
+    "isShortrunnig" = false
+    "resetCounterMinRuntime" = false
+    "resetCounterWait" = false
+    "resetCounterShortruns" = false
+    "counterShortruns" = 0
+    "counterMinRuntime" = 6000
+    "counterWait" = 0
+    "isOperatingREH" = false
+    "isOperatingRE" = false
+    "resetCounterDelayStart" = false
+    "counterRunning" = 0
+    "resetCounterDelayReady" = false
+    "diag" = 0
+    "release" = 10
+    "abortWaiting" = false
+    "codeOperation" = ' '
+    "codeFeedback" = ' '
+    "type" = 3
+    "modeRequested"
+      "defrost" = false
+      "cool" = false
+      "heat" = false
+      "drink" = false
+      "total" = false
+    "modeSelected"
+      "defrost" = false
+      "cool" = false
+      "heat" = false
+      "drink" = false
+      "total" = false
+    "modeOperation"
+      "defrost" = false
+      "cool" = false
+      "heat" = false
+      "drink" = false
+      "total" = false
+    "waiting"
+      "hour" = 0
+      "minute" = 0
+      "second" = 0
+    "counter"
+      "total"
+        "reset" = false
+      "interval"
+        "reset" = false
+    "postrunning"
+      "hour" = 0
+      "minute" = 20
+      "second" = 0
+    "modeActivated"
+      "defrost" = false
+      "cool" = false
+      "heat" = false
+      "drink" = false
+      "total" = false
+    "starting"
+      "hour" = 0
+      "minute" = 0
+      "second" = 5
+    "running"
+      "hour" = 0
+      "minute" = 0
+      "second" = 0
+    "modeFeedback"
+      "defrost" = false
+      "cool" = false
+      "heat" = false
+      "drink" = false
+      "total" = false
+    "power"
+      "calculated" = 0.0
+      "limited" = 0.0
+      "output" = 0.0
+      "isLimited" = true
+  "state"[2]
+    "isReadyDelayed" = false
+    "readyness" = 0
+    "isFaulty" = false
+    "isActivated" = false
+    "isOperating" = false
+    "tankDeviation" = 0.0
+    "isReady" = false
+    "counterDelayReady" = 25
+    "counterDelayStart" = 25
+    "isWaiting" = false
+    "isOperatingFEH" = false
+    "isOperatingFE" = false
+    "isShortrunnig" = false
+    "resetCounterMinRuntime" = false
+    "resetCounterWait" = false
+    "resetCounterShortruns" = false
+    "counterShortruns" = 0
+    "counterMinRuntime" = 6000
+    "counterWait" = 0
+    "isOperatingREH" = false
+    "isOperatingRE" = false
+    "resetCounterDelayStart" = false
+    "counterRunning" = 0
+    "resetCounterDelayReady" = false
+    "diag" = 0
+    "release" = 0
+    "abortWaiting" = false
+    "codeOperation" = ' '
+    "codeFeedback" = ' '
+    "type" = 0
+    "modeRequested"
+      "defrost" = false
+      "cool" = false
+      "heat" = false
+      "drink" = false
+      "total" = false
+    "modeSelected"
+      "defrost" = false
+      "cool" = false
+      "heat" = false
+      "drink" = false
+      "total" = false
+    "modeOperation"
+      "defrost" = false
+      "cool" = false
+      "heat" = false
+      "drink" = false
+      "total" = false
+    "waiting"
+      "hour" = 0
+      "minute" = 0
+      "second" = 5
+    "counter"
+      "total"
+        "reset" = false
+      "interval"
+        "reset" = false
+    "postrunning"
+      "hour" = 0
+      "minute" = 20
+      "second" = 0
+    "modeActivated"
+      "defrost" = false
+      "cool" = false
+      "heat" = false
+      "drink" = false
+      "total" = false
+    "starting"
+      "hour" = 0
+      "minute" = 0
+      "second" = 5
+    "running"
+      "hour" = 0
+      "minute" = 0
+      "second" = 0
+    "modeFeedback"
+      "defrost" = false
+      "cool" = false
+      "heat" = false
+      "drink" = false
+      "total" = false
+    "power"
+      "calculated" = 0.0
+      "limited" = 0.0
+      "output" = 0.0
+      "isLimited" = false
+  "master"[1]
+    "tank"
+      "isReady" = true
+      "isFaulty" = false
+      "drink"
+        "deviation" = 0.0
+      "heatCool"
+        "deviation" = 0.05834961
+    "exchanger"
+      "isReady" = true
+      "isFaulty" = false
+    "mode"
+      "heat"
+        "isRequestedBySystem" = false
+        "isActivatedByMode" = true
+      "cool"
+        "isRequestedBySystem" = false
+        "isActivatedByMode" = false
+      "drink"
+        "isRequestedBySystem" = false
+        "isActivatedByMode" = false
+        "isPrioritizedByMode" = true
+    "dewpoint"
+      "isReady" = true
+      "isFaulty" = false
+  "master"[2]
+    "tank"
+      "isReady" = false
+      "isFaulty" = false
+      "drink"
+        "deviation" = 0.0
+      "heatCool"
+        "deviation" = 0.0
+    "exchanger"
+      "isReady" = false
+      "isFaulty" = false
+    "mode"
+      "heat"
+        "isRequestedBySystem" = false
+        "isActivatedByMode" = false
+      "cool"
+        "isRequestedBySystem" = false
+        "isActivatedByMode" = false
+      "drink"
+        "isRequestedBySystem" = false
+        "isActivatedByMode" = false
+        "isPrioritizedByMode" = false
+    "dewpoint"
+      "isReady" = false
+      "isFaulty" = false
+  "temperatures"[1]
+    "isOutOfRange" = false
+    "isFaulty" = false
+    "isReady" = true
+    "diag" = 0
+    "lowPressure"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 0
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+    "highPressure"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 0
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+    "v1"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 0
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+    "v2"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 0
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+    "compressor"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 0
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+  "temperatures"[2]
+    "isOutOfRange" = false
+    "isFaulty" = false
+    "isReady" = true
+    "diag" = 0
+    "lowPressure"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 0
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+    "highPressure"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 0
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+    "v1"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 0
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+    "v2"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 0
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+    "compressor"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 0
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 0
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+  "refrigerants"[1]
+    "isOutOfRange" = false
+    "isFaulty" = false
+    "isReady" = true
+    "diag" = 0
+    "lowPressure"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 3000
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 900
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+    "highPressure"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 3000
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 900
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+  "refrigerants"[2]
+    "isOutOfRange" = false
+    "isFaulty" = false
+    "isReady" = true
+    "diag" = 0
+    "lowPressure"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 3000
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 900
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+    "highPressure"
+      "isConfigured" = false
+      "isRecordedValue" = false
+      "isValidValue" = false
+      "currentValue" = 0.0
+      "lockTime" = 3000
+      "isReady" = false
+      "isOutOfRange" = false
+      "isFaulty" = false
+      "isUnlocked" = false
+      "isOutOfRangeHolded" = false
+      "delayTime" = 900
+      "holdTime" = 0
+      "isOutOfRangeDelayed" = false
+      "diag" = 0
+      "isOutOfRangeLo" = false
+      "isOutOfRangeHi" = false
+  "cirquitBreakers"[1]
+    "isReady" = true
+    "isFaulty" = false
+    "diag" = 0
+    "lowPressure"
+      "isConfigured" = false
+      "lockTime" = 0
+      "isReady" = true
+      "isUnlocked" = false
+      "currentSignal" = false
+      "isFaultyHolded" = false
+      "currentState" = false
+      "holdTime" = 0
+      "isFaulty" = false
+      "diag" = 0
+    "highPressure"
+      "isConfigured" = false
+      "lockTime" = 0
+      "isReady" = true
+      "isUnlocked" = false
+      "currentSignal" = false
+      "isFaultyHolded" = false
+      "currentState" = false
+      "holdTime" = 0
+      "isFaulty" = false
+      "diag" = 0
+    "motorProtection"
+      "isConfigured" = false
+      "lockTime" = 0
+      "isReady" = true
+      "isUnlocked" = false
+      "currentSignal" = false
+      "isFaultyHolded" = false
+      "currentState" = false
+      "holdTime" = 0
+      "isFaulty" = false
+      "diag" = 0
+    "dryrunProtection"
+      "isConfigured" = false
+      "lockTime" = 0
+      "isReady" = true
+      "isUnlocked" = false
+      "currentSignal" = false
+      "isFaultyHolded" = false
+      "currentState" = false
+      "holdTime" = 0
+      "isFaulty" = false
+      "diag" = 0
+    "converter"
+      "isConfigured" = false
+      "lockTime" = 5
+      "isReady" = true
+      "isUnlocked" = false
+      "currentSignal" = false
+      "isFaultyHolded" = false
+      "currentState" = false
+      "holdTime" = 0
+      "isFaulty" = false
+      "diag" = 0
+    "mitsubishi"
+      "isConfigured" = true
+      "lockTime" = 0
+      "isReady" = true
+      "isUnlocked" = true
+      "currentSignal" = false
+      "isFaultyHolded" = false
+      "currentState" = false
+      "holdTime" = 0
+      "isFaulty" = false
+      "diag" = 2
+  "cirquitBreakers"[2]
+    "isReady" = true
+    "isFaulty" = false
+    "diag" = 0
+    "lowPressure"
+      "isConfigured" = false
+      "lockTime" = 0
+      "isReady" = true
+      "isUnlocked" = false
+      "currentSignal" = false
+      "isFaultyHolded" = false
+      "currentState" = false
+      "holdTime" = 0
+      "isFaulty" = false
+      "diag" = 0
+    "highPressure"
+      "isConfigured" = false
+      "lockTime" = 0
+      "isReady" = true
+      "isUnlocked" = false
+      "currentSignal" = false
+      "isFaultyHolded" = false
+      "currentState" = false
+      "holdTime" = 0
+      "isFaulty" = false
+      "diag" = 0
+    "motorProtection"
+      "isConfigured" = false
+      "lockTime" = 0
+      "isReady" = true
+      "isUnlocked" = false
+      "currentSignal" = false
+      "isFaultyHolded" = false
+      "currentState" = false
+      "holdTime" = 0
+      "isFaulty" = false
+      "diag" = 0
+    "dryrunProtection"
+      "isConfigured" = false
+      "lockTime" = 0
+      "isReady" = true
+      "isUnlocked" = false
+      "currentSignal" = false
+      "isFaultyHolded" = false
+      "currentState" = false
+      "holdTime" = 0
+      "isFaulty" = false
+      "diag" = 0
+    "converter"
+      "isConfigured" = false
+      "lockTime" = 5
+      "isReady" = true
+      "isUnlocked" = false
+      "currentSignal" = false
+      "isFaultyHolded" = false
+      "currentState" = false
+      "holdTime" = 0
+      "isFaulty" = false
+      "diag" = 0
+    "mitsubishi"
+      "isConfigured" = false
+      "lockTime" = 0
+      "isReady" = true
+      "isUnlocked" = false
+      "currentSignal" = false
+      "isFaultyHolded" = false
+      "currentState" = false
+      "holdTime" = 0
+      "isFaulty" = false
+      "diag" = 0
+  "delayNext"
+    "active" = false
+    "activeOld" = false
+    "delay" = 0
+  "alarms"[1,1]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[1,2]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[1,3]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[1,4]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[1,5]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[1,6]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[1,7]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[1,8]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[1,9]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[1,10]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[1,11]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[1,12]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[1,13]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[2,1]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[2,2]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[2,3]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[2,4]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[2,5]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[2,6]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[2,7]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[2,8]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[2,9]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[2,10]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[2,11]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[2,12]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarms"[2,13]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0

@@ -128,11 +128,20 @@ data class JsonRpc(
         val value = when (valueType) {
           "bool" -> jsonValue.jsonPrimitive.boolean
           "real" -> jsonValue.jsonPrimitive.double
-          "usint" -> jsonValue.jsonPrimitive.double
-          "dint" -> jsonValue.jsonPrimitive.double
-          "uint" -> jsonValue.jsonPrimitive.double
-          "int" -> jsonValue.jsonPrimitive.double
-          "string" -> jsonValue.jsonPrimitive.content
+          "usint" -> jsonValue.jsonPrimitive.int
+          "udint" -> jsonValue.jsonPrimitive.int
+          "dint" -> jsonValue.jsonPrimitive.int
+          "uint" -> jsonValue.jsonPrimitive.int
+          "int" -> jsonValue.jsonPrimitive.int
+          "byte" -> jsonValue.jsonPrimitive.int
+
+          // TODO what's that
+          "hw_pto" -> jsonValue.jsonPrimitive.content
+          "hw_pwm" -> jsonValue.jsonPrimitive.content
+          "word" -> jsonValue.jsonPrimitive.content
+
+          "char" -> "'${jsonValue.jsonPrimitive.content}'"
+          "string" -> "'${jsonValue.jsonPrimitive.content}'"
           else -> throw IllegalArgumentException("unknown datatype: $valueType ($jsonValue)")
         }
 
