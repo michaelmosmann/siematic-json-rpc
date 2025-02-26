@@ -34,16 +34,22 @@ object Main {
         MethodCall.browse(it, it)
       }
 
-      try {
+      val browseResponses = try {
         jsonRpc.browseMethodCalls(browseChildCalls)
       } catch (ex: RuntimeException) {
         throw RuntimeException("could not call: $withChildren", ex)
-      }.forEach {
+      }
+
+      val (withoutErrors, withErrors) = browseResponses.partition { it.error == null }
+
+      withErrors.forEach {
         if (it.error != null) {
           output.println("$indent$current - ${it.id} failed with error: ${it.error}")
-        } else {
-          browse(jsonRpc, it.id, it.result, level + 1, maxDepth, output)
         }
+      }
+
+      withoutErrors.forEach {
+        browse(jsonRpc, it.id, it.result, level + 1, maxDepth, output)
       }
     }
   }
@@ -85,7 +91,7 @@ object Main {
     } else {
       val sections = listOf(
         "configurationSettings",
-        "customSettings",
+//        "customSettings",
         "technicalSettings",
         "screedSettings",
 //        "operatingData",
@@ -133,19 +139,22 @@ object Main {
       )
 
       sections.forEach { section ->
-        var stringBuilder = StringBuilder()
-        val collectingOutput = Output { message: String ->
-          output(message)
-          stringBuilder.append(message).append("\n")
-        }
-
-        browse(jsonRpcWithAuth, section, 1, collectingOutput)
-
         val dumpPath = basePath.resolve("http").resolve("$section.txt")
-        Files.writeString(dumpPath, stringBuilder.toString(), Charsets.UTF_8, StandardOpenOption.TRUNCATE_EXISTING , StandardOpenOption.CREATE)
-        output("$section DONE")
-      }
+        if (!Files.exists(dumpPath)) {
+          var stringBuilder = StringBuilder()
+          val collectingOutput = Output { message: String ->
+            output(message)
+            stringBuilder.append(message).append("\n")
+          }
 
+          browse(jsonRpcWithAuth, section, 1, collectingOutput)
+
+          Files.writeString(dumpPath, stringBuilder.toString(), Charsets.UTF_8, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.CREATE)
+          output("$section DONE")
+        } else {
+          output("$section SKIP")
+        }
+      }
     }
   }
 }

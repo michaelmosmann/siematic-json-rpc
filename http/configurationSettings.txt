@@ -1,0 +1,956 @@
+  "configurationSettings"
+    "configurationSettings"."Konfig"
+      "configurationSettings"."Konfig"."SPR"[1]
+        "configurationSettings"."Konfig"."SPR"[1]."TWW" = 0.0
+        "configurationSettings"."Konfig"."SPR"[1]."Heiz" = 2.0
+        "configurationSettings"."Konfig"."SPR"[1]."Kuehl" = 0.0
+        "configurationSettings"."Konfig"."SPR"[1]."system" = 0.0
+      "configurationSettings"."Konfig"."SPR"[2]
+        "configurationSettings"."Konfig"."SPR"[2]."TWW" = 0.0
+        "configurationSettings"."Konfig"."SPR"[2]."Heiz" = 0.0
+        "configurationSettings"."Konfig"."SPR"[2]."Kuehl" = 0.0
+        "configurationSettings"."Konfig"."SPR"[2]."system" = 0.0
+      "configurationSettings"."Konfig"."WP"[1]
+        "configurationSettings"."Konfig"."WP"[1]."Typ" = 3.0
+      "configurationSettings"."Konfig"."WP"[2]
+        "configurationSettings"."Konfig"."WP"[2]."Typ" = 0.0
+      "configurationSettings"."Konfig"."BWP"
+        "configurationSettings"."Konfig"."BWP"."ND"
+          "configurationSettings"."Konfig"."BWP"."ND"."Typ" = 4.0
+          "configurationSettings"."Konfig"."BWP"."ND"."Signal_min" = 0.0
+          "configurationSettings"."Konfig"."BWP"."ND"."Signal_max" = 10.0
+          "configurationSettings"."Konfig"."BWP"."ND"."Druck_min" = 0.0
+          "configurationSettings"."Konfig"."BWP"."ND"."Druck_max" = 45.0
+        "configurationSettings"."Konfig"."BWP"."HD"
+          "configurationSettings"."Konfig"."BWP"."HD"."Typ" = 4.0
+          "configurationSettings"."Konfig"."BWP"."HD"."Signal_min" = 0.0
+          "configurationSettings"."Konfig"."BWP"."HD"."Signal_max" = 10.0
+          "configurationSettings"."Konfig"."BWP"."HD"."Druck_min" = 0.0
+          "configurationSettings"."Konfig"."BWP"."HD"."Druck_max" = 45.0
+        "configurationSettings"."Konfig"."BWP"."FU"
+          "configurationSettings"."Konfig"."BWP"."FU"."aktiv" = true
+      "configurationSettings"."Konfig"."ERR"
+        "configurationSettings"."Konfig"."ERR"."valveInverse"[1] = false
+        "configurationSettings"."Konfig"."ERR"."valveInverse"[2] = false
+        "configurationSettings"."Konfig"."ERR"."valveInverse"[3] = false
+        "configurationSettings"."Konfig"."ERR"."valveInverse"[4] = false
+        "configurationSettings"."Konfig"."ERR"."valveInverse"[5] = false
+        "configurationSettings"."Konfig"."ERR"."valveInverse"[6] = false
+        "configurationSettings"."Konfig"."ERR"."valveInverse"[7] = false
+        "configurationSettings"."Konfig"."ERR"."valveInverse"[8] = false
+        "configurationSettings"."Konfig"."ERR"."valveInverse"[9] = false
+        "configurationSettings"."Konfig"."ERR"."valveInverse"[10] = false
+        "configurationSettings"."Konfig"."ERR"."valveInverse"[11] = false
+        "configurationSettings"."Konfig"."ERR"."valveInverse"[12] = false
+        "configurationSettings"."Konfig"."ERR"."valveInverse"[13] = false
+        "configurationSettings"."Konfig"."ERR"."valveInverse"[14] = false
+        "configurationSettings"."Konfig"."ERR"."valveInverse"[15] = false
+        "configurationSettings"."Konfig"."ERR"."valveInverse"[16] = false
+        "configurationSettings"."Konfig"."ERR"."mode" = 0.0
+        "configurationSettings"."Konfig"."ERR"."number" = 0.0
+        "configurationSettings"."Konfig"."ERR"."system2" = 99.0
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControlMaster" = 0.0
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControl"[1] = false
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControl"[2] = false
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControl"[3] = false
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControl"[4] = false
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControl"[5] = false
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControl"[6] = false
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControl"[7] = false
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControl"[8] = false
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControl"[9] = false
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControl"[10] = false
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControl"[11] = false
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControl"[12] = false
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControl"[13] = false
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControl"[14] = false
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControl"[15] = false
+        "configurationSettings"."Konfig"."ERR"."screedTemperatureControl"[16] = false
+        "configurationSettings"."Konfig"."ERR"."coolGroup"[1] = 0.0
+        "configurationSettings"."Konfig"."ERR"."coolGroup"[2] = 0.0
+        "configurationSettings"."Konfig"."ERR"."coolGroup"[3] = 0.0
+        "configurationSettings"."Konfig"."ERR"."coolGroup"[4] = 0.0
+        "configurationSettings"."Konfig"."ERR"."coolGroup"[5] = 0.0
+        "configurationSettings"."Konfig"."ERR"."coolGroup"[6] = 0.0
+        "configurationSettings"."Konfig"."ERR"."coolGroup"[7] = 0.0
+        "configurationSettings"."Konfig"."ERR"."coolGroup"[8] = 0.0
+        "configurationSettings"."Konfig"."ERR"."coolGroup"[9] = 0.0
+        "configurationSettings"."Konfig"."ERR"."coolGroup"[10] = 0.0
+        "configurationSettings"."Konfig"."ERR"."coolGroup"[11] = 0.0
+        "configurationSettings"."Konfig"."ERR"."coolGroup"[12] = 0.0
+        "configurationSettings"."Konfig"."ERR"."coolGroup"[13] = 0.0
+        "configurationSettings"."Konfig"."ERR"."coolGroup"[14] = 0.0
+        "configurationSettings"."Konfig"."ERR"."coolGroup"[15] = 0.0
+        "configurationSettings"."Konfig"."ERR"."coolGroup"[16] = 0.0
+        "configurationSettings"."Konfig"."ERR"."mainAllowedDirect"[1] = false
+        "configurationSettings"."Konfig"."ERR"."mainAllowedDirect"[2] = false
+        "configurationSettings"."Konfig"."ERR"."mainAllowedDirect"[3] = false
+        "configurationSettings"."Konfig"."ERR"."mainAllowedDirect"[4] = false
+        "configurationSettings"."Konfig"."ERR"."mainAllowedDirect"[5] = false
+        "configurationSettings"."Konfig"."ERR"."mainAllowedDirect"[6] = false
+        "configurationSettings"."Konfig"."ERR"."mainAllowedDirect"[7] = false
+        "configurationSettings"."Konfig"."ERR"."mainAllowedDirect"[8] = false
+        "configurationSettings"."Konfig"."ERR"."mainAllowedDirect"[9] = false
+        "configurationSettings"."Konfig"."ERR"."mainAllowedDirect"[10] = false
+        "configurationSettings"."Konfig"."ERR"."mainAllowedDirect"[11] = false
+        "configurationSettings"."Konfig"."ERR"."mainAllowedDirect"[12] = false
+        "configurationSettings"."Konfig"."ERR"."mainAllowedDirect"[13] = false
+        "configurationSettings"."Konfig"."ERR"."mainAllowedDirect"[14] = false
+        "configurationSettings"."Konfig"."ERR"."mainAllowedDirect"[15] = false
+        "configurationSettings"."Konfig"."ERR"."mainAllowedDirect"[16] = false
+      "configurationSettings"."Konfig"."MWP"
+        "configurationSettings"."Konfig"."MWP"."dummy" = false
+      "configurationSettings"."Konfig"."Master"[1]
+        "configurationSettings"."Konfig"."Master"[1]."SPRabhERR" = false
+        "configurationSettings"."Konfig"."Master"[1]."DIK" = false
+        "configurationSettings"."Konfig"."Master"[1]."BYP" = 0.0
+        "configurationSettings"."Konfig"."Master"[1]."ERRabhSPR" = false
+        "configurationSettings"."Konfig"."Master"[1]."ERRabhWP" = false
+        "configurationSettings"."Konfig"."Master"[1]."RHVhalten" = false
+        "configurationSettings"."Konfig"."Master"[1]."KuehlUmschalt" = false
+        "configurationSettings"."Konfig"."Master"[1]."KuehlPassiv" = false
+      "configurationSettings"."Konfig"."Master"[2]
+        "configurationSettings"."Konfig"."Master"[2]."SPRabhERR" = false
+        "configurationSettings"."Konfig"."Master"[2]."DIK" = false
+        "configurationSettings"."Konfig"."Master"[2]."BYP" = 0.0
+        "configurationSettings"."Konfig"."Master"[2]."ERRabhSPR" = true
+        "configurationSettings"."Konfig"."Master"[2]."ERRabhWP" = true
+        "configurationSettings"."Konfig"."Master"[2]."RHVhalten" = false
+        "configurationSettings"."Konfig"."Master"[2]."KuehlUmschalt" = false
+        "configurationSettings"."Konfig"."Master"[2]."KuehlPassiv" = false
+    "configurationSettings"."information"
+      "configurationSettings"."information"."version" = 2024-10-02
+      "configurationSettings"."information"."projectID" = 
+      "configurationSettings"."information"."name" = 
+      "configurationSettings"."information"."location" = 
+      "configurationSettings"."information"."versionAPI" = 7.0
+    "configurationSettings"."PER"
+      "configurationSettings"."PER"."RTD" = 9.0
+      "configurationSettings"."PER"."NTC_RV" = 100000.0
+      "configurationSettings"."PER"."Offset"[1] = 0.0
+      "configurationSettings"."PER"."Offset"[2] = 0.0
+      "configurationSettings"."PER"."Offset"[3] = 0.0
+      "configurationSettings"."PER"."Offset"[4] = 0.0
+      "configurationSettings"."PER"."Offset"[5] = 0.0
+      "configurationSettings"."PER"."Offset"[6] = -40.0
+      "configurationSettings"."PER"."Offset"[7] = 0.0
+      "configurationSettings"."PER"."Offset"[8] = 0.0
+      "configurationSettings"."PER"."Offset"[9] = 0.0
+      "configurationSettings"."PER"."Offset"[10] = -30.0
+      "configurationSettings"."PER"."Offset"[11] = 0.0
+      "configurationSettings"."PER"."Offset"[12] = 0.0
+      "configurationSettings"."PER"."Offset"[13] = 0.0
+      "configurationSettings"."PER"."Offset"[14] = 0.0
+      "configurationSettings"."PER"."Offset"[15] = 0.0
+      "configurationSettings"."PER"."Offset"[16] = -30.0
+      "configurationSettings"."PER"."Offset"[17] = 0.0
+      "configurationSettings"."PER"."Offset"[18] = 0.0
+      "configurationSettings"."PER"."Offset"[19] = -30.0
+      "configurationSettings"."PER"."Offset"[20] = 0.0
+      "configurationSettings"."PER"."Offset"[21] = 0.0
+      "configurationSettings"."PER"."Offset"[22] = 0.0
+      "configurationSettings"."PER"."Offset"[23] = 0.0
+      "configurationSettings"."PER"."Offset"[24] = 0.0
+      "configurationSettings"."PER"."Offset"[25] = 0.0
+      "configurationSettings"."PER"."Offset"[26] = 0.0
+      "configurationSettings"."PER"."Offset"[27] = 0.0
+      "configurationSettings"."PER"."Offset"[28] = 0.0
+      "configurationSettings"."PER"."Offset"[29] = 0.0
+      "configurationSettings"."PER"."Offset"[30] = 0.0
+      "configurationSettings"."PER"."Offset"[31] = 0.0
+      "configurationSettings"."PER"."Offset"[32] = 0.0
+      "configurationSettings"."PER"."Offset"[33] = 0.0
+      "configurationSettings"."PER"."Offset"[34] = 0.0
+      "configurationSettings"."PER"."Offset"[35] = 0.0
+      "configurationSettings"."PER"."Offset"[36] = 0.0
+      "configurationSettings"."PER"."Offset"[37] = 0.0
+      "configurationSettings"."PER"."Offset"[38] = 0.0
+      "configurationSettings"."PER"."Offset"[39] = 0.0
+      "configurationSettings"."PER"."Offset"[40] = 0.0
+      "configurationSettings"."PER"."Offset"[41] = 0.0
+      "configurationSettings"."PER"."Offset"[42] = 0.0
+      "configurationSettings"."PER"."Offset"[43] = 0.0
+      "configurationSettings"."PER"."Offset"[44] = 0.0
+      "configurationSettings"."PER"."Offset"[45] = 0.0
+      "configurationSettings"."PER"."Offset"[46] = 0.0
+      "configurationSettings"."PER"."Offset"[47] = 0.0
+      "configurationSettings"."PER"."Offset"[48] = 0.0
+      "configurationSettings"."PER"."Offset"[49] = 0.0
+      "configurationSettings"."PER"."Offset"[50] = 0.0
+      "configurationSettings"."PER"."Offset"[51] = 0.0
+      "configurationSettings"."PER"."Offset"[52] = 0.0
+      "configurationSettings"."PER"."Offset"[53] = 0.0
+      "configurationSettings"."PER"."Offset"[54] = 0.0
+      "configurationSettings"."PER"."Offset"[55] = 0.0
+      "configurationSettings"."PER"."Offset"[56] = 0.0
+      "configurationSettings"."PER"."Offset"[57] = 0.0
+      "configurationSettings"."PER"."Offset"[58] = 0.0
+      "configurationSettings"."PER"."Offset"[59] = 0.0
+      "configurationSettings"."PER"."Offset"[60] = 0.0
+      "configurationSettings"."PER"."Offset"[61] = 0.0
+      "configurationSettings"."PER"."Offset"[62] = 0.0
+      "configurationSettings"."PER"."Offset"[63] = 0.0
+      "configurationSettings"."PER"."Offset"[64] = 0.0
+      "configurationSettings"."PER"."AI"[0] = 0.0
+      "configurationSettings"."PER"."AI"[1] = 0.0
+      "configurationSettings"."PER"."AI"[2] = 0.0
+      "configurationSettings"."PER"."AI"[3] = 0.0
+      "configurationSettings"."PER"."AI"[4] = 0.0
+      "configurationSettings"."PER"."AI"[5] = 0.0
+      "configurationSettings"."PER"."AI"[6] = 2.0
+      "configurationSettings"."PER"."AI"[7] = 0.0
+      "configurationSettings"."PER"."AI"[8] = 0.0
+      "configurationSettings"."PER"."AI"[9] = 0.0
+      "configurationSettings"."PER"."AI"[10] = 2.0
+      "configurationSettings"."PER"."AI"[11] = 0.0
+      "configurationSettings"."PER"."AI"[12] = 0.0
+      "configurationSettings"."PER"."AI"[13] = 0.0
+      "configurationSettings"."PER"."AI"[14] = 0.0
+      "configurationSettings"."PER"."AI"[15] = 0.0
+      "configurationSettings"."PER"."AI"[16] = 1.0
+      "configurationSettings"."PER"."AI"[17] = 0.0
+      "configurationSettings"."PER"."AI"[18] = 0.0
+      "configurationSettings"."PER"."AI"[19] = 0.0
+      "configurationSettings"."PER"."AI"[20] = 0.0
+      "configurationSettings"."PER"."AI"[21] = 0.0
+      "configurationSettings"."PER"."AI"[22] = 0.0
+      "configurationSettings"."PER"."AI"[23] = 0.0
+      "configurationSettings"."PER"."AI"[24] = 0.0
+      "configurationSettings"."PER"."AI"[25] = 0.0
+      "configurationSettings"."PER"."AI"[26] = 0.0
+      "configurationSettings"."PER"."AI"[27] = 0.0
+      "configurationSettings"."PER"."AI"[28] = 0.0
+      "configurationSettings"."PER"."AI"[29] = 0.0
+      "configurationSettings"."PER"."AI"[30] = 0.0
+      "configurationSettings"."PER"."AI"[31] = 0.0
+      "configurationSettings"."PER"."AI"[32] = 0.0
+      "configurationSettings"."PER"."AI"[33] = 0.0
+      "configurationSettings"."PER"."AI"[34] = 0.0
+      "configurationSettings"."PER"."AI"[35] = 0.0
+      "configurationSettings"."PER"."AI"[36] = 0.0
+      "configurationSettings"."PER"."AI"[37] = 0.0
+      "configurationSettings"."PER"."AI"[38] = 0.0
+      "configurationSettings"."PER"."AI"[39] = 0.0
+      "configurationSettings"."PER"."AI"[40] = 0.0
+      "configurationSettings"."PER"."AI"[41] = 0.0
+      "configurationSettings"."PER"."AI"[42] = 0.0
+      "configurationSettings"."PER"."AI"[43] = 0.0
+      "configurationSettings"."PER"."AI"[44] = 0.0
+      "configurationSettings"."PER"."AI"[45] = 0.0
+      "configurationSettings"."PER"."AI"[46] = 0.0
+      "configurationSettings"."PER"."AI"[47] = 0.0
+      "configurationSettings"."PER"."AI"[48] = 0.0
+      "configurationSettings"."PER"."AI"[49] = 0.0
+      "configurationSettings"."PER"."AI"[50] = 0.0
+      "configurationSettings"."PER"."AI"[51] = 0.0
+      "configurationSettings"."PER"."AI"[52] = 0.0
+      "configurationSettings"."PER"."AI"[53] = 0.0
+      "configurationSettings"."PER"."AI"[54] = 0.0
+      "configurationSettings"."PER"."AI"[55] = 0.0
+      "configurationSettings"."PER"."AI"[56] = 0.0
+      "configurationSettings"."PER"."AI"[57] = 0.0
+      "configurationSettings"."PER"."AI"[58] = 0.0
+      "configurationSettings"."PER"."AI"[59] = 0.0
+      "configurationSettings"."PER"."AI"[60] = 0.0
+      "configurationSettings"."PER"."AI"[61] = 0.0
+      "configurationSettings"."PER"."AI"[62] = 0.0
+      "configurationSettings"."PER"."AI"[63] = 0.0
+      "configurationSettings"."PER"."AI"[64] = 0.0
+      "configurationSettings"."PER"."AQ"[0] = 0.0
+      "configurationSettings"."PER"."AQ"[1] = 0.0
+      "configurationSettings"."PER"."AQ"[2] = 0.0
+      "configurationSettings"."PER"."AQ"[3] = 0.0
+      "configurationSettings"."PER"."DI"[0] = 0.0
+      "configurationSettings"."PER"."DI"[1] = 0.0
+      "configurationSettings"."PER"."DI"[2] = 0.0
+      "configurationSettings"."PER"."DI"[3] = 0.0
+      "configurationSettings"."PER"."DI"[4] = 0.0
+      "configurationSettings"."PER"."DI"[5] = 0.0
+      "configurationSettings"."PER"."DI"[6] = 0.0
+      "configurationSettings"."PER"."DI"[7] = 0.0
+      "configurationSettings"."PER"."DI"[8] = 0.0
+      "configurationSettings"."PER"."DI"[9] = 0.0
+      "configurationSettings"."PER"."DI"[10] = 0.0
+      "configurationSettings"."PER"."DI"[11] = 0.0
+      "configurationSettings"."PER"."DI"[12] = 0.0
+      "configurationSettings"."PER"."DI"[13] = 0.0
+      "configurationSettings"."PER"."DI"[14] = 0.0
+      "configurationSettings"."PER"."DI"[15] = 0.0
+      "configurationSettings"."PER"."DI"[16] = 0.0
+      "configurationSettings"."PER"."DI"[17] = 9.0
+      "configurationSettings"."PER"."DI"[18] = 10.0
+      "configurationSettings"."PER"."DI"[19] = 11.0
+      "configurationSettings"."PER"."DI"[20] = 12.0
+      "configurationSettings"."PER"."DI"[21] = 13.0
+      "configurationSettings"."PER"."DI"[22] = 14.0
+      "configurationSettings"."PER"."DI"[23] = 0.0
+      "configurationSettings"."PER"."DI"[24] = 0.0
+      "configurationSettings"."PER"."DI"[25] = 0.0
+      "configurationSettings"."PER"."DI"[26] = 0.0
+      "configurationSettings"."PER"."DI"[27] = 0.0
+      "configurationSettings"."PER"."DI"[28] = 0.0
+      "configurationSettings"."PER"."DI"[29] = 0.0
+      "configurationSettings"."PER"."DI"[30] = 0.0
+      "configurationSettings"."PER"."DI"[31] = 0.0
+      "configurationSettings"."PER"."DI"[32] = 0.0
+      "configurationSettings"."PER"."DI"[33] = 0.0
+      "configurationSettings"."PER"."DI"[34] = 0.0
+      "configurationSettings"."PER"."DI"[35] = 0.0
+      "configurationSettings"."PER"."DI"[36] = 0.0
+      "configurationSettings"."PER"."DI"[37] = 0.0
+      "configurationSettings"."PER"."DI"[38] = 0.0
+      "configurationSettings"."PER"."DI"[39] = 0.0
+      "configurationSettings"."PER"."DI"[40] = 0.0
+      "configurationSettings"."PER"."DI"[41] = 0.0
+      "configurationSettings"."PER"."DI"[42] = 0.0
+      "configurationSettings"."PER"."DI"[43] = 0.0
+      "configurationSettings"."PER"."DI"[44] = 0.0
+      "configurationSettings"."PER"."DI"[45] = 0.0
+      "configurationSettings"."PER"."DI"[46] = 0.0
+      "configurationSettings"."PER"."DI"[47] = 0.0
+      "configurationSettings"."PER"."DI"[48] = 0.0
+      "configurationSettings"."PER"."DI"[49] = 0.0
+      "configurationSettings"."PER"."DI"[50] = 0.0
+      "configurationSettings"."PER"."DI"[51] = 0.0
+      "configurationSettings"."PER"."DI"[52] = 0.0
+      "configurationSettings"."PER"."DI"[53] = 0.0
+      "configurationSettings"."PER"."DI"[54] = 0.0
+      "configurationSettings"."PER"."DI"[55] = 0.0
+      "configurationSettings"."PER"."DI"[56] = 0.0
+      "configurationSettings"."PER"."DI"[57] = 0.0
+      "configurationSettings"."PER"."DI"[58] = 0.0
+      "configurationSettings"."PER"."DI"[59] = 0.0
+      "configurationSettings"."PER"."DI"[60] = 0.0
+      "configurationSettings"."PER"."DI"[61] = 0.0
+      "configurationSettings"."PER"."DI"[62] = 0.0
+      "configurationSettings"."PER"."DI"[63] = 0.0
+      "configurationSettings"."PER"."DI"[64] = 0.0
+      "configurationSettings"."PER"."DQ"[0] = 0.0
+      "configurationSettings"."PER"."DQ"[1] = 0.0
+      "configurationSettings"."PER"."DQ"[2] = 0.0
+      "configurationSettings"."PER"."DQ"[3] = 0.0
+      "configurationSettings"."PER"."DQ"[4] = 0.0
+      "configurationSettings"."PER"."DQ"[5] = 0.0
+      "configurationSettings"."PER"."DQ"[6] = 0.0
+      "configurationSettings"."PER"."DQ"[7] = 10.0
+      "configurationSettings"."PER"."DQ"[8] = 0.0
+      "configurationSettings"."PER"."DQ"[9] = 8.0
+      "configurationSettings"."PER"."DQ"[10] = 0.0
+      "configurationSettings"."PER"."DQ"[11] = 7.0
+      "configurationSettings"."PER"."DQ"[12] = 0.0
+      "configurationSettings"."PER"."DQ"[13] = 0.0
+      "configurationSettings"."PER"."DQ"[14] = 0.0
+      "configurationSettings"."PER"."DQ"[15] = 0.0
+      "configurationSettings"."PER"."DQ"[16] = 0.0
+      "configurationSettings"."PER"."DQ"[17] = 0.0
+      "configurationSettings"."PER"."DQ"[18] = 0.0
+      "configurationSettings"."PER"."DQ"[19] = 0.0
+      "configurationSettings"."PER"."DQ"[20] = 0.0
+      "configurationSettings"."PER"."DQ"[21] = 0.0
+      "configurationSettings"."PER"."DQ"[22] = 0.0
+      "configurationSettings"."PER"."DQ"[23] = 0.0
+      "configurationSettings"."PER"."DQ"[24] = 0.0
+      "configurationSettings"."PER"."DQ"[25] = 0.0
+      "configurationSettings"."PER"."DQ"[26] = 9.0
+      "configurationSettings"."PER"."DQ"[27] = 0.0
+      "configurationSettings"."PER"."DQ"[28] = 0.0
+      "configurationSettings"."PER"."DQ"[29] = 0.0
+      "configurationSettings"."PER"."DQ"[30] = 0.0
+      "configurationSettings"."PER"."DQ"[31] = 0.0
+      "configurationSettings"."PER"."DQ"[32] = 0.0
+      "configurationSettings"."PER"."DQ"[33] = 0.0
+      "configurationSettings"."PER"."DQ"[34] = 0.0
+      "configurationSettings"."PER"."DQ"[35] = 0.0
+      "configurationSettings"."PER"."DQ"[36] = 0.0
+      "configurationSettings"."PER"."DQ"[37] = 0.0
+      "configurationSettings"."PER"."DQ"[38] = 0.0
+      "configurationSettings"."PER"."DQ"[39] = 0.0
+      "configurationSettings"."PER"."DQ"[40] = 0.0
+      "configurationSettings"."PER"."DQ"[41] = 0.0
+      "configurationSettings"."PER"."DQ"[42] = 0.0
+      "configurationSettings"."PER"."DQ"[43] = 0.0
+      "configurationSettings"."PER"."DQ"[44] = 0.0
+      "configurationSettings"."PER"."DQ"[45] = 0.0
+      "configurationSettings"."PER"."DQ"[46] = 0.0
+      "configurationSettings"."PER"."DQ"[47] = 0.0
+      "configurationSettings"."PER"."DQ"[48] = 0.0
+      "configurationSettings"."PER"."DQ"[49] = 0.0
+      "configurationSettings"."PER"."DQ"[50] = 0.0
+      "configurationSettings"."PER"."DQ"[51] = 0.0
+      "configurationSettings"."PER"."DQ"[52] = 0.0
+      "configurationSettings"."PER"."DQ"[53] = 0.0
+      "configurationSettings"."PER"."DQ"[54] = 0.0
+      "configurationSettings"."PER"."DQ"[55] = 0.0
+      "configurationSettings"."PER"."DQ"[56] = 0.0
+      "configurationSettings"."PER"."DQ"[57] = 0.0
+      "configurationSettings"."PER"."DQ"[58] = 0.0
+      "configurationSettings"."PER"."DQ"[59] = 0.0
+      "configurationSettings"."PER"."DQ"[60] = 0.0
+      "configurationSettings"."PER"."DQ"[61] = 0.0
+      "configurationSettings"."PER"."DQ"[62] = 0.0
+      "configurationSettings"."PER"."DQ"[63] = 0.0
+      "configurationSettings"."PER"."DQ"[64] = 0.0
+      "configurationSettings"."PER"."DQ"[65] = 0.0
+      "configurationSettings"."PER"."DQ"[66] = 0.0
+      "configurationSettings"."PER"."DQ"[67] = 0.0
+      "configurationSettings"."PER"."DQ"[68] = 0.0
+      "configurationSettings"."PER"."DQ"[69] = 0.0
+      "configurationSettings"."PER"."DQ"[70] = 4.0
+      "configurationSettings"."PER"."DQ"[71] = 0.0
+      "configurationSettings"."PER"."DQ"[72] = 0.0
+      "configurationSettings"."PER"."DQ"[73] = 0.0
+      "configurationSettings"."PER"."DQ"[74] = 2.0
+      "configurationSettings"."PER"."DQ"[75] = 0.0
+      "configurationSettings"."PER"."DQ"[76] = 0.0
+      "configurationSettings"."PER"."DQ"[77] = 0.0
+      "configurationSettings"."PER"."DQ"[78] = 0.0
+      "configurationSettings"."PER"."DQ"[79] = 0.0
+      "configurationSettings"."PER"."DQ"[80] = 0.0
+      "configurationSettings"."PER"."DQ"[81] = 0.0
+      "configurationSettings"."PER"."DQ"[82] = 0.0
+      "configurationSettings"."PER"."DQ"[83] = 0.0
+      "configurationSettings"."PER"."DQ"[84] = 0.0
+      "configurationSettings"."PER"."DQ"[85] = 0.0
+      "configurationSettings"."PER"."DQ"[86] = 0.0
+      "configurationSettings"."PER"."DQ"[87] = 0.0
+      "configurationSettings"."PER"."DQ"[88] = 0.0
+      "configurationSettings"."PER"."DQ"[89] = 0.0
+      "configurationSettings"."PER"."DQ"[90] = 0.0
+      "configurationSettings"."PER"."DQ"[91] = 0.0
+      "configurationSettings"."PER"."DQ"[92] = 0.0
+      "configurationSettings"."PER"."DQ"[93] = 0.0
+      "configurationSettings"."PER"."DQ"[94] = 0.0
+      "configurationSettings"."PER"."DQ"[95] = 0.0
+      "configurationSettings"."PER"."DQ"[96] = 0.0
+      "configurationSettings"."PER"."DQ"[97] = 0.0
+      "configurationSettings"."PER"."DQ"[98] = 0.0
+      "configurationSettings"."PER"."DQ"[99] = 0.0
+      "configurationSettings"."PER"."DQ"[100] = 0.0
+      "configurationSettings"."PER"."DQ"[101] = 0.0
+      "configurationSettings"."PER"."DQ"[102] = 0.0
+      "configurationSettings"."PER"."DQ"[103] = 0.0
+      "configurationSettings"."PER"."DQ"[104] = 0.0
+      "configurationSettings"."PER"."DQ"[105] = 0.0
+      "configurationSettings"."PER"."DQ"[106] = 0.0
+      "configurationSettings"."PER"."DQ"[107] = 0.0
+      "configurationSettings"."PER"."DQ"[108] = 0.0
+      "configurationSettings"."PER"."DQ"[109] = 0.0
+      "configurationSettings"."PER"."DQ"[110] = 0.0
+      "configurationSettings"."PER"."DQ"[111] = 0.0
+      "configurationSettings"."PER"."DQ"[112] = 0.0
+      "configurationSettings"."PER"."DQ"[113] = 0.0
+      "configurationSettings"."PER"."DQ"[114] = 0.0
+      "configurationSettings"."PER"."DQ"[115] = 0.0
+      "configurationSettings"."PER"."DQ"[116] = 0.0
+      "configurationSettings"."PER"."DQ"[117] = 0.0
+      "configurationSettings"."PER"."DQ"[118] = 0.0
+      "configurationSettings"."PER"."DQ"[119] = 0.0
+      "configurationSettings"."PER"."DQ"[120] = 0.0
+      "configurationSettings"."PER"."DQ"[121] = 0.0
+      "configurationSettings"."PER"."DQ"[122] = 0.0
+      "configurationSettings"."PER"."DQ"[123] = 0.0
+      "configurationSettings"."PER"."DQ"[124] = 0.0
+      "configurationSettings"."PER"."DQ"[125] = 0.0
+      "configurationSettings"."PER"."DQ"[126] = 0.0
+      "configurationSettings"."PER"."DQ"[127] = 0.0
+      "configurationSettings"."PER"."DQ"[128] = 0.0
+      "configurationSettings"."PER"."MUX"
+        "configurationSettings"."PER"."MUX"."AI" = 2.0
+        "configurationSettings"."PER"."MUX"."Z1"
+          "configurationSettings"."PER"."MUX"."Z1"."Phase" = 3.0
+          "configurationSettings"."PER"."MUX"."Z1"."MessA" = 2.0
+          "configurationSettings"."PER"."MUX"."Z1"."MessE" = 2.0
+          "configurationSettings"."PER"."MUX"."Z1"."Ueber" = 1.0
+        "configurationSettings"."PER"."MUX"."Z2"
+          "configurationSettings"."PER"."MUX"."Z2"."Phase" = 120.0
+          "configurationSettings"."PER"."MUX"."Z2"."MessA" = 6.0
+          "configurationSettings"."PER"."MUX"."Z2"."MessE" = 100.0
+          "configurationSettings"."PER"."MUX"."Z2"."Ueber" = 1.0
+      "configurationSettings"."PER"."modePTO"[1]
+        "configurationSettings"."PER"."modePTO"[1]."mode" = 1.0
+        "configurationSettings"."PER"."modePTO"[1]."fmax" = 1000.0
+      "configurationSettings"."PER"."modePTO"[2]
+        "configurationSettings"."PER"."modePTO"[2]."mode" = 1.0
+        "configurationSettings"."PER"."modePTO"[2]."fmax" = 100.0
+      "configurationSettings"."PER"."modePTO"[3]
+        "configurationSettings"."PER"."modePTO"[3]."mode" = 0.0
+        "configurationSettings"."PER"."modePTO"[3]."fmax" = 100.0
+      "configurationSettings"."PER"."modePTO"[4]
+        "configurationSettings"."PER"."modePTO"[4]."mode" = 0.0
+        "configurationSettings"."PER"."modePTO"[4]."fmax" = 100.0
+      "configurationSettings"."PER"."PTO"[1]
+        "configurationSettings"."PER"."PTO"[1]."EEV" = 0.0
+        "configurationSettings"."PER"."PTO"[1]."FU" = 0.0
+        "configurationSettings"."PER"."PTO"[1]."FAN" = 0.0
+        "configurationSettings"."PER"."PTO"[1]."Mitsu" = 1.0
+      "configurationSettings"."PER"."PTO"[2]
+        "configurationSettings"."PER"."PTO"[2]."EEV" = 0.0
+        "configurationSettings"."PER"."PTO"[2]."FU" = 0.0
+        "configurationSettings"."PER"."PTO"[2]."FAN" = 0.0
+        "configurationSettings"."PER"."PTO"[2]."Mitsu" = 2.0
+    "configurationSettings"."CDN"
+      "configurationSettings"."CDN"."URL" = https://cdn.beglau.de/Smart-Home/
+      "configurationSettings"."CDN"."aktiv" = true
+    "configurationSettings"."exchanger"[1]
+      "configurationSettings"."exchanger"[1]."pxDQ" = 0.0
+      "configurationSettings"."exchanger"[1]."drink"
+        "configurationSettings"."exchanger"[1]."drink"."pxAI" = 0.0
+        "configurationSettings"."exchanger"[1]."drink"."mux" = 0.0
+        "configurationSettings"."exchanger"[1]."drink"."offset" = 0.0
+        "configurationSettings"."exchanger"[1]."drink"."pxDI" = 0.0
+        "configurationSettings"."exchanger"[1]."drink"."pxDQ" = 0.0
+      "configurationSettings"."exchanger"[1]."heatCool"
+        "configurationSettings"."exchanger"[1]."heatCool"."pxAI" = 0.0
+        "configurationSettings"."exchanger"[1]."heatCool"."mux" = 0.0
+        "configurationSettings"."exchanger"[1]."heatCool"."offset" = 0.0
+        "configurationSettings"."exchanger"[1]."heatCool"."pxDI" = 0.0
+        "configurationSettings"."exchanger"[1]."heatCool"."pxDQ" = 0.0
+    "configurationSettings"."exchanger"[2]
+      "configurationSettings"."exchanger"[2]."pxDQ" = 0.0
+      "configurationSettings"."exchanger"[2]."drink"
+        "configurationSettings"."exchanger"[2]."drink"."pxAI" = 0.0
+        "configurationSettings"."exchanger"[2]."drink"."mux" = 0.0
+        "configurationSettings"."exchanger"[2]."drink"."offset" = 0.0
+        "configurationSettings"."exchanger"[2]."drink"."pxDI" = 0.0
+        "configurationSettings"."exchanger"[2]."drink"."pxDQ" = 0.0
+      "configurationSettings"."exchanger"[2]."heatCool"
+        "configurationSettings"."exchanger"[2]."heatCool"."pxAI" = 0.0
+        "configurationSettings"."exchanger"[2]."heatCool"."mux" = 0.0
+        "configurationSettings"."exchanger"[2]."heatCool"."offset" = 0.0
+        "configurationSettings"."exchanger"[2]."heatCool"."pxDI" = 0.0
+        "configurationSettings"."exchanger"[2]."heatCool"."pxDQ" = 0.0
+    "configurationSettings"."dewpoint"[1]
+      "configurationSettings"."dewpoint"[1]."pxAI" = 0.0
+      "configurationSettings"."dewpoint"[1]."mux" = 0.0
+      "configurationSettings"."dewpoint"[1]."offset" = 0.0
+    "configurationSettings"."dewpoint"[2]
+      "configurationSettings"."dewpoint"[2]."pxAI" = 0.0
+      "configurationSettings"."dewpoint"[2]."mux" = 0.0
+      "configurationSettings"."dewpoint"[2]."offset" = 0.0
+    "configurationSettings"."mixer"[1]
+      "configurationSettings"."mixer"[1]."pxAI" = 0.0
+      "configurationSettings"."mixer"[1]."mux" = 0.0
+      "configurationSettings"."mixer"[1]."offset" = 0.0
+      "configurationSettings"."mixer"[1]."pxDQ_open" = 0.0
+      "configurationSettings"."mixer"[1]."pxDQ_close" = 0.0
+    "configurationSettings"."mixer"[2]
+      "configurationSettings"."mixer"[2]."pxAI" = 0.0
+      "configurationSettings"."mixer"[2]."mux" = 0.0
+      "configurationSettings"."mixer"[2]."offset" = 0.0
+      "configurationSettings"."mixer"[2]."pxDQ_open" = 0.0
+      "configurationSettings"."mixer"[2]."pxDQ_close" = 0.0
+    "configurationSettings"."circulation"[1]
+      "configurationSettings"."circulation"[1]."pxDQ" = 0.0
+    "configurationSettings"."circulation"[2]
+      "configurationSettings"."circulation"[2]."pxDQ" = 0.0
+    "configurationSettings"."tank"[1]
+      "configurationSettings"."tank"[1]."system" = 0.0
+      "configurationSettings"."tank"[1]."drink"
+        "configurationSettings"."tank"[1]."drink"."type" = 0.0
+        "configurationSettings"."tank"[1]."drink"."pxAI" = 0.0
+        "configurationSettings"."tank"[1]."drink"."mux" = 0.0
+        "configurationSettings"."tank"[1]."drink"."offset" = 0.0
+      "configurationSettings"."tank"[1]."heat"
+        "configurationSettings"."tank"[1]."heat"."type" = 0.0
+        "configurationSettings"."tank"[1]."heat"."pxAI" = 0.0
+        "configurationSettings"."tank"[1]."heat"."mux" = 0.0
+        "configurationSettings"."tank"[1]."heat"."offset" = 0.0
+      "configurationSettings"."tank"[1]."cool"
+        "configurationSettings"."tank"[1]."cool"."type" = 0.0
+        "configurationSettings"."tank"[1]."cool"."pxAI" = 0.0
+        "configurationSettings"."tank"[1]."cool"."mux" = 0.0
+        "configurationSettings"."tank"[1]."cool"."offset" = 0.0
+    "configurationSettings"."tank"[2]
+      "configurationSettings"."tank"[2]."system" = 0.0
+      "configurationSettings"."tank"[2]."drink"
+        "configurationSettings"."tank"[2]."drink"."type" = 0.0
+        "configurationSettings"."tank"[2]."drink"."pxAI" = 0.0
+        "configurationSettings"."tank"[2]."drink"."mux" = 0.0
+        "configurationSettings"."tank"[2]."drink"."offset" = 0.0
+      "configurationSettings"."tank"[2]."heat"
+        "configurationSettings"."tank"[2]."heat"."type" = 0.0
+        "configurationSettings"."tank"[2]."heat"."pxAI" = 0.0
+        "configurationSettings"."tank"[2]."heat"."mux" = 0.0
+        "configurationSettings"."tank"[2]."heat"."offset" = 0.0
+      "configurationSettings"."tank"[2]."cool"
+        "configurationSettings"."tank"[2]."cool"."type" = 0.0
+        "configurationSettings"."tank"[2]."cool"."pxAI" = 0.0
+        "configurationSettings"."tank"[2]."cool"."mux" = 0.0
+        "configurationSettings"."tank"[2]."cool"."offset" = 0.0
+    "configurationSettings"."number"
+      "configurationSettings"."number"."tank" = 1.0
+      "configurationSettings"."number"."circulation" = 1.0
+      "configurationSettings"."number"."exchanger" = 1.0
+      "configurationSettings"."number"."dewpoint" = 1.0
+      "configurationSettings"."number"."mixer" = 1.0
+      "configurationSettings"."number"."bypass" = 1.0
+      "configurationSettings"."number"."floorpump" = 1.0
+      "configurationSettings"."number"."room" = 8.0
+      "configurationSettings"."number"."coolgroup" = 2.0
+      "configurationSettings"."number"."vacation" = 6.0
+      "configurationSettings"."number"."mode" = 1.0
+      "configurationSettings"."number"."system" = 1.0
+    "configurationSettings"."bypass"[1]
+      "configurationSettings"."bypass"[1]."pxDQ" = 0.0
+    "configurationSettings"."bypass"[2]
+      "configurationSettings"."bypass"[2]."pxDQ" = 0.0
+    "configurationSettings"."floorpump"[1]
+      "configurationSettings"."floorpump"[1]."pxDQ" = 0.0
+      "configurationSettings"."floorpump"[1]."pxAI" = 0.0
+      "configurationSettings"."floorpump"[1]."mux" = 0.0
+      "configurationSettings"."floorpump"[1]."offset" = 0.0
+    "configurationSettings"."floorpump"[2]
+      "configurationSettings"."floorpump"[2]."pxDQ" = 0.0
+      "configurationSettings"."floorpump"[2]."pxAI" = 0.0
+      "configurationSettings"."floorpump"[2]."mux" = 0.0
+      "configurationSettings"."floorpump"[2]."offset" = 0.0
+    "configurationSettings"."coolgroup"[1]
+      "configurationSettings"."coolgroup"[1]."pxDQ" = 0.0
+    "configurationSettings"."coolgroup"[2]
+      "configurationSettings"."coolgroup"[2]."pxDQ" = 0.0
+    "configurationSettings"."room"[1]
+      "configurationSettings"."room"[1]."system" = 0.0
+      "configurationSettings"."room"[1]."pxAI" = 0.0
+      "configurationSettings"."room"[1]."pxDI" = 0.0
+      "configurationSettings"."room"[1]."pxDQ" = 0.0
+      "configurationSettings"."room"[1]."mux" = 0.0
+      "configurationSettings"."room"[1]."valveInverse" = false
+      "configurationSettings"."room"[1]."offset" = 0.0
+      "configurationSettings"."room"[1]."holdValve" = false
+      "configurationSettings"."room"[1]."couple" = 0.0
+      "configurationSettings"."room"[1]."coolgroup" = 0.0
+      "configurationSettings"."room"[1]."mainAllowedDirect" = false
+    "configurationSettings"."room"[2]
+      "configurationSettings"."room"[2]."system" = 0.0
+      "configurationSettings"."room"[2]."pxAI" = 0.0
+      "configurationSettings"."room"[2]."pxDI" = 0.0
+      "configurationSettings"."room"[2]."pxDQ" = 0.0
+      "configurationSettings"."room"[2]."mux" = 0.0
+      "configurationSettings"."room"[2]."valveInverse" = false
+      "configurationSettings"."room"[2]."offset" = 0.0
+      "configurationSettings"."room"[2]."holdValve" = false
+      "configurationSettings"."room"[2]."couple" = 0.0
+      "configurationSettings"."room"[2]."coolgroup" = 0.0
+      "configurationSettings"."room"[2]."mainAllowedDirect" = false
+    "configurationSettings"."room"[3]
+      "configurationSettings"."room"[3]."system" = 0.0
+      "configurationSettings"."room"[3]."pxAI" = 0.0
+      "configurationSettings"."room"[3]."pxDI" = 0.0
+      "configurationSettings"."room"[3]."pxDQ" = 0.0
+      "configurationSettings"."room"[3]."mux" = 0.0
+      "configurationSettings"."room"[3]."valveInverse" = false
+      "configurationSettings"."room"[3]."offset" = 0.0
+      "configurationSettings"."room"[3]."holdValve" = false
+      "configurationSettings"."room"[3]."couple" = 0.0
+      "configurationSettings"."room"[3]."coolgroup" = 0.0
+      "configurationSettings"."room"[3]."mainAllowedDirect" = false
+    "configurationSettings"."room"[4]
+      "configurationSettings"."room"[4]."system" = 0.0
+      "configurationSettings"."room"[4]."pxAI" = 0.0
+      "configurationSettings"."room"[4]."pxDI" = 0.0
+      "configurationSettings"."room"[4]."pxDQ" = 0.0
+      "configurationSettings"."room"[4]."mux" = 0.0
+      "configurationSettings"."room"[4]."valveInverse" = false
+      "configurationSettings"."room"[4]."offset" = 0.0
+      "configurationSettings"."room"[4]."holdValve" = false
+      "configurationSettings"."room"[4]."couple" = 0.0
+      "configurationSettings"."room"[4]."coolgroup" = 0.0
+      "configurationSettings"."room"[4]."mainAllowedDirect" = false
+    "configurationSettings"."room"[5]
+      "configurationSettings"."room"[5]."system" = 0.0
+      "configurationSettings"."room"[5]."pxAI" = 0.0
+      "configurationSettings"."room"[5]."pxDI" = 0.0
+      "configurationSettings"."room"[5]."pxDQ" = 0.0
+      "configurationSettings"."room"[5]."mux" = 0.0
+      "configurationSettings"."room"[5]."valveInverse" = false
+      "configurationSettings"."room"[5]."offset" = 0.0
+      "configurationSettings"."room"[5]."holdValve" = false
+      "configurationSettings"."room"[5]."couple" = 0.0
+      "configurationSettings"."room"[5]."coolgroup" = 0.0
+      "configurationSettings"."room"[5]."mainAllowedDirect" = false
+    "configurationSettings"."room"[6]
+      "configurationSettings"."room"[6]."system" = 0.0
+      "configurationSettings"."room"[6]."pxAI" = 0.0
+      "configurationSettings"."room"[6]."pxDI" = 0.0
+      "configurationSettings"."room"[6]."pxDQ" = 0.0
+      "configurationSettings"."room"[6]."mux" = 0.0
+      "configurationSettings"."room"[6]."valveInverse" = false
+      "configurationSettings"."room"[6]."offset" = 0.0
+      "configurationSettings"."room"[6]."holdValve" = false
+      "configurationSettings"."room"[6]."couple" = 0.0
+      "configurationSettings"."room"[6]."coolgroup" = 0.0
+      "configurationSettings"."room"[6]."mainAllowedDirect" = false
+    "configurationSettings"."room"[7]
+      "configurationSettings"."room"[7]."system" = 0.0
+      "configurationSettings"."room"[7]."pxAI" = 0.0
+      "configurationSettings"."room"[7]."pxDI" = 0.0
+      "configurationSettings"."room"[7]."pxDQ" = 0.0
+      "configurationSettings"."room"[7]."mux" = 0.0
+      "configurationSettings"."room"[7]."valveInverse" = false
+      "configurationSettings"."room"[7]."offset" = 0.0
+      "configurationSettings"."room"[7]."holdValve" = false
+      "configurationSettings"."room"[7]."couple" = 0.0
+      "configurationSettings"."room"[7]."coolgroup" = 0.0
+      "configurationSettings"."room"[7]."mainAllowedDirect" = false
+    "configurationSettings"."room"[8]
+      "configurationSettings"."room"[8]."system" = 0.0
+      "configurationSettings"."room"[8]."pxAI" = 0.0
+      "configurationSettings"."room"[8]."pxDI" = 0.0
+      "configurationSettings"."room"[8]."pxDQ" = 0.0
+      "configurationSettings"."room"[8]."mux" = 0.0
+      "configurationSettings"."room"[8]."valveInverse" = false
+      "configurationSettings"."room"[8]."offset" = 0.0
+      "configurationSettings"."room"[8]."holdValve" = false
+      "configurationSettings"."room"[8]."couple" = 0.0
+      "configurationSettings"."room"[8]."coolgroup" = 0.0
+      "configurationSettings"."room"[8]."mainAllowedDirect" = false
+    "configurationSettings"."room"[9]
+      "configurationSettings"."room"[9]."system" = 0.0
+      "configurationSettings"."room"[9]."pxAI" = 0.0
+      "configurationSettings"."room"[9]."pxDI" = 0.0
+      "configurationSettings"."room"[9]."pxDQ" = 0.0
+      "configurationSettings"."room"[9]."mux" = 0.0
+      "configurationSettings"."room"[9]."valveInverse" = false
+      "configurationSettings"."room"[9]."offset" = 0.0
+      "configurationSettings"."room"[9]."holdValve" = false
+      "configurationSettings"."room"[9]."couple" = 0.0
+      "configurationSettings"."room"[9]."coolgroup" = 0.0
+      "configurationSettings"."room"[9]."mainAllowedDirect" = false
+    "configurationSettings"."room"[10]
+      "configurationSettings"."room"[10]."system" = 0.0
+      "configurationSettings"."room"[10]."pxAI" = 0.0
+      "configurationSettings"."room"[10]."pxDI" = 0.0
+      "configurationSettings"."room"[10]."pxDQ" = 0.0
+      "configurationSettings"."room"[10]."mux" = 0.0
+      "configurationSettings"."room"[10]."valveInverse" = false
+      "configurationSettings"."room"[10]."offset" = 0.0
+      "configurationSettings"."room"[10]."holdValve" = false
+      "configurationSettings"."room"[10]."couple" = 0.0
+      "configurationSettings"."room"[10]."coolgroup" = 0.0
+      "configurationSettings"."room"[10]."mainAllowedDirect" = false
+    "configurationSettings"."room"[11]
+      "configurationSettings"."room"[11]."system" = 0.0
+      "configurationSettings"."room"[11]."pxAI" = 0.0
+      "configurationSettings"."room"[11]."pxDI" = 0.0
+      "configurationSettings"."room"[11]."pxDQ" = 0.0
+      "configurationSettings"."room"[11]."mux" = 0.0
+      "configurationSettings"."room"[11]."valveInverse" = false
+      "configurationSettings"."room"[11]."offset" = 0.0
+      "configurationSettings"."room"[11]."holdValve" = false
+      "configurationSettings"."room"[11]."couple" = 0.0
+      "configurationSettings"."room"[11]."coolgroup" = 0.0
+      "configurationSettings"."room"[11]."mainAllowedDirect" = false
+    "configurationSettings"."room"[12]
+      "configurationSettings"."room"[12]."system" = 0.0
+      "configurationSettings"."room"[12]."pxAI" = 0.0
+      "configurationSettings"."room"[12]."pxDI" = 0.0
+      "configurationSettings"."room"[12]."pxDQ" = 0.0
+      "configurationSettings"."room"[12]."mux" = 0.0
+      "configurationSettings"."room"[12]."valveInverse" = false
+      "configurationSettings"."room"[12]."offset" = 0.0
+      "configurationSettings"."room"[12]."holdValve" = false
+      "configurationSettings"."room"[12]."couple" = 0.0
+      "configurationSettings"."room"[12]."coolgroup" = 0.0
+      "configurationSettings"."room"[12]."mainAllowedDirect" = false
+    "configurationSettings"."room"[13]
+      "configurationSettings"."room"[13]."system" = 0.0
+      "configurationSettings"."room"[13]."pxAI" = 0.0
+      "configurationSettings"."room"[13]."pxDI" = 0.0
+      "configurationSettings"."room"[13]."pxDQ" = 0.0
+      "configurationSettings"."room"[13]."mux" = 0.0
+      "configurationSettings"."room"[13]."valveInverse" = false
+      "configurationSettings"."room"[13]."offset" = 0.0
+      "configurationSettings"."room"[13]."holdValve" = false
+      "configurationSettings"."room"[13]."couple" = 0.0
+      "configurationSettings"."room"[13]."coolgroup" = 0.0
+      "configurationSettings"."room"[13]."mainAllowedDirect" = false
+    "configurationSettings"."room"[14]
+      "configurationSettings"."room"[14]."system" = 0.0
+      "configurationSettings"."room"[14]."pxAI" = 0.0
+      "configurationSettings"."room"[14]."pxDI" = 0.0
+      "configurationSettings"."room"[14]."pxDQ" = 0.0
+      "configurationSettings"."room"[14]."mux" = 0.0
+      "configurationSettings"."room"[14]."valveInverse" = false
+      "configurationSettings"."room"[14]."offset" = 0.0
+      "configurationSettings"."room"[14]."holdValve" = false
+      "configurationSettings"."room"[14]."couple" = 0.0
+      "configurationSettings"."room"[14]."coolgroup" = 0.0
+      "configurationSettings"."room"[14]."mainAllowedDirect" = false
+    "configurationSettings"."room"[15]
+      "configurationSettings"."room"[15]."system" = 0.0
+      "configurationSettings"."room"[15]."pxAI" = 0.0
+      "configurationSettings"."room"[15]."pxDI" = 0.0
+      "configurationSettings"."room"[15]."pxDQ" = 0.0
+      "configurationSettings"."room"[15]."mux" = 0.0
+      "configurationSettings"."room"[15]."valveInverse" = false
+      "configurationSettings"."room"[15]."offset" = 0.0
+      "configurationSettings"."room"[15]."holdValve" = false
+      "configurationSettings"."room"[15]."couple" = 0.0
+      "configurationSettings"."room"[15]."coolgroup" = 0.0
+      "configurationSettings"."room"[15]."mainAllowedDirect" = false
+    "configurationSettings"."room"[16]
+      "configurationSettings"."room"[16]."system" = 0.0
+      "configurationSettings"."room"[16]."pxAI" = 0.0
+      "configurationSettings"."room"[16]."pxDI" = 0.0
+      "configurationSettings"."room"[16]."pxDQ" = 0.0
+      "configurationSettings"."room"[16]."mux" = 0.0
+      "configurationSettings"."room"[16]."valveInverse" = false
+      "configurationSettings"."room"[16]."offset" = 0.0
+      "configurationSettings"."room"[16]."holdValve" = false
+      "configurationSettings"."room"[16]."couple" = 0.0
+      "configurationSettings"."room"[16]."coolgroup" = 0.0
+      "configurationSettings"."room"[16]."mainAllowedDirect" = false
+    "configurationSettings"."mode"[1]
+      "configurationSettings"."mode"[1]."drink" = false
+      "configurationSettings"."mode"[1]."heat" = false
+      "configurationSettings"."mode"[1]."cool" = false
+      "configurationSettings"."mode"[1]."pxDQ" = 0.0
+    "configurationSettings"."mode"[2]
+      "configurationSettings"."mode"[2]."drink" = false
+      "configurationSettings"."mode"[2]."heat" = false
+      "configurationSettings"."mode"[2]."cool" = false
+      "configurationSettings"."mode"[2]."pxDQ" = 0.0
+    "configurationSettings"."sgready"
+      "configurationSettings"."sgready"."pxDI_lock" = 0.0
+      "configurationSettings"."sgready"."pxDI_sgr0" = 0.0
+      "configurationSettings"."sgready"."pxDI_sgr1" = 0.0
+    "configurationSettings"."outerTemp"
+      "configurationSettings"."outerTemp"."pxAI" = 0.0
+      "configurationSettings"."outerTemp"."mux" = 0.0
+      "configurationSettings"."outerTemp"."offset" = 0.0
+    "configurationSettings"."heatpump"[1]
+      "configurationSettings"."heatpump"[1]."type" = 3.0
+    "configurationSettings"."heatpump"[2]
+      "configurationSettings"."heatpump"[2]."type" = 3.0
+    "configurationSettings"."heatpumpBeglau"[1]
+      "configurationSettings"."heatpumpBeglau"[1]."pxDQ_compressorContactor" = 0.0
+      "configurationSettings"."heatpumpBeglau"[1]."pxDQ_converterStart" = 0.0
+      "configurationSettings"."heatpumpBeglau"[1]."pxDQ_fourWayValve" = 0.0
+      "configurationSettings"."heatpumpBeglau"[1]."pxDQ_magneticValve" = 0.0
+    "configurationSettings"."heatpumpBeglau"[2]
+      "configurationSettings"."heatpumpBeglau"[2]."pxDQ_compressorContactor" = 0.0
+      "configurationSettings"."heatpumpBeglau"[2]."pxDQ_converterStart" = 0.0
+      "configurationSettings"."heatpumpBeglau"[2]."pxDQ_fourWayValve" = 0.0
+      "configurationSettings"."heatpumpBeglau"[2]."pxDQ_magneticValve" = 0.0
+    "configurationSettings"."heatpumpMitsu"[1]
+      "configurationSettings"."heatpumpMitsu"[1]."pxDI_operation" = 0.0
+      "configurationSettings"."heatpumpMitsu"[1]."pxDI_error" = 0.0
+      "configurationSettings"."heatpumpMitsu"[1]."pxDI_compressor" = 0.0
+      "configurationSettings"."heatpumpMitsu"[1]."pxDI_defrost" = 0.0
+      "configurationSettings"."heatpumpMitsu"[1]."pxDI_cool" = 0.0
+      "configurationSettings"."heatpumpMitsu"[1]."pxDI_heat" = 0.0
+      "configurationSettings"."heatpumpMitsu"[1]."pxDQ_step0" = 0.0
+      "configurationSettings"."heatpumpMitsu"[1]."pxDQ_step1" = 0.0
+      "configurationSettings"."heatpumpMitsu"[1]."pxDQ_step2" = 0.0
+      "configurationSettings"."heatpumpMitsu"[1]."pxDQ_heatCool" = 0.0
+      "configurationSettings"."heatpumpMitsu"[1]."pxAQ" = 0.0
+      "configurationSettings"."heatpumpMitsu"[1]."pxPTO" = 0.0
+    "configurationSettings"."heatpumpMitsu"[2]
+      "configurationSettings"."heatpumpMitsu"[2]."pxDI_operation" = 0.0
+      "configurationSettings"."heatpumpMitsu"[2]."pxDI_error" = 0.0
+      "configurationSettings"."heatpumpMitsu"[2]."pxDI_compressor" = 0.0
+      "configurationSettings"."heatpumpMitsu"[2]."pxDI_defrost" = 0.0
+      "configurationSettings"."heatpumpMitsu"[2]."pxDI_cool" = 0.0
+      "configurationSettings"."heatpumpMitsu"[2]."pxDI_heat" = 0.0
+      "configurationSettings"."heatpumpMitsu"[2]."pxDQ_step0" = 0.0
+      "configurationSettings"."heatpumpMitsu"[2]."pxDQ_step1" = 0.0
+      "configurationSettings"."heatpumpMitsu"[2]."pxDQ_step2" = 0.0
+      "configurationSettings"."heatpumpMitsu"[2]."pxDQ_heatCool" = 0.0
+      "configurationSettings"."heatpumpMitsu"[2]."pxAQ" = 0.0
+      "configurationSettings"."heatpumpMitsu"[2]."pxPTO" = 0.0
+    "configurationSettings"."supervision"[1]
+      "configurationSettings"."supervision"[1]."lowPressure"
+        "configurationSettings"."supervision"[1]."lowPressure"."sensorType" = 0.0
+        "configurationSettings"."supervision"[1]."lowPressure"."signalMin" = 0.0
+        "configurationSettings"."supervision"[1]."lowPressure"."signalMaxax" = 0.0
+        "configurationSettings"."supervision"[1]."lowPressure"."pressureMin" = 0.0
+        "configurationSettings"."supervision"[1]."lowPressure"."pressureMax" = 0.0
+        "configurationSettings"."supervision"[1]."lowPressure"."pxAI" = 0.0
+        "configurationSettings"."supervision"[1]."lowPressure"."mux" = 0.0
+        "configurationSettings"."supervision"[1]."lowPressure"."offset" = 0.0
+        "configurationSettings"."supervision"[1]."lowPressure"."pxDI" = 0.0
+      "configurationSettings"."supervision"[1]."highPressure"
+        "configurationSettings"."supervision"[1]."highPressure"."sensorType" = 0.0
+        "configurationSettings"."supervision"[1]."highPressure"."signalMin" = 0.0
+        "configurationSettings"."supervision"[1]."highPressure"."signalMaxax" = 0.0
+        "configurationSettings"."supervision"[1]."highPressure"."pressureMin" = 0.0
+        "configurationSettings"."supervision"[1]."highPressure"."pressureMax" = 0.0
+        "configurationSettings"."supervision"[1]."highPressure"."pxAI" = 0.0
+        "configurationSettings"."supervision"[1]."highPressure"."mux" = 0.0
+        "configurationSettings"."supervision"[1]."highPressure"."offset" = 0.0
+        "configurationSettings"."supervision"[1]."highPressure"."pxDI" = 0.0
+      "configurationSettings"."supervision"[1]."v1"
+        "configurationSettings"."supervision"[1]."v1"."pxAI" = 0.0
+        "configurationSettings"."supervision"[1]."v1"."mux" = 0.0
+        "configurationSettings"."supervision"[1]."v1"."offset" = 0.0
+      "configurationSettings"."supervision"[1]."v2"
+        "configurationSettings"."supervision"[1]."v2"."pxAI" = 0.0
+        "configurationSettings"."supervision"[1]."v2"."mux" = 0.0
+        "configurationSettings"."supervision"[1]."v2"."offset" = 0.0
+      "configurationSettings"."supervision"[1]."compressor"
+        "configurationSettings"."supervision"[1]."compressor"."pxAI" = 0.0
+        "configurationSettings"."supervision"[1]."compressor"."mux" = 0.0
+        "configurationSettings"."supervision"[1]."compressor"."offset" = 0.0
+      "configurationSettings"."supervision"[1]."motorProtection"
+        "configurationSettings"."supervision"[1]."motorProtection"."pxDI" = 0.0
+      "configurationSettings"."supervision"[1]."dryrunProtection"
+        "configurationSettings"."supervision"[1]."dryrunProtection"."pxDI" = 0.0
+      "configurationSettings"."supervision"[1]."error"
+        "configurationSettings"."supervision"[1]."error"."pxDI" = 0.0
+    "configurationSettings"."supervision"[2]
+      "configurationSettings"."supervision"[2]."lowPressure"
+        "configurationSettings"."supervision"[2]."lowPressure"."sensorType" = 0.0
+        "configurationSettings"."supervision"[2]."lowPressure"."signalMin" = 0.0
+        "configurationSettings"."supervision"[2]."lowPressure"."signalMaxax" = 0.0
+        "configurationSettings"."supervision"[2]."lowPressure"."pressureMin" = 0.0
+        "configurationSettings"."supervision"[2]."lowPressure"."pressureMax" = 0.0
+        "configurationSettings"."supervision"[2]."lowPressure"."pxAI" = 0.0
+        "configurationSettings"."supervision"[2]."lowPressure"."mux" = 0.0
+        "configurationSettings"."supervision"[2]."lowPressure"."offset" = 0.0
+        "configurationSettings"."supervision"[2]."lowPressure"."pxDI" = 0.0
+      "configurationSettings"."supervision"[2]."highPressure"
+        "configurationSettings"."supervision"[2]."highPressure"."sensorType" = 0.0
+        "configurationSettings"."supervision"[2]."highPressure"."signalMin" = 0.0
+        "configurationSettings"."supervision"[2]."highPressure"."signalMaxax" = 0.0
+        "configurationSettings"."supervision"[2]."highPressure"."pressureMin" = 0.0
+        "configurationSettings"."supervision"[2]."highPressure"."pressureMax" = 0.0
+        "configurationSettings"."supervision"[2]."highPressure"."pxAI" = 0.0
+        "configurationSettings"."supervision"[2]."highPressure"."mux" = 0.0
+        "configurationSettings"."supervision"[2]."highPressure"."offset" = 0.0
+        "configurationSettings"."supervision"[2]."highPressure"."pxDI" = 0.0
+      "configurationSettings"."supervision"[2]."v1"
+        "configurationSettings"."supervision"[2]."v1"."pxAI" = 0.0
+        "configurationSettings"."supervision"[2]."v1"."mux" = 0.0
+        "configurationSettings"."supervision"[2]."v1"."offset" = 0.0
+      "configurationSettings"."supervision"[2]."v2"
+        "configurationSettings"."supervision"[2]."v2"."pxAI" = 0.0
+        "configurationSettings"."supervision"[2]."v2"."mux" = 0.0
+        "configurationSettings"."supervision"[2]."v2"."offset" = 0.0
+      "configurationSettings"."supervision"[2]."compressor"
+        "configurationSettings"."supervision"[2]."compressor"."pxAI" = 0.0
+        "configurationSettings"."supervision"[2]."compressor"."mux" = 0.0
+        "configurationSettings"."supervision"[2]."compressor"."offset" = 0.0
+      "configurationSettings"."supervision"[2]."motorProtection"
+        "configurationSettings"."supervision"[2]."motorProtection"."pxDI" = 0.0
+      "configurationSettings"."supervision"[2]."dryrunProtection"
+        "configurationSettings"."supervision"[2]."dryrunProtection"."pxDI" = 0.0
+      "configurationSettings"."supervision"[2]."error"
+        "configurationSettings"."supervision"[2]."error"."pxDI" = 0.0
+    "configurationSettings"."converter"[1]
+      "configurationSettings"."converter"[1]."pxAQ" = 0.0
+      "configurationSettings"."converter"[1]."pxPTO" = 0.0
+    "configurationSettings"."converter"[2]
+      "configurationSettings"."converter"[2]."pxAQ" = 0.0
+      "configurationSettings"."converter"[2]."pxPTO" = 0.0
+    "configurationSettings"."injection"[1]
+      "configurationSettings"."injection"[1]."pxAQ" = 0.0
+      "configurationSettings"."injection"[1]."pxPTO" = 0.0
+    "configurationSettings"."injection"[2]
+      "configurationSettings"."injection"[2]."pxAQ" = 0.0
+      "configurationSettings"."injection"[2]."pxPTO" = 0.0
+    "configurationSettings"."fan"[1]
+      "configurationSettings"."fan"[1]."pxAQ" = 0.0
+      "configurationSettings"."fan"[1]."pxPTO" = 0.0
+    "configurationSettings"."fan"[2]
+      "configurationSettings"."fan"[2]."pxAQ" = 0.0
+      "configurationSettings"."fan"[2]."pxPTO" = 0.0
