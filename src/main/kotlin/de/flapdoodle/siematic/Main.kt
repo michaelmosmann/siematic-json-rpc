@@ -15,7 +15,7 @@ object Main {
     val indent = "  ".repeat(level)
     responses.forEach {
       collector.add(it.id)
-      println("$indent${it.id}")
+      println("$indent${it.id} (${it.result.size})")
     }
     if (level + 1 <= maxDepth && responses.isNotEmpty()) {
       val readValues = responses.flatMap { r ->
@@ -133,11 +133,11 @@ object Main {
       browse(jsonRpcWithAuth, Int.MAX_VALUE)
     } else {
       val sections = listOf(
-        "configurationSettings",
+//        "configurationSettings",
 //        "customSettings",
-//        "technicalSettings",
+        "technicalSettings",
         "screedSettings",
-//        "operatingData",
+        "operatingData",
         "dbService",
         "dbLoadSave",
         "DB 333",

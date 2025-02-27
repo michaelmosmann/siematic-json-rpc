@@ -1,0 +1,678 @@
+
+"technicalSettings"
+  "heatpumpBeglau"
+    "ABTAU"
+      "TA_max" = 10.0
+      "TA_V2_min" = 8.0
+      "V1_min" = 35.0
+      "AV" = 120
+      "LZ_max" = 15
+      "SZ" = 60
+  "mode"
+    "spLimits"
+      "outerTempHi" = 30.0
+      "outerTempLo" = 0.0
+  "outerTemp"
+    "averageTime1" = 24
+    "averageTime2" = 48
+    "averageTime3" = 48
+    "refreshTime" = 10
+  "heatpump"
+    "waitTime"[0] = 20
+    "waitTime"[1] = 45
+    "waitTime"[2] = 60
+    "waitTime"[3] = 120
+    "delayReady" = 5
+    "delayStart" = 5
+    "staggering" = 30
+    "minRuntime" = 20
+    "temperatures"
+      "lowPressureHeat"
+        "limitLo" = -30.0
+        "limitHi" = 40.0
+        "hysteresisHi" = 1.0
+        "lockTime" = 0
+        "delayTime" = 0
+        "hysteresisLo" = 1.0
+        "holdTime" = 0
+      "highPressure"
+        "limitLo" = -5.0
+        "limitHi" = 65.0
+        "hysteresisHi" = 1.0
+        "lockTime" = 0
+        "delayTime" = 0
+        "hysteresisLo" = 1.0
+        "holdTime" = 0
+      "v1"
+        "limitLo" = -60.0
+        "limitHi" = 80.0
+        "hysteresisHi" = 1.0
+        "lockTime" = 0
+        "delayTime" = 0
+        "hysteresisLo" = 1.0
+        "holdTime" = 0
+      "v2"
+        "limitLo" = -60.0
+        "limitHi" = 80.0
+        "hysteresisHi" = 1.0
+        "lockTime" = 0
+        "delayTime" = 0
+        "hysteresisLo" = 1.0
+        "holdTime" = 0
+      "compressor"
+        "limitLo" = -29.9
+        "limitHi" = 95.0
+        "hysteresisHi" = 1.0
+        "lockTime" = 0
+        "delayTime" = 0
+        "hysteresisLo" = 1.0
+        "holdTime" = 0
+      "lowPressureCool"
+        "limitLo" = -5.0
+        "limitHi" = 40.0
+        "hysteresisHi" = 1.0
+        "lockTime" = 0
+        "delayTime" = 0
+        "hysteresisLo" = 1.0
+        "holdTime" = 0
+    "refrigerants"
+      "low_pressure"
+        "limitLo" = 0.0
+        "limitHi" = 18.0
+        "hysteresisHi" = 1.0
+        "lockTime" = 600
+        "delayTime" = 180
+        "hysteresisLo" = 1.0
+        "holdTime" = 0
+      "highPressure"
+        "limitLo" = 12.0
+        "limitHi" = 50.0
+        "hysteresisHi" = 1.0
+        "lockTime" = 600
+        "delayTime" = 180
+        "hysteresisLo" = 1.0
+        "holdTime" = 0
+    "cirquitBreakers"
+      "highPressure"
+        "lockTime" = 0
+        "holdTime" = 0
+      "lowPressure"
+        "lockTime" = 0
+        "holdTime" = 0
+      "motorProtection"
+        "lockTime" = 0
+        "holdTime" = 0
+      "dryrunProtection"
+        "lockTime" = 0
+        "holdTime" = 0
+      "converter"
+        "lockTime" = 1
+        "holdTime" = 0
+      "mitsubishi"
+        "lockTime" = 0
+        "holdTime" = 0
+  "exchanger"
+    "chargePumps"
+      "antifreezeOuterTemp" = -4.0
+      "antifreezeExchangerTemp" = 12.0
+      "holdtime" = 30
+    "temperatures"
+      "drink"
+        "limitLo" = 15.0
+        "limitHi" = 95.0
+        "hysteresisHi" = 1.0
+        "lockTime" = 0
+        "delayTime" = 0
+        "hysteresisLo" = 1.0
+        "holdTime" = 0
+      "heatCool"
+        "limitLo" = 12.0
+        "limitHi" = 95.0
+        "hysteresisHi" = 1.0
+        "lockTime" = 0
+        "delayTime" = 0
+        "hysteresisLo" = 1.0
+        "holdTime" = 0
+    "cirquitBreakers"
+      "drink"
+        "lockTime" = 5
+        "holdTime" = 0
+      "heatCool"
+        "lockTime" = 5
+        "holdTime" = 0
+    "threeWayValve"
+      "thresholdOn" = 0.0
+      "thresholdOff" = 0.0
+      "pulse" = 0
+      "cycle" = 0
+  "tank"
+    "temperatures"
+      "limitLo" = 3.0
+      "limitHi" = 50.0
+      "hysteresisHi" = 1.0
+      "lockTime" = 0
+      "delayTime" = 0
+      "hysteresisLo" = 1.0
+      "holdTime" = 0
+    "factoryDefaults"
+      "drink"
+        "mode" = 2
+        "hysteresis" = 4.0
+        "default" = 47.0
+        "curve"
+          "outerTempLo" = -10.0
+          "outerTempHi" = 10.0
+          "setpointHi" = 10.0
+          "setpointLo" = 0.0
+          "isValid" = false
+        "rule"[1]
+          "setpoint" = 46.0
+          "isValid" = true
+          "start"
+            "hour" = 0
+            "minute" = 0
+          "end"
+            "hour" = 6
+            "minute" = 0
+        "rule"[2]
+          "setpoint" = 47.0
+          "isValid" = true
+          "start"
+            "hour" = 6
+            "minute" = 0
+          "end"
+            "hour" = 22
+            "minute" = 0
+        "rule"[3]
+          "setpoint" = 46.0
+          "isValid" = true
+          "start"
+            "hour" = 22
+            "minute" = 0
+          "end"
+            "hour" = 0
+            "minute" = 0
+        "rule"[4]
+          "setpoint" = 0.0
+          "isValid" = false
+          "start"
+            "hour" = 0
+            "minute" = 0
+          "end"
+            "hour" = 0
+            "minute" = 0
+        "rule"[5]
+          "setpoint" = 0.0
+          "isValid" = false
+          "start"
+            "hour" = 0
+            "minute" = 0
+          "end"
+            "hour" = 0
+            "minute" = 0
+      "heat"
+        "mode" = 4
+        "hysteresis" = 4.0
+        "default" = 30.0
+        "curve"
+          "outerTempLo" = -10.0
+          "outerTempHi" = 10.0
+          "setpointHi" = 10.0
+          "setpointLo" = 0.0
+          "isValid" = true
+        "rule"[1]
+          "setpoint" = 29.0
+          "isValid" = true
+          "start"
+            "hour" = 0
+            "minute" = 0
+          "end"
+            "hour" = 6
+            "minute" = 0
+        "rule"[2]
+          "setpoint" = 30.0
+          "isValid" = true
+          "start"
+            "hour" = 6
+            "minute" = 0
+          "end"
+            "hour" = 22
+            "minute" = 0
+        "rule"[3]
+          "setpoint" = 29.0
+          "isValid" = true
+          "start"
+            "hour" = 22
+            "minute" = 0
+          "end"
+            "hour" = 0
+            "minute" = 0
+        "rule"[4]
+          "setpoint" = 0.0
+          "isValid" = false
+          "start"
+            "hour" = 0
+            "minute" = 0
+          "end"
+            "hour" = 0
+            "minute" = 0
+        "rule"[5]
+          "setpoint" = 0.0
+          "isValid" = false
+          "start"
+            "hour" = 0
+            "minute" = 0
+          "end"
+            "hour" = 0
+            "minute" = 0
+      "cool"
+        "mode" = 4
+        "hysteresis" = 4.0
+        "default" = 20.0
+        "curve"
+          "outerTempLo" = 26.0
+          "outerTempHi" = 35.0
+          "setpointHi" = 0.0
+          "setpointLo" = -4.0
+          "isValid" = true
+        "rule"[1]
+          "setpoint" = 21.0
+          "isValid" = true
+          "start"
+            "hour" = 0
+            "minute" = 0
+          "end"
+            "hour" = 6
+            "minute" = 0
+        "rule"[2]
+          "setpoint" = 20.0
+          "isValid" = true
+          "start"
+            "hour" = 6
+            "minute" = 0
+          "end"
+            "hour" = 22
+            "minute" = 0
+        "rule"[3]
+          "setpoint" = 21.0
+          "isValid" = true
+          "start"
+            "hour" = 22
+            "minute" = 0
+          "end"
+            "hour" = 0
+            "minute" = 0
+        "rule"[4]
+          "setpoint" = 0.0
+          "isValid" = false
+          "start"
+            "hour" = 0
+            "minute" = 0
+          "end"
+            "hour" = 0
+            "minute" = 0
+        "rule"[5]
+          "setpoint" = 0.0
+          "isValid" = false
+          "start"
+            "hour" = 0
+            "minute" = 0
+          "end"
+            "hour" = 0
+            "minute" = 0
+    "setpointLimits"
+      "drinkHi" = 55.0
+      "drinkLo" = 25.0
+      "heatCoolHi" = 50.0
+      "heatCoolLo" = 17.0
+      "hysteresisHi" = 10.0
+      "hysteresisLo" = 4.0
+      "antifreeze" = 6.0
+  "dewpoint"
+    "temperatures"
+      "limitLo" = 18.0
+      "limitHi" = 139.9
+      "hysteresisHi" = 1.0
+      "lockTime" = 0
+      "delayTime" = 0
+      "hysteresisLo" = 1.0
+      "holdTime" = 0
+  "circulation"
+    "factoryDefaults"
+      "cycle" = 20
+      "duration" = 2
+      "rule"[1]
+        "isValid" = true
+        "isActive" = false
+        "start"
+          "hour" = 0
+          "minute" = 0
+        "end"
+          "hour" = 6
+          "minute" = 0
+      "rule"[2]
+        "isValid" = true
+        "isActive" = true
+        "start"
+          "hour" = 6
+          "minute" = 0
+        "end"
+          "hour" = 9
+          "minute" = 0
+      "rule"[3]
+        "isValid" = true
+        "isActive" = false
+        "start"
+          "hour" = 9
+          "minute" = 0
+        "end"
+          "hour" = 18
+          "minute" = 0
+      "rule"[4]
+        "isValid" = true
+        "isActive" = true
+        "start"
+          "hour" = 18
+          "minute" = 0
+        "end"
+          "hour" = 22
+          "minute" = 0
+      "rule"[5]
+        "isValid" = true
+        "isActive" = false
+        "start"
+          "hour" = 22
+          "minute" = 0
+        "end"
+          "hour" = 0
+          "minute" = 0
+      "rule"[6]
+        "isValid" = false
+        "isActive" = false
+        "start"
+          "hour" = 0
+          "minute" = 0
+        "end"
+          "hour" = 0
+          "minute" = 0
+      "rule"[7]
+        "isValid" = false
+        "isActive" = false
+        "start"
+          "hour" = 0
+          "minute" = 0
+        "end"
+          "hour" = 0
+          "minute" = 0
+  "room"
+    "delayOn" = 300
+    "delayOff" = 600
+    "valve"
+      "staggering" = 150
+      "staggeringDirect" = 1
+      "delayClose" = 5
+    "factoryDefaults"
+      "heat"
+        "mode" = 2
+        "main" = 1
+        "default" = 22.0
+        "rule"[1]
+          "setpoint" = 21.0
+          "isValid" = true
+          "start"
+            "hour" = 0
+            "minute" = 0
+          "end"
+            "hour" = 6
+            "minute" = 0
+        "rule"[2]
+          "setpoint" = 22.0
+          "isValid" = true
+          "start"
+            "hour" = 6
+            "minute" = 0
+          "end"
+            "hour" = 22
+            "minute" = 0
+        "rule"[3]
+          "setpoint" = 21.0
+          "isValid" = true
+          "start"
+            "hour" = 22
+            "minute" = 0
+          "end"
+            "hour" = 0
+            "minute" = 0
+        "rule"[4]
+          "setpoint" = 0.0
+          "isValid" = false
+          "start"
+            "hour" = 0
+            "minute" = 0
+          "end"
+            "hour" = 0
+            "minute" = 0
+        "rule"[5]
+          "setpoint" = 0.0
+          "isValid" = false
+          "start"
+            "hour" = 0
+            "minute" = 0
+          "end"
+            "hour" = 0
+            "minute" = 0
+      "cool"
+        "mode" = 2
+        "main" = 1
+        "default" = 22.0
+        "rule"[1]
+          "setpoint" = 25.0
+          "isValid" = true
+          "start"
+            "hour" = 0
+            "minute" = 0
+          "end"
+            "hour" = 6
+            "minute" = 0
+        "rule"[2]
+          "setpoint" = 22.0
+          "isValid" = true
+          "start"
+            "hour" = 6
+            "minute" = 0
+          "end"
+            "hour" = 22
+            "minute" = 0
+        "rule"[3]
+          "setpoint" = 25.0
+          "isValid" = true
+          "start"
+            "hour" = 22
+            "minute" = 0
+          "end"
+            "hour" = 0
+            "minute" = 0
+        "rule"[4]
+          "setpoint" = 0.0
+          "isValid" = false
+          "start"
+            "hour" = 0
+            "minute" = 0
+          "end"
+            "hour" = 0
+            "minute" = 0
+        "rule"[5]
+          "setpoint" = 0.0
+          "isValid" = false
+          "start"
+            "hour" = 0
+            "minute" = 0
+          "end"
+            "hour" = 0
+            "minute" = 0
+    "setpointLimits"
+      "heatCoolHi" = 26.0
+      "heatCoolLo" = 8.0
+      "antifreeze" = 6.0
+  "heatpumpMitsu"
+    "power2step"[2] = 20.0
+    "power2step"[3] = 30.0
+    "power2step"[4] = 50.0
+    "power2step"[5] = 70.0
+    "power2step"[6] = 80.0
+    "power2step"[7] = 100.0
+    "step2voltage"[0] = 0.8
+    "step2voltage"[1] = 2.0
+    "step2voltage"[2] = 3.5
+    "step2voltage"[3] = 4.5
+    "step2voltage"[4] = 5.8
+    "step2voltage"[5] = 7.0
+    "step2voltage"[6] = 8.3
+    "step2voltage"[7] = 9.5
+    "mode" = 1
+    "P1"
+      "outerTemp" = 20.0
+      "tempDiff1" = 0.0
+      "power1" = 20.0
+      "tempDiff2" = 7.0
+      "power2" = 30.0
+    "P2"
+      "outerTemp" = -5.0
+      "tempDiff1" = 0.0
+      "power1" = 50.0
+      "tempDiff2" = 8.0
+      "power2" = 80.0
+    "step"
+      "min" = 2
+      "max" = 7
+      "locktimeDec" = 10
+      "locktimeInc" = 15
+      "checktime" = 15
+    "zones"[0]
+      "deviation" = 0.0
+      "step" = 1
+      "deviationChangeMin" = 0.0
+      "deviationChangeMax" = 0.025
+    "zones"[1]
+      "deviation" = 0.5
+      "step" = 4
+      "deviationChangeMin" = 0.0
+      "deviationChangeMax" = 0.2
+    "zones"[2]
+      "deviation" = 1.0
+      "step" = 3
+      "deviationChangeMin" = 0.1
+      "deviationChangeMax" = 0.4
+    "zones"[3]
+      "deviation" = 2.0
+      "step" = 3
+      "deviationChangeMin" = 0.1
+      "deviationChangeMax" = 1.0
+    "zones"[4]
+      "deviation" = 3.0
+      "step" = 3
+      "deviationChangeMin" = 0.1
+      "deviationChangeMax" = 1.5
+    "zones"[5]
+      "deviation" = 4.0
+      "step" = 3
+      "deviationChangeMin" = 0.1
+      "deviationChangeMax" = 1.5
+    "zones"[6]
+      "deviation" = 5.0
+      "step" = 3
+      "deviationChangeMin" = 0.1
+      "deviationChangeMax" = 2.0
+    "zones"[7]
+      "deviation" = 5.5
+      "step" = 3
+      "deviationChangeMin" = 0.1
+      "deviationChangeMax" = 2.0
+    "zones"[8]
+      "deviation" = 6.0
+      "step" = 3
+      "deviationChangeMin" = 0.1
+      "deviationChangeMax" = 2.0
+  "mixer"
+    "temperatures"
+      "limitLo" = -29.9
+      "limitHi" = 40.0
+      "hysteresisHi" = 3.0
+      "lockTime" = 0
+      "delayTime" = 0
+      "hysteresisLo" = 1.0
+      "holdTime" = 0
+  "floorpump"
+    "postRuntime" = 10
+    "protectionInterval" = 24
+    "protectionRuntime" = 60
+    "temperatures"
+      "limitLo" = 18.0
+      "limitHi" = 40.0
+      "hysteresisHi" = 1.0
+      "lockTime" = 0
+      "delayTime" = 0
+      "hysteresisLo" = 1.0
+      "holdTime" = 0
+  "converter"
+    "cycle" = 30
+    "defrost"
+      "controlValue" = 20.0
+    "cool"
+      "controlValue" = 50.0
+    "heat"
+      "controlValue_min" = 0.0
+      "controlValue_max" = 80.0
+      "OT"
+        "outerTemp_1" = 0.0
+        "controlValue_1" = 0.0
+        "outerTemp_2" = 10.0
+        "controlValue_2" = 0.0
+      "HP"
+        "highPressure_1" = 30.0
+        "controlValue_1" = 100.0
+        "highPressure_2" = 45.0
+        "controlValue_2" = 0.0
+    "drink"
+      "controlValue" = 50.0
+  "injector"
+    "cycle" = 1
+    "defrost"
+      "controlValue" = 100.0
+    "heatDrink"
+      "controlValue_min" = 12.0
+      "controlValue_max" = 60.0
+      "increase_max" = 20.0
+      "V2_V1"
+        "setpoint" = 6.0
+        "weight" = 10.0
+      "V1_LP"
+        "setpoint" = 5.0
+        "weight" = 10.0
+      "V2_LP"
+        "setpoint" = 7.0
+        "weight" = 10.0
+      "CO_HP"
+        "setpoint" = 26.0
+        "weight" = 10.0
+    "cool"
+      "controlValue_min" = 50.0
+      "controlValue_max" = 80.0
+      "increase_max" = 5.0
+      "CO_HP"
+        "setpoint" = 33.0
+        "weight" = 5.0
+  "fan"
+    "cycle" = 60
+    "defrost"
+      "controlValue" = 0.0
+    "cool"
+      "controlValue" = 50.0
+    "heatDrink"
+      "controlValue_min" = 0.0
+      "controlValue_max" = 80.0
+      "OT"
+        "outerTemp_1" = -5.0
+        "controlValue_1" = 80.0
+        "outerTemp_2" = 20.0
+        "controlValue_2" = 30.0

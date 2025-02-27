@@ -6,6 +6,7 @@ import de.flapdoodle.siematic.api.MethodCall
 import de.flapdoodle.siematic.api.PropertyResponse
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.*
+import java.io.IOException
 import java.net.URI
 import java.net.http.HttpClient
 import java.net.http.HttpRequest
@@ -24,7 +25,7 @@ data class JsonRpc(
 
   inline fun <reified T> request(json: T): HttpRequest {
     var httpRequestBuilder = HttpRequest.newBuilder(URI(api))
-      .timeout(Duration.of(10, SECONDS))
+      .timeout(Duration.of(15, SECONDS))
       .header("Content-Type", "application/json")
 
     header.forEach {
@@ -39,16 +40,20 @@ data class JsonRpc(
   }
 
   fun responseBody(request: HttpRequest): String {
-    val response = HttpClient.newBuilder()
+    val httpClient = HttpClient.newBuilder()
       .sslContext(Net.acceptAllSSLContext())
       .build()
-      .send(request, BodyHandlers.ofString())
+    
+    return httpClient.use { httpClient ->
+      val response = httpClient
+        .send(request, BodyHandlers.ofString())
 
-    require(response.statusCode() == 200) {
-      "request failed: $request, status: ${response.statusCode()}"
+      require(response.statusCode() == 200) {
+        "request failed: $request, status: ${response.statusCode()}"
+      }
+
+      response.body()
     }
-
-    return response.body()
   }
 
   inline fun <reified T> response(request: HttpRequest): T {
@@ -98,7 +103,7 @@ data class JsonRpc(
   }
 
   fun readProperties(properties: List<Pair<String, String>>): List<Pair<String, Any>> {
-    return readProperties(properties, 100)
+    return readProperties(properties, 75)
   }
 
   fun readProperties(properties: List<Pair<String, String>>, maxCalls: Int): List<Pair<String, Any>> {
@@ -114,7 +119,11 @@ data class JsonRpc(
 
       val methodCalls = properties.map { MethodCall.read(it.first, it.first) }
       val request = request(methodCalls)
-      val json = responseBody(request)
+      val json = try {
+        responseBody(request)
+      } catch (ex: IOException) {
+        throw RuntimeException("could not get Response for: $properties", ex)
+      }
 
       val parsed = Json.parseToJsonElement(json)
       require(parsed is JsonArray) { "wrong type: $parsed - $methodCalls" }
