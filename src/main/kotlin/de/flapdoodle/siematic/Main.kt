@@ -133,8 +133,8 @@ object Main {
       browse(jsonRpcWithAuth, Int.MAX_VALUE)
     } else {
       val sections = listOf(
-//        "configurationSettings",
-//        "customSettings",
+        "configurationSettings",
+        "customSettings",
         "technicalSettings",
         "screedSettings",
         "operatingData",

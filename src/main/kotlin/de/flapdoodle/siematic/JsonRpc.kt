@@ -42,6 +42,7 @@ data class JsonRpc(
   fun responseBody(request: HttpRequest): String {
     val httpClient = HttpClient.newBuilder()
       .sslContext(Net.acceptAllSSLContext())
+      .connectTimeout(Duration.ofSeconds(30))
       .build()
     
     return httpClient.use { httpClient ->

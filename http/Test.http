@@ -25,7 +25,7 @@ x-auth-token: {{auth_token}}
     "method": "PlcProgram.Read",
     "params": {
       "mode": "simple",
-      "var": "PTO"
+      "var": "\"dbOuterTemp\".\"currentSample\"[1]"
     },
     "jsonrpc": "2.0",
     "id": "guessWhat"
