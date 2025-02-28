@@ -12,23 +12,24 @@ Content-Type: application/json
 x-auth-token: {{auth_token}}
 
 [
+  {"jsonrpc":"2.0","method":"Api.GetPermissions","id":1},
   {
     "method": "PlcProgram.Browse",
     "params": {
       "mode": "children",
-      "var": "\"PTO\""
+      "var": "\"dbConfigIP\""
     },
     "jsonrpc": "2.0",
-    "id": "\"PTO\""
+    "id": "browse"
   },
   {
     "method": "PlcProgram.Read",
     "params": {
       "mode": "simple",
-      "var": "\"dbOuterTemp\".\"currentSample\"[1]"
+      "var": "\"configurationSettings\".Konfig.BWP.ND.Typ"
     },
     "jsonrpc": "2.0",
-    "id": "guessWhat"
+    "id": "read"
   }
 ]
 
