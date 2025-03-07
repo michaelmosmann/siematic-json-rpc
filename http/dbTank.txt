@@ -1,241 +1,323 @@
+
 "dbTank"
-  "dbTank".limits
-    "dbTank".limits.setpoint[1,1]
-      "dbTank".limits.setpoint[1,1]."dbTank".limits.setpoint[1,1].high = 55.0
-      "dbTank".limits.setpoint[1,1]."dbTank".limits.setpoint[1,1].low = 25.0
-    "dbTank".limits.setpoint[1,2]
-      "dbTank".limits.setpoint[1,2]."dbTank".limits.setpoint[1,2].high = 50.0
-      "dbTank".limits.setpoint[1,2]."dbTank".limits.setpoint[1,2].low = 17.0
-    "dbTank".limits.setpoint[2,1]
-      "dbTank".limits.setpoint[2,1]."dbTank".limits.setpoint[2,1].high = 55.0
-      "dbTank".limits.setpoint[2,1]."dbTank".limits.setpoint[2,1].low = 25.0
-    "dbTank".limits.setpoint[2,2]
-      "dbTank".limits.setpoint[2,2]."dbTank".limits.setpoint[2,2].high = 50.0
-      "dbTank".limits.setpoint[2,2]."dbTank".limits.setpoint[2,2].low = 17.0
-    "dbTank".limits.hysteresis[1,1]
-      "dbTank".limits.hysteresis[1,1]."dbTank".limits.hysteresis[1,1].high = 10.0
-      "dbTank".limits.hysteresis[1,1]."dbTank".limits.hysteresis[1,1].low = 4.0
-    "dbTank".limits.hysteresis[1,2]
-      "dbTank".limits.hysteresis[1,2]."dbTank".limits.hysteresis[1,2].high = 10.0
-      "dbTank".limits.hysteresis[1,2]."dbTank".limits.hysteresis[1,2].low = 4.0
-    "dbTank".limits.hysteresis[2,1]
-      "dbTank".limits.hysteresis[2,1]."dbTank".limits.hysteresis[2,1].high = 10.0
-      "dbTank".limits.hysteresis[2,1]."dbTank".limits.hysteresis[2,1].low = 4.0
-    "dbTank".limits.hysteresis[2,2]
-      "dbTank".limits.hysteresis[2,2]."dbTank".limits.hysteresis[2,2].high = 10.0
-      "dbTank".limits.hysteresis[2,2]."dbTank".limits.hysteresis[2,2].low = 4.0
-    "dbTank".limits."dbTank".limits.number = 1.0
-    "dbTank".limits."dbTank".limits.numberMax = 2.0
-    "dbTank".limits."dbTank".limits.rulesMax = 5.0
-  "dbTank".state[1,1]
-    "dbTank".state[1,1]."dbTank".state[1,1].isConfigured = false
-    "dbTank".state[1,1]."dbTank".state[1,1].isRequired = false
-    "dbTank".state[1,1]."dbTank".state[1,1].isReady = false
-    "dbTank".state[1,1]."dbTank".state[1,1].isRequested = false
-    "dbTank".state[1,1]."dbTank".state[1,1].activeSetpoint = 0.0
-    "dbTank".state[1,1]."dbTank".state[1,1].thresholdHigh = 0.0
-    "dbTank".state[1,1]."dbTank".state[1,1].thresholdLow = 0.0
-    "dbTank".state[1,1]."dbTank".state[1,1].deviation = 0.0
-    "dbTank".state[1,1]."dbTank".state[1,1].currentValue = 0.0
-    "dbTank".state[1,1]."dbTank".state[1,1].stateControl = 0.0
-    "dbTank".state[1,1]."dbTank".state[1,1].isValidValue = false
-    "dbTank".state[1,1]."dbTank".state[1,1].switchOnThreshold = 0.0
-    "dbTank".state[1,1]."dbTank".state[1,1].isRecordedValue = false
-    "dbTank".state[1,1]."dbTank".state[1,1].activeRule = 0.0
-    "dbTank".state[1,1]."dbTank".state[1,1].setpointByCurve = 0.0
-    "dbTank".state[1,1]."dbTank".state[1,1].setpointByRule = 0.0
-    "dbTank".state[1,1]."dbTank".state[1,1].setpointBySGR = 0.0
-    "dbTank".state[1,1]."dbTank".state[1,1].calculatedSetpoint = 0.0
-    "dbTank".state[1,1]."dbTank".state[1,1].hysteresisBySGR = 0.0
-    "dbTank".state[1,1]."dbTank".state[1,1].calculatedHysteresis = 0.0
-    "dbTank".state[1,1]."dbTank".state[1,1].activeHysteresis = 4.0
-    "dbTank".state[1,1]."dbTank".state[1,1].isReleasedBySGR = true
-    "dbTank".state[1,1]."dbTank".state[1,1].mode = 9.0
-    "dbTank".state[1,1]."dbTank".state[1,1].hysteresisByDefault = 4.0
-    "dbTank".state[1,1]."dbTank".state[1,1].setpointByDefault = 47.0
-    "dbTank".state[1,1]."dbTank".state[1,1].isRequestedByMode = false
-    "dbTank".state[1,1]."dbTank".state[1,1].isRequestedByRoom = true
-    "dbTank".state[1,1]."dbTank".state[1,1].isRequiredHyst = false
-    "dbTank".state[1,1]."dbTank".state[1,1].setpointByVacation = 0.0
-    "dbTank".state[1,1]."dbTank".state[1,1].activeVacation = 0.0
-    "dbTank".state[1,1]."dbTank".state[1,1].isRequiredAntifreeze = false
-    "dbTank".state[1,1]."dbTank".state[1,1].isActivated = false
-    "dbTank".state[1,1]."dbTank".state[1,1].isReadyValue = false
-    "dbTank".state[1,1]."dbTank".state[1,1].isFaulty = false
-  "dbTank".state[1,2]
-    "dbTank".state[1,2]."dbTank".state[1,2].isConfigured = true
-    "dbTank".state[1,2]."dbTank".state[1,2].isRequired = true
-    "dbTank".state[1,2]."dbTank".state[1,2].isReady = true
-    "dbTank".state[1,2]."dbTank".state[1,2].isRequested = true
-    "dbTank".state[1,2]."dbTank".state[1,2].activeSetpoint = 36.82816
-    "dbTank".state[1,2]."dbTank".state[1,2].thresholdHigh = 36.82816
-    "dbTank".state[1,2]."dbTank".state[1,2].thresholdLow = 31.82816
-    "dbTank".state[1,2]."dbTank".state[1,2].deviation = 3.533646
-    "dbTank".state[1,2]."dbTank".state[1,2].currentValue = 33.29452
-    "dbTank".state[1,2]."dbTank".state[1,2].stateControl = 12.0
-    "dbTank".state[1,2]."dbTank".state[1,2].isValidValue = true
-    "dbTank".state[1,2]."dbTank".state[1,2].switchOnThreshold = 31.82816
-    "dbTank".state[1,2]."dbTank".state[1,2].isRecordedValue = true
-    "dbTank".state[1,2]."dbTank".state[1,2].activeRule = 2.0
-    "dbTank".state[1,2]."dbTank".state[1,2].setpointByCurve = 1.828163
-    "dbTank".state[1,2]."dbTank".state[1,2].setpointByRule = 35.0
-    "dbTank".state[1,2]."dbTank".state[1,2].setpointBySGR = 0.0
-    "dbTank".state[1,2]."dbTank".state[1,2].calculatedSetpoint = 36.82816
-    "dbTank".state[1,2]."dbTank".state[1,2].hysteresisBySGR = 0.0
-    "dbTank".state[1,2]."dbTank".state[1,2].calculatedHysteresis = 5.0
-    "dbTank".state[1,2]."dbTank".state[1,2].activeHysteresis = 5.0
-    "dbTank".state[1,2]."dbTank".state[1,2].isReleasedBySGR = true
-    "dbTank".state[1,2]."dbTank".state[1,2].mode = 4.0
-    "dbTank".state[1,2]."dbTank".state[1,2].hysteresisByDefault = 5.0
-    "dbTank".state[1,2]."dbTank".state[1,2].setpointByDefault = 30.0
-    "dbTank".state[1,2]."dbTank".state[1,2].isRequestedByMode = true
-    "dbTank".state[1,2]."dbTank".state[1,2].isRequestedByRoom = true
-    "dbTank".state[1,2]."dbTank".state[1,2].isRequiredHyst = false
-    "dbTank".state[1,2]."dbTank".state[1,2].setpointByVacation = 0.0
-    "dbTank".state[1,2]."dbTank".state[1,2].activeVacation = 0.0
-    "dbTank".state[1,2]."dbTank".state[1,2].isRequiredAntifreeze = false
-    "dbTank".state[1,2]."dbTank".state[1,2].isActivated = true
-    "dbTank".state[1,2]."dbTank".state[1,2].isReadyValue = true
-    "dbTank".state[1,2]."dbTank".state[1,2].isFaulty = false
-  "dbTank".state[2,1]
-    "dbTank".state[2,1]."dbTank".state[2,1].isConfigured = false
-    "dbTank".state[2,1]."dbTank".state[2,1].isRequired = false
-    "dbTank".state[2,1]."dbTank".state[2,1].isReady = false
-    "dbTank".state[2,1]."dbTank".state[2,1].isRequested = false
-    "dbTank".state[2,1]."dbTank".state[2,1].activeSetpoint = 0.0
-    "dbTank".state[2,1]."dbTank".state[2,1].thresholdHigh = 0.0
-    "dbTank".state[2,1]."dbTank".state[2,1].thresholdLow = 0.0
-    "dbTank".state[2,1]."dbTank".state[2,1].deviation = 0.0
-    "dbTank".state[2,1]."dbTank".state[2,1].currentValue = 0.0
-    "dbTank".state[2,1]."dbTank".state[2,1].stateControl = 0.0
-    "dbTank".state[2,1]."dbTank".state[2,1].isValidValue = false
-    "dbTank".state[2,1]."dbTank".state[2,1].switchOnThreshold = 0.0
-    "dbTank".state[2,1]."dbTank".state[2,1].isRecordedValue = false
-    "dbTank".state[2,1]."dbTank".state[2,1].activeRule = 2.0
-    "dbTank".state[2,1]."dbTank".state[2,1].setpointByCurve = 0.0
-    "dbTank".state[2,1]."dbTank".state[2,1].setpointByRule = 47.0
-    "dbTank".state[2,1]."dbTank".state[2,1].setpointBySGR = 0.0
-    "dbTank".state[2,1]."dbTank".state[2,1].calculatedSetpoint = 0.0
-    "dbTank".state[2,1]."dbTank".state[2,1].hysteresisBySGR = 0.0
-    "dbTank".state[2,1]."dbTank".state[2,1].calculatedHysteresis = 0.0
-    "dbTank".state[2,1]."dbTank".state[2,1].activeHysteresis = 4.0
-    "dbTank".state[2,1]."dbTank".state[2,1].isReleasedBySGR = true
-    "dbTank".state[2,1]."dbTank".state[2,1].mode = 9.0
-    "dbTank".state[2,1]."dbTank".state[2,1].hysteresisByDefault = 4.0
-    "dbTank".state[2,1]."dbTank".state[2,1].setpointByDefault = 47.0
-    "dbTank".state[2,1]."dbTank".state[2,1].isRequestedByMode = false
-    "dbTank".state[2,1]."dbTank".state[2,1].isRequestedByRoom = true
-    "dbTank".state[2,1]."dbTank".state[2,1].isRequiredHyst = false
-    "dbTank".state[2,1]."dbTank".state[2,1].setpointByVacation = 0.0
-    "dbTank".state[2,1]."dbTank".state[2,1].activeVacation = 0.0
-    "dbTank".state[2,1]."dbTank".state[2,1].isRequiredAntifreeze = false
-    "dbTank".state[2,1]."dbTank".state[2,1].isActivated = false
-    "dbTank".state[2,1]."dbTank".state[2,1].isReadyValue = false
-    "dbTank".state[2,1]."dbTank".state[2,1].isFaulty = false
-  "dbTank".state[2,2]
-    "dbTank".state[2,2]."dbTank".state[2,2].isConfigured = false
-    "dbTank".state[2,2]."dbTank".state[2,2].isRequired = false
-    "dbTank".state[2,2]."dbTank".state[2,2].isReady = false
-    "dbTank".state[2,2]."dbTank".state[2,2].isRequested = false
-    "dbTank".state[2,2]."dbTank".state[2,2].activeSetpoint = 0.0
-    "dbTank".state[2,2]."dbTank".state[2,2].thresholdHigh = 0.0
-    "dbTank".state[2,2]."dbTank".state[2,2].thresholdLow = 0.0
-    "dbTank".state[2,2]."dbTank".state[2,2].deviation = 0.0
-    "dbTank".state[2,2]."dbTank".state[2,2].currentValue = 0.0
-    "dbTank".state[2,2]."dbTank".state[2,2].stateControl = 0.0
-    "dbTank".state[2,2]."dbTank".state[2,2].isValidValue = false
-    "dbTank".state[2,2]."dbTank".state[2,2].switchOnThreshold = 0.0
-    "dbTank".state[2,2]."dbTank".state[2,2].isRecordedValue = false
-    "dbTank".state[2,2]."dbTank".state[2,2].activeRule = 2.0
-    "dbTank".state[2,2]."dbTank".state[2,2].setpointByCurve = 0.01372337
-    "dbTank".state[2,2]."dbTank".state[2,2].setpointByRule = 30.0
-    "dbTank".state[2,2]."dbTank".state[2,2].setpointBySGR = 0.0
-    "dbTank".state[2,2]."dbTank".state[2,2].calculatedSetpoint = 0.0
-    "dbTank".state[2,2]."dbTank".state[2,2].hysteresisBySGR = 0.0
-    "dbTank".state[2,2]."dbTank".state[2,2].calculatedHysteresis = 0.0
-    "dbTank".state[2,2]."dbTank".state[2,2].activeHysteresis = 4.0
-    "dbTank".state[2,2]."dbTank".state[2,2].isReleasedBySGR = true
-    "dbTank".state[2,2]."dbTank".state[2,2].mode = 9.0
-    "dbTank".state[2,2]."dbTank".state[2,2].hysteresisByDefault = 4.0
-    "dbTank".state[2,2]."dbTank".state[2,2].setpointByDefault = 30.0
-    "dbTank".state[2,2]."dbTank".state[2,2].isRequestedByMode = false
-    "dbTank".state[2,2]."dbTank".state[2,2].isRequestedByRoom = true
-    "dbTank".state[2,2]."dbTank".state[2,2].isRequiredHyst = false
-    "dbTank".state[2,2]."dbTank".state[2,2].setpointByVacation = 0.0
-    "dbTank".state[2,2]."dbTank".state[2,2].activeVacation = 0.0
-    "dbTank".state[2,2]."dbTank".state[2,2].isRequiredAntifreeze = false
-    "dbTank".state[2,2]."dbTank".state[2,2].isActivated = false
-    "dbTank".state[2,2]."dbTank".state[2,2].isReadyValue = false
-    "dbTank".state[2,2]."dbTank".state[2,2].isFaulty = false
-  "dbTank".copy
-    "dbTank".copy.days
-      "dbTank".copy.days."dbTank".copy.days.from = 0.0
-      "dbTank".copy.days."dbTank".copy.days.to[1] = false
-      "dbTank".copy.days."dbTank".copy.days.to[2] = false
-      "dbTank".copy.days."dbTank".copy.days.to[3] = false
-      "dbTank".copy.days."dbTank".copy.days.to[4] = false
-      "dbTank".copy.days."dbTank".copy.days.to[5] = false
-      "dbTank".copy.days."dbTank".copy.days.to[6] = false
-      "dbTank".copy.days."dbTank".copy.days.to[7] = false
-      "dbTank".copy.days."dbTank".copy.days.valid = false
-      "dbTank".copy.days."dbTank".copy.days.tank = 0.0
-      "dbTank".copy.days."dbTank".copy.days.control = 0.0
-    "dbTank".copy.tanks
-      "dbTank".copy.tanks."dbTank".copy.tanks.from = 0.0
-      "dbTank".copy.tanks."dbTank".copy.tanks.valid = false
-      "dbTank".copy.tanks."dbTank".copy.tanks.to[1] = false
-      "dbTank".copy.tanks."dbTank".copy.tanks.to[2] = false
-      "dbTank".copy.tanks."dbTank".copy.tanks.control = 0.0
-  "dbTank".system[1]
-    "dbTank".system[1].cool
-      "dbTank".system[1].cool."dbTank".system[1].cool.isOperating = false
-      "dbTank".system[1].cool."dbTank".system[1].cool.isActivatedByMode = false
-      "dbTank".system[1].cool."dbTank".system[1].cool.isRequestedByMode = false
-      "dbTank".system[1].cool."dbTank".system[1].cool.isRequestedByRoom = false
-    "dbTank".system[1].heat
-      "dbTank".system[1].heat."dbTank".system[1].heat.isOperating = true
-      "dbTank".system[1].heat."dbTank".system[1].heat.isActivatedByMode = true
-      "dbTank".system[1].heat."dbTank".system[1].heat.isRequestedByMode = true
-      "dbTank".system[1].heat."dbTank".system[1].heat.isRequestedByRoom = true
-    "dbTank".system[1].drink
-      "dbTank".system[1].drink."dbTank".system[1].drink.isOperating = false
-      "dbTank".system[1].drink."dbTank".system[1].drink.isActivatedByMode = false
-      "dbTank".system[1].drink."dbTank".system[1].drink.isRequestedByMode = false
-    "dbTank".system[1].defrost
-      "dbTank".system[1].defrost."dbTank".system[1].defrost.isOperating = false
-    "dbTank".system[1]."dbTank".system[1].isOperating = true
-  "dbTank".system[2]
-    "dbTank".system[2].cool
-      "dbTank".system[2].cool."dbTank".system[2].cool.isOperating = false
-      "dbTank".system[2].cool."dbTank".system[2].cool.isActivatedByMode = false
-      "dbTank".system[2].cool."dbTank".system[2].cool.isRequestedByMode = false
-      "dbTank".system[2].cool."dbTank".system[2].cool.isRequestedByRoom = false
-    "dbTank".system[2].heat
-      "dbTank".system[2].heat."dbTank".system[2].heat.isOperating = false
-      "dbTank".system[2].heat."dbTank".system[2].heat.isActivatedByMode = false
-      "dbTank".system[2].heat."dbTank".system[2].heat.isRequestedByMode = false
-      "dbTank".system[2].heat."dbTank".system[2].heat.isRequestedByRoom = false
-    "dbTank".system[2].drink
-      "dbTank".system[2].drink."dbTank".system[2].drink.isOperating = false
-      "dbTank".system[2].drink."dbTank".system[2].drink.isActivatedByMode = false
-      "dbTank".system[2].drink."dbTank".system[2].drink.isRequestedByMode = false
-    "dbTank".system[2].defrost
-      "dbTank".system[2].defrost."dbTank".system[2].defrost.isOperating = false
-    "dbTank".system[2]."dbTank".system[2].isOperating = false
-  "dbTank".temperature[1,1]
-    "dbTank".temperature[1,1]."dbTank".temperature[1,1].isConfigured = false
-    "dbTank".temperature[1,1]."dbTank".temperature[1,1].isRecordedValue = false
-    "dbTank".temperature[1,1]."dbTank".temperature[1,1].isValidValue = false
-    "dbTank".temperature[1,1]."dbTank".temperature[1,1].currentValue = 0.0
-    "dbTank".temperature[1,1]."dbTank".temperature[1,1].lockTime = 0.0
-    "dbTank".temperature[1,1]."dbTank".temperature[1,1].isReady = false
-    "dbTank".temperature[1,1]."dbTank".temperature[1,1].isOutOfRange = false
-    "dbTank".temperature[1,1]."dbTank".temperature[1,1].isFaulty = false
-    "dbTank".temperature[1,1]."dbTank".temperature[1,1].isUnlocked = false
-    "dbTank".temperature[1,1]."dbTank".temperature[1,1].isOutOfRangeHolded = false
-    "dbTank".temperature[1,1]."dbTank".temperature[1,1].delayTime = 0.0
-    "dbTank".temperature[1,1]."dbTank".temperature[1,1].holdTime = 0.0
-    "dbTank".temperature[1,1]."dbTank".temperature[1,1].isOutOfRangeDelayed = false
-    "dbTank".temperature[1,1]."dbTank".temperature[1,1].diag = 0.0
-    "dbTank".temperature[1,1]."dbTank".temperature[1,1].isOutOfRangeLo = false
-    "dbTank".temperature[1,1]."dbTank".temperature[1,1].isOutOfRangeHi = false
+  "limits"
+    "number" = 1
+    "numberMax" = 2
+    "rulesMax" = 5
+    "setpoint"[1,1]
+      "high" = 55.0
+      "low" = 25.0
+    "setpoint"[1,2]
+      "high" = 50.0
+      "low" = 17.0
+    "setpoint"[2,1]
+      "high" = 55.0
+      "low" = 25.0
+    "setpoint"[2,2]
+      "high" = 50.0
+      "low" = 17.0
+    "hysteresis"[1,1]
+      "high" = 10.0
+      "low" = 4.0
+    "hysteresis"[1,2]
+      "high" = 10.0
+      "low" = 4.0
+    "hysteresis"[2,1]
+      "high" = 10.0
+      "low" = 4.0
+    "hysteresis"[2,2]
+      "high" = 10.0
+      "low" = 4.0
+  "state"[1,1]
+    "isConfigured" = false
+    "isRequired" = false
+    "isReady" = false
+    "isRequested" = false
+    "activeSetpoint" = 0.0
+    "thresholdHigh" = 0.0
+    "thresholdLow" = 0.0
+    "deviation" = 0.0
+    "currentValue" = 0.0
+    "stateControl" = 0
+    "isValidValue" = false
+    "switchOnThreshold" = 0.0
+    "isRecordedValue" = false
+    "activeRule" = 0
+    "setpointByCurve" = 0.0
+    "setpointByRule" = 0.0
+    "setpointBySGR" = 0.0
+    "calculatedSetpoint" = 0.0
+    "hysteresisBySGR" = 0.0
+    "calculatedHysteresis" = 0.0
+    "activeHysteresis" = 4.0
+    "isReleasedBySGR" = true
+    "mode" = 9
+    "hysteresisByDefault" = 4.0
+    "setpointByDefault" = 47.0
+    "isRequestedByMode" = false
+    "isRequestedByRoom" = true
+    "isRequiredHyst" = false
+    "setpointByVacation" = 0.0
+    "activeVacation" = 0
+    "isRequiredAntifreeze" = false
+    "isActivated" = false
+    "isReadyValue" = false
+    "isFaulty" = false
+  "state"[1,2]
+    "isConfigured" = true
+    "isRequired" = true
+    "isReady" = true
+    "isRequested" = true
+    "activeSetpoint" = 36.04454
+    "thresholdHigh" = 36.04454
+    "thresholdLow" = 30.04454
+    "deviation" = 6.148258
+    "currentValue" = 29.89628
+    "stateControl" = 12
+    "isValidValue" = true
+    "switchOnThreshold" = 30.04454
+    "isRecordedValue" = true
+    "activeRule" = 2
+    "setpointByCurve" = 2.044535
+    "setpointByRule" = 34.0
+    "setpointBySGR" = 0.0
+    "calculatedSetpoint" = 36.04454
+    "hysteresisBySGR" = 0.0
+    "calculatedHysteresis" = 6.0
+    "activeHysteresis" = 6.0
+    "isReleasedBySGR" = true
+    "mode" = 4
+    "hysteresisByDefault" = 6.0
+    "setpointByDefault" = 30.0
+    "isRequestedByMode" = true
+    "isRequestedByRoom" = true
+    "isRequiredHyst" = true
+    "setpointByVacation" = 0.0
+    "activeVacation" = 0
+    "isRequiredAntifreeze" = false
+    "isActivated" = true
+    "isReadyValue" = true
+    "isFaulty" = false
+  "state"[2,1]
+    "isConfigured" = false
+    "isRequired" = false
+    "isReady" = false
+    "isRequested" = false
+    "activeSetpoint" = 0.0
+    "thresholdHigh" = 0.0
+    "thresholdLow" = 0.0
+    "deviation" = 0.0
+    "currentValue" = 0.0
+    "stateControl" = 0
+    "isValidValue" = false
+    "switchOnThreshold" = 0.0
+    "isRecordedValue" = false
+    "activeRule" = 2
+    "setpointByCurve" = 0.0
+    "setpointByRule" = 47.0
+    "setpointBySGR" = 0.0
+    "calculatedSetpoint" = 0.0
+    "hysteresisBySGR" = 0.0
+    "calculatedHysteresis" = 0.0
+    "activeHysteresis" = 4.0
+    "isReleasedBySGR" = true
+    "mode" = 9
+    "hysteresisByDefault" = 4.0
+    "setpointByDefault" = 47.0
+    "isRequestedByMode" = false
+    "isRequestedByRoom" = true
+    "isRequiredHyst" = false
+    "setpointByVacation" = 0.0
+    "activeVacation" = 0
+    "isRequiredAntifreeze" = false
+    "isActivated" = false
+    "isReadyValue" = false
+    "isFaulty" = false
+  "state"[2,2]
+    "isConfigured" = false
+    "isRequired" = false
+    "isReady" = false
+    "isRequested" = false
+    "activeSetpoint" = 0.0
+    "thresholdHigh" = 0.0
+    "thresholdLow" = 0.0
+    "deviation" = 0.0
+    "currentValue" = 0.0
+    "stateControl" = 0
+    "isValidValue" = false
+    "switchOnThreshold" = 0.0
+    "isRecordedValue" = false
+    "activeRule" = 2
+    "setpointByCurve" = 0.0
+    "setpointByRule" = 30.0
+    "setpointBySGR" = 0.0
+    "calculatedSetpoint" = 0.0
+    "hysteresisBySGR" = 0.0
+    "calculatedHysteresis" = 0.0
+    "activeHysteresis" = 4.0
+    "isReleasedBySGR" = true
+    "mode" = 9
+    "hysteresisByDefault" = 4.0
+    "setpointByDefault" = 30.0
+    "isRequestedByMode" = false
+    "isRequestedByRoom" = true
+    "isRequiredHyst" = false
+    "setpointByVacation" = 0.0
+    "activeVacation" = 0
+    "isRequiredAntifreeze" = false
+    "isActivated" = false
+    "isReadyValue" = false
+    "isFaulty" = false
+  "copy"
+    "days"
+      "from" = 0
+      "to"[1] = false
+      "to"[2] = false
+      "to"[3] = false
+      "to"[4] = false
+      "to"[5] = false
+      "to"[6] = false
+      "to"[7] = false
+      "valid" = false
+      "tank" = 0
+      "control" = 0
+    "tanks"
+      "from" = 0
+      "valid" = false
+      "to"[1] = false
+      "to"[2] = false
+      "control" = 0
+  "system"[1]
+    "isOperating" = true
+    "cool"
+      "isOperating" = false
+      "isActivatedByMode" = false
+      "isRequestedByMode" = false
+      "isRequestedByRoom" = false
+    "heat"
+      "isOperating" = true
+      "isActivatedByMode" = true
+      "isRequestedByMode" = true
+      "isRequestedByRoom" = true
+    "drink"
+      "isOperating" = false
+      "isActivatedByMode" = false
+      "isRequestedByMode" = false
+    "defrost"
+      "isOperating" = false
+  "system"[2]
+    "isOperating" = false
+    "cool"
+      "isOperating" = false
+      "isActivatedByMode" = false
+      "isRequestedByMode" = false
+      "isRequestedByRoom" = false
+    "heat"
+      "isOperating" = false
+      "isActivatedByMode" = false
+      "isRequestedByMode" = false
+      "isRequestedByRoom" = false
+    "drink"
+      "isOperating" = false
+      "isActivatedByMode" = false
+      "isRequestedByMode" = false
+    "defrost"
+      "isOperating" = false
+  "temperature"[1,1]
+    "isConfigured" = false
+    "isRecordedValue" = false
+    "isValidValue" = false
+    "currentValue" = 0.0
+    "lockTime" = 0
+    "isReady" = false
+    "isOutOfRange" = false
+    "isFaulty" = false
+    "isUnlocked" = false
+    "isOutOfRangeHolded" = false
+    "delayTime" = 0
+    "holdTime" = 0
+    "isOutOfRangeDelayed" = false
+    "diag" = 0
+    "isOutOfRangeLo" = false
+    "isOutOfRangeHi" = false
+  "temperature"[1,2]
+    "isConfigured" = true
+    "isRecordedValue" = true
+    "isValidValue" = true
+    "currentValue" = 29.89628
+    "lockTime" = 0
+    "isReady" = true
+    "isOutOfRange" = false
+    "isFaulty" = false
+    "isUnlocked" = true
+    "isOutOfRangeHolded" = false
+    "delayTime" = 0
+    "holdTime" = 0
+    "isOutOfRangeDelayed" = false
+    "diag" = 2
+    "isOutOfRangeLo" = false
+    "isOutOfRangeHi" = false
+  "temperature"[2,1]
+    "isConfigured" = false
+    "isRecordedValue" = false
+    "isValidValue" = false
+    "currentValue" = 0.0
+    "lockTime" = 0
+    "isReady" = false
+    "isOutOfRange" = false
+    "isFaulty" = false
+    "isUnlocked" = false
+    "isOutOfRangeHolded" = false
+    "delayTime" = 0
+    "holdTime" = 0
+    "isOutOfRangeDelayed" = false
+    "diag" = 0
+    "isOutOfRangeLo" = false
+    "isOutOfRangeHi" = false
+  "temperature"[2,2]
+    "isConfigured" = false
+    "isRecordedValue" = false
+    "isValidValue" = false
+    "currentValue" = 0.0
+    "lockTime" = 0
+    "isReady" = false
+    "isOutOfRange" = false
+    "isFaulty" = false
+    "isUnlocked" = false
+    "isOutOfRangeHolded" = false
+    "delayTime" = 0
+    "holdTime" = 0
+    "isOutOfRangeDelayed" = false
+    "diag" = 0
+    "isOutOfRangeLo" = false
+    "isOutOfRangeHi" = false
+  "alarm"[1,1]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarm"[1,2]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarm"[2,1]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "alarm"[2,2]
+    "quality" = 0
+    "qualityOld" = 0
+    "acknRequired" = 0
+    "qualityPage" = 0
+  "state2"[1]
+    "system" = 1
+    "isFaulty" = false
+    "isOutOfRange" = false
+    "isReady" = true
+  "state2"[2]
+    "system" = 2
+    "isFaulty" = false
+    "isOutOfRange" = false
+    "isReady" = true

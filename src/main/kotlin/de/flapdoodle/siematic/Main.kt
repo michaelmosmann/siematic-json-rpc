@@ -182,9 +182,7 @@ object Main {
       )
 
       val redo = setOf(
-        "dbRoom",
-        "dbScreed",
-        "dbTank"
+        "technicalSettings"
       )
 
       sections.forEach { section ->
