@@ -43,7 +43,7 @@
         "hour" = 0
         "minute" = 0
   "vacation"[1]
-    "setpoint" = 0.0
+    "setpoint" = 8.0
     "isValid" = false
     "isActivated"[1] = false
     "isActivated"[2] = false
@@ -61,22 +61,22 @@
     "isActivated"[14] = false
     "isActivated"[15] = false
     "isActivated"[16] = false
-    "setpointDrink" = 0.0
-    "setpointHeatCool" = 0.0
-    "isActivatedTank"[1] = false
-    "isActivatedTank"[2] = false
+    "setpointDrink" = 40.0
+    "setpointHeatCool" = 33.0
+    "isActivatedTank"[1] = true
+    "isActivatedTank"[2] = true
     "start"
-      "hour" = 0
+      "hour" = 8
       "minute" = 0
-      "day" = 0
-      "month" = 0
-      "year" = 0
+      "day" = 1
+      "month" = 3
+      "year" = 25
     "end"
-      "hour" = 0
+      "hour" = 12
       "minute" = 0
-      "month" = 0
-      "day" = 0
-      "year" = 0
+      "month" = 3
+      "day" = 3
+      "year" = 25
   "vacation"[2]
     "setpoint" = 0.0
     "isValid" = false
@@ -16943,7 +16943,7 @@
       "setpointLo" = 0.0
       "isValid" = false
   "tank"[1,2]
-    "hysteresis" = 5.0
+    "hysteresis" = 6.0
     "mode" = 4
     "default" = 30.0
     "name" = 'Vorlauftemperatur'
@@ -16957,7 +16957,7 @@
         "hour" = 6
         "minute" = 30
     "rule"[1,2]
-      "setpoint" = 35.0
+      "setpoint" = 34.0
       "isValid" = true
       "start"
         "hour" = 6
@@ -17002,7 +17002,7 @@
         "hour" = 6
         "minute" = 30
     "rule"[2,2]
-      "setpoint" = 35.0
+      "setpoint" = 34.0
       "isValid" = true
       "start"
         "hour" = 6
@@ -17047,7 +17047,7 @@
         "hour" = 6
         "minute" = 30
     "rule"[3,2]
-      "setpoint" = 35.0
+      "setpoint" = 34.0
       "isValid" = true
       "start"
         "hour" = 6
@@ -17092,7 +17092,7 @@
         "hour" = 6
         "minute" = 30
     "rule"[4,2]
-      "setpoint" = 35.0
+      "setpoint" = 34.0
       "isValid" = true
       "start"
         "hour" = 6
@@ -17137,7 +17137,7 @@
         "hour" = 6
         "minute" = 30
     "rule"[5,2]
-      "setpoint" = 35.0
+      "setpoint" = 34.0
       "isValid" = true
       "start"
         "hour" = 6
@@ -17182,7 +17182,7 @@
         "hour" = 6
         "minute" = 30
     "rule"[6,2]
-      "setpoint" = 35.0
+      "setpoint" = 34.0
       "isValid" = true
       "start"
         "hour" = 6
@@ -17227,7 +17227,7 @@
         "hour" = 6
         "minute" = 30
     "rule"[7,2]
-      "setpoint" = 35.0
+      "setpoint" = 34.0
       "isValid" = true
       "start"
         "hour" = 6
@@ -17265,7 +17265,7 @@
     "curve"
       "outerTempLo" = -7.0
       "outerTempHi" = 15.0
-      "setpointHi" = 8.0
+      "setpointHi" = 9.0
       "setpointLo" = 0.0
       "isValid" = true
   "tank"[2,1]
@@ -17921,7 +17921,7 @@
       "setpointLo" = 0.0
       "isValid" = true
   "tankHeat"[1]
-    "hysteresis" = 5.0
+    "hysteresis" = 6.0
     "mode" = 4
     "default" = 30.0
     "name" = 'Vorlauftemperatur'
@@ -17935,7 +17935,7 @@
         "hour" = 6
         "minute" = 30
     "rule"[1,2]
-      "setpoint" = 35.0
+      "setpoint" = 34.0
       "isValid" = true
       "start"
         "hour" = 6
@@ -17980,7 +17980,7 @@
         "hour" = 6
         "minute" = 30
     "rule"[2,2]
-      "setpoint" = 35.0
+      "setpoint" = 34.0
       "isValid" = true
       "start"
         "hour" = 6
@@ -18025,7 +18025,7 @@
         "hour" = 6
         "minute" = 30
     "rule"[3,2]
-      "setpoint" = 35.0
+      "setpoint" = 34.0
       "isValid" = true
       "start"
         "hour" = 6
@@ -18070,7 +18070,7 @@
         "hour" = 6
         "minute" = 30
     "rule"[4,2]
-      "setpoint" = 35.0
+      "setpoint" = 34.0
       "isValid" = true
       "start"
         "hour" = 6
@@ -18115,7 +18115,7 @@
         "hour" = 6
         "minute" = 30
     "rule"[5,2]
-      "setpoint" = 35.0
+      "setpoint" = 34.0
       "isValid" = true
       "start"
         "hour" = 6
@@ -18160,7 +18160,7 @@
         "hour" = 6
         "minute" = 30
     "rule"[6,2]
-      "setpoint" = 35.0
+      "setpoint" = 34.0
       "isValid" = true
       "start"
         "hour" = 6
@@ -18205,7 +18205,7 @@
         "hour" = 6
         "minute" = 30
     "rule"[7,2]
-      "setpoint" = 35.0
+      "setpoint" = 34.0
       "isValid" = true
       "start"
         "hour" = 6
@@ -18243,7 +18243,7 @@
     "curve"
       "outerTempLo" = -7.0
       "outerTempHi" = 15.0
-      "setpointHi" = 8.0
+      "setpointHi" = 9.0
       "setpointLo" = 0.0
       "isValid" = true
   "tankHeat"[2]

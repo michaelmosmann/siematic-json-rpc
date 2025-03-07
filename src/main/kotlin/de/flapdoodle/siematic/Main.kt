@@ -182,9 +182,11 @@ object Main {
       )
 
       val redo = setOf(
-        "dbConverter",
-        "dbFan",
-        "dbExchanger",
+        "dbCirculation",
+        "dbAlternate3",
+        "dbAlternate2",
+        "customSettings",
+        "configurationSettings"
       )
 
       sections.forEach { section ->
