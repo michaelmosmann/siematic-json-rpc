@@ -560,32 +560,32 @@
       "deviationChangeMax" = 0.2
     "zones"[2]
       "deviation" = 1.0
-      "step" = 3
+      "step" = 1
       "deviationChangeMin" = 0.1
       "deviationChangeMax" = 0.4
     "zones"[3]
       "deviation" = 2.0
-      "step" = 3
+      "step" = 1
       "deviationChangeMin" = 0.1
       "deviationChangeMax" = 1.0
     "zones"[4]
       "deviation" = 3.0
-      "step" = 3
+      "step" = 1
       "deviationChangeMin" = 0.1
       "deviationChangeMax" = 1.5
     "zones"[5]
       "deviation" = 4.0
-      "step" = 3
+      "step" = 1
       "deviationChangeMin" = 0.1
       "deviationChangeMax" = 1.5
     "zones"[6]
       "deviation" = 5.0
-      "step" = 3
+      "step" = 1
       "deviationChangeMin" = 0.1
       "deviationChangeMax" = 2.0
     "zones"[7]
       "deviation" = 5.5
-      "step" = 3
+      "step" = 1
       "deviationChangeMin" = 0.1
       "deviationChangeMax" = 2.0
     "zones"[8]

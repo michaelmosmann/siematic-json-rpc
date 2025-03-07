@@ -181,9 +181,15 @@ object Main {
         "PTO"
       )
 
+      val redo = setOf(
+        "dbRoom",
+        "dbScreed",
+        "dbTank"
+      )
+
       sections.forEach { section ->
         val dumpPath = basePath.resolve("http").resolve("$section.txt")
-        if (!Files.exists(dumpPath)) {
+        if (!Files.exists(dumpPath) || redo.contains(section)) {
 
           val collector = PropertyCollector()
           browse(jsonRpcWithAuth, section, 1, collector)
