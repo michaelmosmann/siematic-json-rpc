@@ -28,12 +28,12 @@
     "controlValue"
       "calculated" = 0.0
       "limited" = 12.0
-      "limitedInc" = 0.0
+      "limitedInc" = 12.0
       "output" = 0.0
       "limitedOld" = 12.0
-      "min" = 0.0
-      "max" = 0.0
-      "increase" = 0.0
+      "min" = 12.0
+      "max" = 60.0
+      "increase" = 20.0
     "cool"
       "controlValue_CO_HP"
         "current" = 0.0
