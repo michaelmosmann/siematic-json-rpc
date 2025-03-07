@@ -4,51 +4,51 @@
     "isReadyDelayed" = true
     "readyness" = 10
     "isFaulty" = false
-    "isActivated" = false
-    "isOperating" = false
-    "tankDeviation" = 0.0
+    "isActivated" = true
+    "isOperating" = true
+    "tankDeviation" = 4.868465
     "isReady" = true
     "counterDelayReady" = 0
-    "counterDelayStart" = 25
+    "counterDelayStart" = 0
     "isWaiting" = false
-    "isOperatingFEH" = false
+    "isOperatingFEH" = true
     "isOperatingFE" = false
-    "isShortrunnig" = false
+    "isShortrunnig" = true
     "resetCounterMinRuntime" = false
     "resetCounterWait" = false
     "resetCounterShortruns" = false
     "counterShortruns" = 0
-    "counterMinRuntime" = 6000
+    "counterMinRuntime" = 1353
     "counterWait" = 0
-    "isOperatingREH" = false
+    "isOperatingREH" = true
     "isOperatingRE" = false
     "resetCounterDelayStart" = false
-    "counterRunning" = 0
+    "counterRunning" = 4648
     "resetCounterDelayReady" = false
     "diag" = 0
     "release" = 10
     "abortWaiting" = false
-    "codeOperation" = ' '
-    "codeFeedback" = ' '
+    "codeOperation" = 'H'
+    "codeFeedback" = 'H'
     "type" = 3
     "modeRequested"
       "defrost" = false
       "cool" = false
-      "heat" = false
+      "heat" = true
       "drink" = false
-      "total" = false
+      "total" = true
     "modeSelected"
       "defrost" = false
       "cool" = false
-      "heat" = false
+      "heat" = true
       "drink" = false
-      "total" = false
+      "total" = true
     "modeOperation"
       "defrost" = false
       "cool" = false
-      "heat" = false
+      "heat" = true
       "drink" = false
-      "total" = false
+      "total" = true
     "waiting"
       "hour" = 0
       "minute" = 0
@@ -60,33 +60,33 @@
         "reset" = false
     "postrunning"
       "hour" = 0
-      "minute" = 20
-      "second" = 0
+      "minute" = 4
+      "second" = 8
     "modeActivated"
       "defrost" = false
       "cool" = false
-      "heat" = false
+      "heat" = true
       "drink" = false
-      "total" = false
+      "total" = true
     "starting"
       "hour" = 0
       "minute" = 0
-      "second" = 5
+      "second" = 0
     "running"
       "hour" = 0
-      "minute" = 0
-      "second" = 0
+      "minute" = 15
+      "second" = 52
     "modeFeedback"
       "defrost" = false
       "cool" = false
-      "heat" = false
+      "heat" = true
       "drink" = false
-      "total" = false
+      "total" = true
     "power"
       "calculated" = 0.0
       "limited" = 0.0
       "output" = 0.0
-      "isLimited" = true
+      "isLimited" = false
   "state"[2]
     "isReadyDelayed" = false
     "readyness" = 0
@@ -181,13 +181,13 @@
       "drink"
         "deviation" = 0.0
       "heatCool"
-        "deviation" = 0.05834961
+        "deviation" = 3.934319
     "exchanger"
       "isReady" = true
       "isFaulty" = false
     "mode"
       "heat"
-        "isRequestedBySystem" = false
+        "isRequestedBySystem" = true
         "isActivatedByMode" = true
       "cool"
         "isRequestedBySystem" = false
@@ -414,7 +414,7 @@
       "isRecordedValue" = false
       "isValidValue" = false
       "currentValue" = 0.0
-      "lockTime" = 3000
+      "lockTime" = 0
       "isReady" = false
       "isOutOfRange" = false
       "isFaulty" = false
@@ -431,7 +431,7 @@
       "isRecordedValue" = false
       "isValidValue" = false
       "currentValue" = 0.0
-      "lockTime" = 3000
+      "lockTime" = 0
       "isReady" = false
       "isOutOfRange" = false
       "isFaulty" = false
@@ -532,7 +532,7 @@
       "diag" = 0
     "converter"
       "isConfigured" = false
-      "lockTime" = 5
+      "lockTime" = 0
       "isReady" = true
       "isUnlocked" = false
       "currentSignal" = false

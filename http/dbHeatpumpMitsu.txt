@@ -4,33 +4,33 @@
     "locktimeInc" = 0
     "locktimeDec" = 0
     "resetLocktime" = false
-    "checktime" = 4500
+    "checktime" = 3930
     "isChecktime" = false
-    "PWM" = 8.0
-    "AQU" = 0.8
+    "PWM" = 35.0
+    "AQU" = 3.5
     "DIDQ"
-      "BE" = false
+      "BE" = true
       "FE" = false
-      "KO" = false
+      "KO" = true
       "EF" = false
       "KU" = false
-      "HZ" = false
+      "HZ" = true
       "S0" = false
-      "S1" = false
+      "S1" = true
       "S2" = false
       "HC" = false
     "step"
-      "calculated" = 0
-      "output" = 0
-      "requested" = 0
-      "limited" = 0
+      "calculated" = 2
+      "output" = 2
+      "requested" = 2
+      "limited" = 2
     "power"
-      "outerTemp" = 9.218936
-      "tankDeviationAct" = 0.0
-      "tankDeviationLast" = 0.0
-      "tankDeviationChange" = 5.200481
-      "tankZoneAct" = 1
-      "tankZoneLast" = 1
+      "outerTemp" = 10.00225
+      "tankDeviationAct" = 3.934319
+      "tankDeviationLast" = 4.868465
+      "tankDeviationChange" = 1.279793
+      "tankZoneAct" = 5
+      "tankZoneLast" = 6
     "isConfiguredDI"
       "BE" = true
       "FE" = true
