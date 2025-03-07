@@ -182,7 +182,8 @@ object Main {
       )
 
       val redo = setOf(
-        "dbPTO"
+        "dbMixer",
+        "dbMode"
       )
 
       sections.forEach { section ->

@@ -1,82 +1,83 @@
+
 "dbMode"
-  "dbMode".state[1]
-    "dbMode".state[1].heat
-      "dbMode".state[1].heat."dbMode".state[1].heat.isConfigured = true
-      "dbMode".state[1].heat."dbMode".state[1].heat.isActivated = true
-      "dbMode".state[1].heat."dbMode".state[1].heat.isReady = true
-      "dbMode".state[1].heat."dbMode".state[1].heat.isRequested = true
-      "dbMode".state[1].heat."dbMode".state[1].heat.isRequired = true
-      "dbMode".state[1].heat."dbMode".state[1].heat.isActivatedOld = true
-      "dbMode".state[1].heat."dbMode".state[1].heat.isActivatedNew = false
-      "dbMode".state[1].heat."dbMode".state[1].heat.isRequestedByUserMode = true
-      "dbMode".state[1].heat."dbMode".state[1].heat.isRequestedByRoomAntifreeze = false
-      "dbMode".state[1].heat."dbMode".state[1].heat.isRequestedByTankAntifreeze = false
-      "dbMode".state[1].heat."dbMode".state[1].heat.isRequestedByScreed = false
-    "dbMode".state[1].cool
-      "dbMode".state[1].cool."dbMode".state[1].cool.isConfigured = false
-      "dbMode".state[1].cool."dbMode".state[1].cool.isActivated = false
-      "dbMode".state[1].cool."dbMode".state[1].cool.isReady = false
-      "dbMode".state[1].cool."dbMode".state[1].cool.isRequested = false
-      "dbMode".state[1].cool."dbMode".state[1].cool.isActivatedOld = false
-      "dbMode".state[1].cool."dbMode".state[1].cool.isActivatedNew = false
-      "dbMode".state[1].cool."dbMode".state[1].cool.isRequired = false
-      "dbMode".state[1].cool."dbMode".state[1].cool.isRequestedByUserMode = false
-    "dbMode".state[1].drink
-      "dbMode".state[1].drink."dbMode".state[1].drink.isConfigured = false
-      "dbMode".state[1].drink."dbMode".state[1].drink.isActivated = false
-      "dbMode".state[1].drink."dbMode".state[1].drink.isReady = false
-      "dbMode".state[1].drink."dbMode".state[1].drink.isRequested = false
-      "dbMode".state[1].drink."dbMode".state[1].drink.isRequestedByTankAntifreeze = false
-      "dbMode".state[1].drink."dbMode".state[1].drink.isRequestedByUserMode = false
-      "dbMode".state[1].drink."dbMode".state[1].drink.isPrioritizedByMode = true
-  "dbMode".state[2]
-    "dbMode".state[2].heat
-      "dbMode".state[2].heat."dbMode".state[2].heat.isConfigured = false
-      "dbMode".state[2].heat."dbMode".state[2].heat.isActivated = false
-      "dbMode".state[2].heat."dbMode".state[2].heat.isReady = false
-      "dbMode".state[2].heat."dbMode".state[2].heat.isRequested = false
-      "dbMode".state[2].heat."dbMode".state[2].heat.isRequired = false
-      "dbMode".state[2].heat."dbMode".state[2].heat.isActivatedOld = false
-      "dbMode".state[2].heat."dbMode".state[2].heat.isActivatedNew = false
-      "dbMode".state[2].heat."dbMode".state[2].heat.isRequestedByUserMode = false
-      "dbMode".state[2].heat."dbMode".state[2].heat.isRequestedByRoomAntifreeze = false
-      "dbMode".state[2].heat."dbMode".state[2].heat.isRequestedByTankAntifreeze = false
-      "dbMode".state[2].heat."dbMode".state[2].heat.isRequestedByScreed = false
-    "dbMode".state[2].cool
-      "dbMode".state[2].cool."dbMode".state[2].cool.isConfigured = false
-      "dbMode".state[2].cool."dbMode".state[2].cool.isActivated = false
-      "dbMode".state[2].cool."dbMode".state[2].cool.isReady = false
-      "dbMode".state[2].cool."dbMode".state[2].cool.isRequested = false
-      "dbMode".state[2].cool."dbMode".state[2].cool.isActivatedOld = false
-      "dbMode".state[2].cool."dbMode".state[2].cool.isActivatedNew = false
-      "dbMode".state[2].cool."dbMode".state[2].cool.isRequired = false
-      "dbMode".state[2].cool."dbMode".state[2].cool.isRequestedByUserMode = false
-    "dbMode".state[2].drink
-      "dbMode".state[2].drink."dbMode".state[2].drink.isConfigured = false
-      "dbMode".state[2].drink."dbMode".state[2].drink.isActivated = false
-      "dbMode".state[2].drink."dbMode".state[2].drink.isReady = false
-      "dbMode".state[2].drink."dbMode".state[2].drink.isRequested = false
-      "dbMode".state[2].drink."dbMode".state[2].drink.isRequestedByTankAntifreeze = false
-      "dbMode".state[2].drink."dbMode".state[2].drink.isRequestedByUserMode = false
-      "dbMode".state[2].drink."dbMode".state[2].drink.isPrioritizedByMode = false
-  "dbMode".limits
-    "dbMode".limits."dbMode".limits.number = 1.0
-    "dbMode".limits."dbMode".limits.numberMax = 2.0
-    "dbMode".limits."dbMode".limits.setpointHigh = 30.0
-    "dbMode".limits."dbMode".limits.setpointLow = 0.0
-  "dbMode".system[1]
-    "dbMode".system[1].heat
-      "dbMode".system[1].heat."dbMode".system[1].heat.isRequestedByTankAntifreeze = false
-      "dbMode".system[1].heat."dbMode".system[1].heat.isRequestedByRoomAntifreeze = false
-    "dbMode".system[1].drink
-      "dbMode".system[1].drink."dbMode".system[1].drink.isRequestedByTankAntifreeze = false
-  "dbMode".system[2]
-    "dbMode".system[2].heat
-      "dbMode".system[2].heat."dbMode".system[2].heat.isRequestedByTankAntifreeze = false
-      "dbMode".system[2].heat."dbMode".system[2].heat.isRequestedByRoomAntifreeze = false
-    "dbMode".system[2].drink
-      "dbMode".system[2].drink."dbMode".system[2].drink.isRequestedByTankAntifreeze = false
-  "dbMode".outerTemp
-    "dbMode".outerTemp."dbMode".outerTemp.isConfigured = true
-    "dbMode".outerTemp."dbMode".outerTemp.isValidValue = true
-    "dbMode".outerTemp."dbMode".outerTemp.currentValue = 9.125951
+  "state"[1]
+    "heat"
+      "isConfigured" = true
+      "isActivated" = true
+      "isReady" = true
+      "isRequested" = true
+      "isRequired" = true
+      "isActivatedOld" = true
+      "isActivatedNew" = false
+      "isRequestedByUserMode" = true
+      "isRequestedByRoomAntifreeze" = false
+      "isRequestedByTankAntifreeze" = false
+      "isRequestedByScreed" = false
+    "cool"
+      "isConfigured" = false
+      "isActivated" = false
+      "isReady" = false
+      "isRequested" = false
+      "isActivatedOld" = false
+      "isActivatedNew" = false
+      "isRequired" = false
+      "isRequestedByUserMode" = false
+    "drink"
+      "isConfigured" = false
+      "isActivated" = false
+      "isReady" = false
+      "isRequested" = false
+      "isRequestedByTankAntifreeze" = false
+      "isRequestedByUserMode" = false
+      "isPrioritizedByMode" = true
+  "state"[2]
+    "heat"
+      "isConfigured" = false
+      "isActivated" = false
+      "isReady" = false
+      "isRequested" = false
+      "isRequired" = false
+      "isActivatedOld" = false
+      "isActivatedNew" = false
+      "isRequestedByUserMode" = false
+      "isRequestedByRoomAntifreeze" = false
+      "isRequestedByTankAntifreeze" = false
+      "isRequestedByScreed" = false
+    "cool"
+      "isConfigured" = false
+      "isActivated" = false
+      "isReady" = false
+      "isRequested" = false
+      "isActivatedOld" = false
+      "isActivatedNew" = false
+      "isRequired" = false
+      "isRequestedByUserMode" = false
+    "drink"
+      "isConfigured" = false
+      "isActivated" = false
+      "isReady" = false
+      "isRequested" = false
+      "isRequestedByTankAntifreeze" = false
+      "isRequestedByUserMode" = false
+      "isPrioritizedByMode" = false
+  "limits"
+    "number" = 1
+    "numberMax" = 2
+    "setpointHigh" = 30.0
+    "setpointLow" = 0.0
+  "system"[1]
+    "heat"
+      "isRequestedByTankAntifreeze" = false
+      "isRequestedByRoomAntifreeze" = false
+    "drink"
+      "isRequestedByTankAntifreeze" = false
+  "system"[2]
+    "heat"
+      "isRequestedByTankAntifreeze" = false
+      "isRequestedByRoomAntifreeze" = false
+    "drink"
+      "isRequestedByTankAntifreeze" = false
+  "outerTemp"
+    "isConfigured" = true
+    "isValidValue" = true
+    "currentValue" = 10.11508
