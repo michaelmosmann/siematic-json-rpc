@@ -11,14 +11,14 @@
         "calculated" = 50.0
     "heatDrink"
       "controlValue"
-        "calculated" = 62.13039
+        "calculated" = 38.38171
       "controlValue_OT"
-        "calculated" = 62.13039
+        "calculated" = 38.38171
     "controlValue"
-      "calculated" = 0.0
-      "limited" = 58.8844
+      "calculated" = 38.38171
+      "limited" = 38.38171
       "min" = 0.0
-      "max" = 0.0
+      "max" = 80.0
       "output" = 0.0
   "state2"[2]
     "isConfigured" = false
@@ -31,9 +31,9 @@
         "calculated" = 50.0
     "heatDrink"
       "controlValue"
-        "calculated" = 62.13039
+        "calculated" = 38.38171
       "controlValue_OT"
-        "calculated" = 62.13039
+        "calculated" = 38.38171
     "controlValue"
       "calculated" = 0.0
       "limited" = 0.0

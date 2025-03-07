@@ -182,10 +182,9 @@ object Main {
       )
 
       val redo = setOf(
-        "dbHeatpump",
-        "dbFloorpump",
-        "dbHeatpumpBeglau",
-        "dbHeatpumpMitsu",
+        "dbConverter",
+        "dbFan",
+        "dbExchanger",
       )
 
       sections.forEach { section ->

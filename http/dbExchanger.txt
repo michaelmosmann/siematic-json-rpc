@@ -1,12 +1,12 @@
 
 "dbExchanger"
   "system"[1]
-    "isActiveHeatpump" = false
+    "isActiveHeatpump" = true
     "drink"
       "isActiveHeatpump" = false
       "isActivatedHeatpump" = false
     "heat"
-      "isActiveHeatpump" = false
+      "isActiveHeatpump" = true
     "cool"
       "isActiveHeatpump" = false
     "defrost"
@@ -47,7 +47,7 @@
       "isConfigured" = true
       "isRecordedValue" = true
       "isValidValue" = true
-      "currentValue" = 20.84127
+      "currentValue" = 28.53864
       "lockTime" = 0
       "isReady" = true
       "isOutOfRange" = false
@@ -107,9 +107,9 @@
       "isConfigured" = false
     "heatCool"
       "cntDelay" = 0
-      "isRequested" = false
-      "isRequestedOld" = false
-      "isRequestedHold" = false
+      "isRequested" = true
+      "isRequestedOld" = true
+      "isRequestedHold" = true
       "isConfigured" = true
   "loadpump"[2]
     "drink"
@@ -129,7 +129,7 @@
     "isFaulty" = false
     "heatCool"
       "isConfigured" = false
-      "lockTime" = 25
+      "lockTime" = 0
       "isReady" = true
       "isUnlocked" = false
       "currentSignal" = false
@@ -217,7 +217,7 @@
   "outerTemp"
     "isConfigured" = true
     "isValidValue" = true
-    "currentValue" = 3.932243
+    "currentValue" = 15.80914
   "threeWayValve"[1]
     "isConfigured" = false
     "isRequestedOpen" = false

@@ -2,7 +2,7 @@
 "dbConverter"
   "state2"[1]
     "isConfigured" = false
-    "cycle" = 117
+    "cycle" = 73
     "defrost"
       "controlValue"
         "calculated" = 20.0
@@ -23,11 +23,11 @@
       "calculated" = 0.0
       "limited" = 0.0
       "min" = 0.0
-      "max" = 0.0
+      "max" = 80.0
       "output" = 0.0
   "state2"[2]
     "isConfigured" = false
-    "cycle" = 117
+    "cycle" = 72
     "defrost"
       "controlValue"
         "calculated" = 20.0
