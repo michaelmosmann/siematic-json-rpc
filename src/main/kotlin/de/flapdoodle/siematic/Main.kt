@@ -182,7 +182,7 @@ object Main {
       )
 
       val redo = setOf(
-        "technicalSettings"
+        "dbPTO"
       )
 
       sections.forEach { section ->
