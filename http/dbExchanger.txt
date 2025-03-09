@@ -47,7 +47,7 @@
       "isConfigured" = true
       "isRecordedValue" = true
       "isValidValue" = true
-      "currentValue" = 28.53864
+      "currentValue" = 28.44736
       "lockTime" = 0
       "isReady" = true
       "isOutOfRange" = false
@@ -217,7 +217,7 @@
   "outerTemp"
     "isConfigured" = true
     "isValidValue" = true
-    "currentValue" = 15.80914
+    "currentValue" = 4.304244
   "threeWayValve"[1]
     "isConfigured" = false
     "isRequestedOpen" = false

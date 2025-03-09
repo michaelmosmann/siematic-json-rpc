@@ -6,24 +6,24 @@
     "isFaulty" = false
     "isActivated" = true
     "isOperating" = true
-    "tankDeviation" = 4.868465
+    "tankDeviation" = 2.708248
     "isReady" = true
     "counterDelayReady" = 0
     "counterDelayStart" = 0
     "isWaiting" = false
     "isOperatingFEH" = true
     "isOperatingFE" = false
-    "isShortrunnig" = true
+    "isShortrunnig" = false
     "resetCounterMinRuntime" = false
     "resetCounterWait" = false
     "resetCounterShortruns" = false
     "counterShortruns" = 0
-    "counterMinRuntime" = 1353
+    "counterMinRuntime" = 0
     "counterWait" = 0
     "isOperatingREH" = true
     "isOperatingRE" = false
     "resetCounterDelayStart" = false
-    "counterRunning" = 4648
+    "counterRunning" = 25685
     "resetCounterDelayReady" = false
     "diag" = 0
     "release" = 10
@@ -60,8 +60,8 @@
         "reset" = false
     "postrunning"
       "hour" = 0
-      "minute" = 4
-      "second" = 8
+      "minute" = 0
+      "second" = 0
     "modeActivated"
       "defrost" = false
       "cool" = false
@@ -73,9 +73,9 @@
       "minute" = 0
       "second" = 0
     "running"
-      "hour" = 0
-      "minute" = 15
-      "second" = 52
+      "hour" = 1
+      "minute" = 25
+      "second" = 57
     "modeFeedback"
       "defrost" = false
       "cool" = false
@@ -181,7 +181,7 @@
       "drink"
         "deviation" = 0.0
       "heatCool"
-        "deviation" = 3.934319
+        "deviation" = 2.708248
     "exchanger"
       "isReady" = true
       "isFaulty" = false

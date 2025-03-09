@@ -20,7 +20,7 @@
     "isActiveProtectionRuntime" = false
     "isActive" = false
     "postRuntime" = 0
-    "protectionInterval" = 316840
+    "protectionInterval" = 47831
     "protectionRuntime" = 0
     "isActiveProtectionInterval" = true
     "isRequested" = false
@@ -58,7 +58,7 @@
       "isConfigured" = true
       "isRecordedValue" = true
       "isValidValue" = true
-      "currentValue" = 31.17607
+      "currentValue" = 32.8615
       "lockTime" = 0
       "isReady" = true
       "isOutOfRange" = false

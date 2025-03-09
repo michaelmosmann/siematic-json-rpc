@@ -4,7 +4,7 @@
     "locktimeInc" = 0
     "locktimeDec" = 0
     "resetLocktime" = false
-    "checktime" = 3930
+    "checktime" = 1007
     "isChecktime" = false
     "PWM" = 35.0
     "AQU" = 3.5
@@ -25,12 +25,12 @@
       "requested" = 2
       "limited" = 2
     "power"
-      "outerTemp" = 10.00225
-      "tankDeviationAct" = 3.934319
-      "tankDeviationLast" = 4.868465
-      "tankDeviationChange" = 1.279793
-      "tankZoneAct" = 5
-      "tankZoneLast" = 6
+      "outerTemp" = 10.25544
+      "tankDeviationAct" = 2.708248
+      "tankDeviationLast" = 3.982689
+      "tankDeviationChange" = 1.978287
+      "tankZoneAct" = 4
+      "tankZoneLast" = 5
     "isConfiguredDI"
       "BE" = true
       "FE" = true
